@@ -1,0 +1,48 @@
+<header>
+	<div class="h_logo"><h1><span>R</span><span>Y</span></h1></div>
+	<div class="h_nav">
+		<ul>
+			<li id="About"><a href="javascript:;">About</a></li><!-- click하면 새창없이 이동-->
+			<li id="Skill"><a href="javascript:;">Skill</a></li>
+			<li id="Share"><a href="javascript:;">Share</a></li>
+		</ul>
+	</div>
+</header>
+<script>
+        $(window).scroll(function(){
+            console.log("container : "+ $(".container").offset().top);
+            
+            var win_sc = $(window).scrollTop();
+            var this_sc = $(this).scrollTop();
+            var container =  $(".container").offset().top;
+            var h_txt = $(".h_txt");
+            
+            
+        
+            if ( win_sc > container-500) {
+                h_txt.addClass("visible");
+            } else {
+                h_txt.removeClass("visible");
+            }
+        });
+	
+	
+	
+		$(document).ready(function(){
+			$('#About').click(function(){
+				var offset = $('.container').offset();
+				$('html').animate({scrollTop : offset.top}, 800);
+			});
+			$('#Skill').click(function(){
+				var offset = $('.sct02').offset();
+				$('html').animate({scrollTop : offset.top}, 800);
+			});
+			$('#Share').click(function(){
+				var offset = $('.sct03').offset();
+				$('html').animate({scrollTop : offset.top}, 800);
+			});
+			
+		});
+
+
+</script>

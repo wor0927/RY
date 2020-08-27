@@ -1,0 +1,2452 @@
+@font-face {
+	font-family: 'AAA';
+	src: local('NanumGothic') url('NanumGothic.eot') url('NanumGothic.ttf') url('NanumGothic.woff')
+}
+
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'AAA';
+}
+
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:visited {
+	color: black
+}
+
+
+
+.wrap {
+	width: 100%;
+	height: 100vh;
+	_overflow: hidden;
+}
+
+.M_txt {
+	max-width: 1920px;
+	width: 100%;
+	height: 100%;
+	z-index: -9999;
+	position: fixed;
+}
+
+.m_txt {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.M_txt_Out {
+	opacity: 0;
+	transition-delay: .5s;
+	transition-duration: 1s;
+	z-index: -1;
+	background-attachment: fixed;
+}
+
+.M_txt_In {
+	opacity: 1;
+	transition-delay: .5s;
+	transition-duration: 1s;
+}
+
+/*--------------t01----------------*/
+/*.t01 { height: 300px;}*/
+.m_txt div {
+	height: 150px;
+}
+
+.m_txt div p {
+	font-size: 5em;
+	font-weight: bold;
+	text-align: left;
+}
+
+.t01 {
+	margin-top: 160px;
+}
+
+/*--------------t02----------------*/
+.t02 {}
+
+.t02::before {
+	content: "";
+	width: 400px;
+	padding-left: 5px;
+	padding-bottom: 100px;
+	display: block;
+	border-top: 1px solid #000;
+}
+
+.m_txt .my_gr {
+	width: 100%;
+	height: 100%;
+}
+
+.m_txt .my_gr img {
+	display: block;
+	width: 300px;
+	height: 400px;
+}
+
+
+
+/*---------------------------- 공통 ---------------------------*/
+.container {
+	top: 1000px;
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
+	position: relative;
+}
+
+.section {
+	width: 100%;
+}
+
+/*------------------------------ sct01 --------------------------------*/
+
+.sct01 {
+	_background: #f7f7f7;
+}
+
+.about_txt {
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.about_txt p {
+	font-weight: bold;
+	font-family: 'NanumGothic';
+	font-size: 18px;
+	color: #222;
+	line-height: 2;
+	letter-spacing: 1.2px;
+}
+
+
+
+/*------------------------------ sct02 --------------------------------*/
+
+.sct02 {
+	_background: #777;
+	overflow: hidden;
+	position: relative;
+}
+
+.Technics_txt {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.Technics_txt div {
+	height: 360px;
+	background: #fff;
+	text-align: center;
+}
+
+.Technics_txt div:nth-child(1) {
+	width: 100%;
+	float: left;
+}
+
+.Technics_txt div:nth-child(2) {
+	width: 100%;
+	float: right;
+}
+
+.Technics_txt div:nth-child(3) {
+	width: 100%;
+	float: left;
+}
+
+.Technics_txt div p {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	font-weight: bold;
+	font-size: 4em;
+	color: #fff;
+	text-shadow:
+		-1px -1px 0 #999,
+		1px -1px 0 #999,
+		-1px 1px 0 #999,
+		1px 1px 0 #999;
+	position: relative;
+	letter-spacing: 0.15em;
+	opacity: 1;
+	width: 50%;
+}
+
+.Technics_txt div p:nth-child(1) {
+	float: left;
+}
+
+.Technics_txt div p:nth-child(2) {
+	float: left;
+}
+
+.Technics_txt div:nth-child(2) p {
+	text-align: right;
+}
+
+.Technics_txt div p .o_txt {
+	opacity: 0;
+	position: relative;
+}
+
+/* circle */
+.Technics_txt div p .o_cle {
+	opacity: 1;
+	display: block;
+	top: 50px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #000;
+	position: absolute;
+	cursor: pointer;
+	transition-delay: .5;
+	transition-duration: .8;
+	cursor: pointer;
+}
+
+.Technics_txt div:nth-child(1) p:nth-child(1) .o_cle {
+	right: 390px;
+	top: 45px;
+}
+
+.Technics_txt div:nth-child(1) p:nth-child(2) .o_cle {
+	right: 370px;
+	top: 45px;
+}
+
+.Technics_txt div:nth-child(2) p:nth-child(1) .o_cle {
+	right: 100px;
+	top: 45px;
+}
+
+.Technics_txt div:nth-child(2) p:nth-child(2) .o_cle {
+	right: 170px;
+	top: 45px;
+}
+
+.Technics_txt div:nth-child(3) p:nth-child(1) .o_cle {
+	right: 390px;
+	top: 45px;
+}
+
+.Technics_txt div:nth-child(3) p:nth-child(2) .o_cle {
+	right: 370px;
+	top: 45px;
+}
+
+
+/*--- hover animation ---*/
+.Technics_txt div p .o_txt::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 40px;
+	width: 0px;
+	height: 40px;
+	background-color: #e9e81e66;
+	transition: 1s;
+
+}
+
+.Technics_txt div:nth-child(1) p .o_txt::before {
+	left: 0px;
+}
+
+.Technics_txt div:nth-child(2) p .o_txt::before {
+	right: 0px;
+}
+
+.Technics_txt div:nth-child(3) p .o_txt::before {
+	left: 0px;
+}
+
+.Technics_txt div p:hover {
+	color: #000;
+	text-shadow:
+		-1px -1px 0 #999,
+		1px -1px 0 #999,
+		-1px 1px 0 #999,
+		1px 1px 0 #999;
+}
+
+.Technics_txt div p:hover::before {
+	transition: 1s;
+}
+
+.Technics_txt div:nth-child(1) p:nth-child(1) .o_txt:hover::before {
+	width: 250px;
+}
+
+.Technics_txt div:nth-child(1) p:nth-child(2) .o_txt:hover::before {
+	width: 190px;
+}
+
+.Technics_txt div:nth-child(2) p:nth-child(1) .o_txt:hover::before {
+	width: 300px;
+}
+
+.Technics_txt div:nth-child(2) p:nth-child(2) .o_txt:hover::before {
+	width: 430px;
+}
+
+.Technics_txt div:nth-child(3) p .o_txt:hover::before {
+	width: 460px;
+}
+
+/*------- ★ 모달 ★-------*/
+
+.modal {
+	position: absolute;
+	width: 1500px;
+	left: 10%;
+	margin: 0 auto;
+	z-index: 999;
+}
+
+.m_brackets {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	box-shadow: 30px 41px 66px -60px #777;
+}
+
+/*-- 메뉴 --*/
+.top {
+	padding: 5px 0 0 10px;
+	z-index: 1;
+	width: 1500px;
+	height: 40px;
+	background: #3c3f41;
+	border-radius: 5px 5px 0 0;
+}
+
+.top ul {
+	text-align: left;
+}
+
+.top ul li {
+	padding: 5px 0 0 10px;
+	display: inline;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+.left {
+	width: 120px;
+	height: 700px;
+	background: #3c3f41;
+	float: left;
+}
+
+.left .le,
+.left .ri {
+	padding: 5px 0 0 10px;
+}
+
+.left .le p,
+.left .ri p {
+	padding-bottom: 10px;
+	color: #a3a3a3;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.left .le ul li,
+.left .ri ul li {
+	font-size: 11px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	color: #a3a3a3;
+	font-weight: 100;
+}
+
+.left .le ul li span,
+.left .ri ul li span {
+	color: #eee;
+}
+
+
+
+/*-- 내용 --*/
+
+.mo_html,
+.mo_css,
+.mo_jQ,
+.mo_java {
+	display: block;
+	width: 90%;
+	height: 700px;
+	background: #eee;
+	float: left;
+}
+
+.mo_photo,
+.mo_Illust {
+	display: block;
+	width: 100%;
+	height: 700px;
+	background: #eee;
+	float: left;
+}
+
+.mo_html img,
+.mo_css img,
+.mo_jQ img,
+.mo_java img {
+	width: 1380px;
+	height: 100%;
+}
+
+.mo_photo img,
+.mo_Illust img {
+	width: 1500px;
+	height: 100%;
+}
+
+/*------- ★ star ★-------*/
+.star_top,
+.star_bottom {
+	width: 100%;
+	top: 0;
+	z-index: 0;
+}
+
+.star_top span,
+.star_bottom span {
+	position: absolute;
+	border-radius: 50%;
+	display: block;
+	width: 5px;
+	height: 5px;
+}
+
+.star_top span {
+	background: #000;
+	opacity: .4;
+}
+
+.star_bottom span {
+	background: #000;
+}
+
+
+
+.star_top > .st1 {
+	left: 20%;
+	top: 12%;
+}
+
+.star_top > .st2 {
+	right: 0;
+	top: 21%;
+}
+
+.star_top > .st3 {
+	left: 60%;
+	top: 64%;
+}
+
+.star_top > .st4 {
+	left: 58%;
+	top: 21%;
+}
+
+.star_top > .st5 {
+	left: 45%;
+	top: 0%;
+}
+
+.star_top > .st6 {
+	left: 25%;
+	top: 5%;
+}
+
+.star_top > .st7 {
+	left: 50%;
+	top: 78%;
+}
+
+.star_top > .st8 {
+	left: 45%;
+	top: 43%;
+}
+
+.star_top > .st9 {
+	left: 6%;
+	top: 41%;
+}
+
+.star_top > .st10 {
+	left: 54%;
+	top: 44%;
+}
+
+.star_bottom > .stb1 {
+	left: 60%;
+	top: 77%
+}
+
+.star_bottom > .stb2 {
+	right: 0;
+	top: 47%;
+}
+
+.star_bottom > .stb3 {
+	left: 8%;
+	top: 87%;
+}
+
+.star_bottom > .stb4 {
+	right: 12%;
+	top: 47%;
+}
+
+.star_bottom > .stb5 {
+	left: 78%;
+	top: 57%;
+}
+
+.star_bottom > .stb6 {
+	right: 19%;
+	top: 0%;
+}
+
+.star_bottom > .stb7 {
+	left: 20%;
+	top: 54%;
+}
+
+.star_bottom > .stb8 {
+	left: 45%;
+	top: 84%;
+}
+
+.star_bottom > .stb9 {
+	left: 68%;
+	top: 68%;
+}
+
+.star_bottom > .stb10 {
+	left: 28%;
+	top: 29%;
+}
+
+
+
+
+
+/*
+
+cilck animation
+.Technics_txt div p.changed::before{
+	display: none;
+}
+*/
+
+sct02::after {
+	content: "";
+	clear: both;
+}
+
+/*------------------------------ sct03 --------------------------------*/
+
+.sct03 {
+	background: #fff;
+	overflow: hidden;
+	height: 1500px;
+}
+
+.sct03 h1 {
+	text-align: center;
+	font-size: 12em;
+	z-index: -1;
+	color: #eee;
+}
+
+/*---- mobile* ----*/
+.mobile {
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+.mobile_box {
+	position: relative;
+	width: 300px;
+	height: 600px;
+	margin: 0 auto;
+	background: #000;
+	border-radius: 55px;
+	margin-bottom: 50px;
+}
+
+.m_ain {
+	position: absolute;
+	overflow: hidden;
+	left: 5%;
+	top: 60px;
+	width: 90%;
+	height: 450px;
+	background: #fff;
+	margin: 0 auto;
+}
+
+.m_ain:hover::before {
+	position: absolute;
+	content: "Cilck ME :) ";
+	display: block;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	z-index: 999;
+	letter-spacing: 1.2;
+}
+
+.m_o,
+.m_l,
+.m_btn,
+.m_btn_bt {
+	position: absolute;
+}
+
+.m_o {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #777;
+	top: 25px;
+	left: 110px;
+}
+
+.m_l {
+	width: 50px;
+	height: 6px;
+	border-radius: 15px;
+	background: #777;
+	top: 27px;
+	left: 125px;
+}
+
+.m_btn {
+	width: 40px;
+	height: 40px;
+	bottom: 30px;
+	left: 130px;
+	border-radius: 50%;
+	background-color: silver;
+}
+
+.m_btn_bt {
+	display: block;
+	width: 36px;
+	height: 36px;
+	bottom: 30px;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	background-color: #343434;
+}
+
+/*---- swiper ----*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+/*------------------------------ sct04 --------------------------------*/
+.sct04 {
+	width: calc(100% - 120px);
+	max-width: 784px;
+	padding-top: 42px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.f_icon {
+	width: 100%;
+}
+
+.f_icon ul {
+	text-align: center;
+}
+
+.f_icon ul li {
+	display: inline;
+}
+
+
+.f_icon ul li a img:hover {}
+
+.f_icon ul li:nth-child(1) {
+	padding-right: 60px;
+}
+
+.f_address {
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.f_address p {
+	font-size: 2em;
+}
+
+
+
+
+/*★★★★★ 반응형 ★★★★★ */
+/* 가장 작은 기기들 (모바일, 320px 이상) */
+@media screen and (max-width:320px) {
+
+	/*------------------------------ M_txt --------------------------------*/
+	.M_txt {
+		width: 100%;
+		height: 100%;
+		z-index: -9999;
+		position: fixed;
+	}
+
+	.m_txt {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*--------------t01----------------*/
+	/*.t01 { height: 300px;}*/
+	.m_txt div {
+		height: 100px;
+	}
+
+	.m_txt div p {
+		font-size: 2.5em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.t01 {
+		margin-top: 110px;
+	}
+
+	/*--------------t02----------------*/
+	.t02 {}
+
+	.t02::before {
+		content: "";
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		display: block;
+		border-top: 1px solid #000;
+	}
+
+	.m_txt .my_gr {
+		width: 100%;
+		height: 100%;
+	}
+
+	.m_txt .my_gr img {
+		margin: 0 auto;
+		display: block;
+		width: 200px;
+		height: 255px;
+	}
+
+
+	/*------------------------------ sct01 --------------------------------*/
+	.container {
+		top: 950px;
+		/* max-width: 1920px; */
+		width: 100%;
+		margin: 0 auto;
+		z-index: 1;
+		position: relative;
+	}
+
+
+	.about_txt {
+		width: 90%;
+		height: 890px;
+		padding-top: 0px;
+		margin: 0px auto;
+	}
+
+	.about_txt p {
+		font-weight: bold;
+		font-family: 'NanumGothic';
+		font-size: 15px;
+		color: #222;
+		line-height: 2.3;
+		letter-spacing: 1.6px;
+	}
+
+	/*------------------------------ sct02 --------------------------------*/
+	.sct02 {
+		_background: #777;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.Technics_txt {
+		width: 95%;
+		height: 100%;
+		margin: 100px auto;
+	}
+
+
+	.Technics_txt div {
+		height: 280px;
+		background: #fff;
+		text-align: center;
+	}
+
+	.Technics_txt div:nth-child(1) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(3) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div p {
+		width: 100%;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		font-weight: bold;
+		font-size: 11vw;
+		color: #fff;
+		text-shadow:
+			-1px -1px 0 #999,
+			1px -1px 0 #999,
+			-1px 1px 0 #999,
+			1px 1px 0 #999;
+		position: relative;
+		letter-spacing: 0.15em;
+		line-height: 1.5;
+		opacity: 1;
+	}
+
+	.Technics_txt div p:nth-child(1) {
+		float: none;
+	}
+
+	.Technics_txt div p:nth-child(2) {
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) p {
+		text-align: center;
+	}
+
+	.Technics_txt div p .o_txt {
+		opacity: 0;
+		position: relative;
+	}
+
+
+	/*--- hover animation ---*/
+	.Technics_txt div p .o_txt::before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 40px;
+		width: 0px;
+		height: 20px;
+		background-color: #e9e81e66;
+		transition: 1s;
+
+	}
+
+	.Technics_txt div:nth-child(1) p .o_txt::before {
+		left: 0px;
+	}
+
+	.Technics_txt div:nth-child(2) p .o_txt::before {
+		right: 0px;
+	}
+
+	.Technics_txt div:nth-child(3) p .o_txt::before {
+		left: 0px;
+	}
+
+	.Technics_txt div p:hover {
+		color: #000;
+		text-shadow:
+			-1px -1px 0 #999,
+			1px -1px 0 #999,
+			-1px 1px 0 #999,
+			1px 1px 0 #999;
+	}
+
+	.Technics_txt div p:hover::before {
+		transition: 1s;
+	}
+
+	.Technics_txt div:nth-child(1) p:nth-child(1) .o_txt:hover::before {
+		width: 140px;
+	}
+
+	.Technics_txt div:nth-child(1) p:nth-child(2) .o_txt:hover::before {
+		width: 100px;
+	}
+
+	.Technics_txt div:nth-child(2) p:nth-child(1) .o_txt:hover::before {
+		width: 150px;
+	}
+
+	.Technics_txt div:nth-child(2) p:nth-child(2) .o_txt:hover::before {
+		width: 220px;
+	}
+
+	.Technics_txt div:nth-child(3) p .o_txt:hover::before {
+		width: 230px;
+	}
+
+	/*------- ★ 모달 ★-------*/
+
+	.modal {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 800px;
+		left: 5%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 800px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 100px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 10px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 700px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 700px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 800px;
+	}
+
+
+
+
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 100%;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+	.mobile {
+		width: 100%;
+		height: 100%;
+		margin: 60px auto 0 auto;
+	}
+
+	.mobile_box {
+		position: relative;
+		width: 220px;
+		height: 420px;
+		margin: 0 auto;
+		background: #000;
+		border-radius: 40px;
+		margin-bottom: 50px;
+	}
+
+	.m_ain {
+		position: absolute;
+		overflow: hidden;
+		left: 5%;
+		top: 60px;
+		width: 90%;
+		height: 300px;
+		background: #fff;
+		margin: 0 auto;
+	}
+
+	.swiper-slide a img {
+		width: 100%;
+		height: 300px;
+	}
+
+	/*핸드폰 top */
+	.m_o {
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: #777;
+		top: 27px;
+		left: 85px;
+	}
+
+	.m_l {
+		width: 30px;
+		height: 5px;
+		border-radius: 15px;
+		background: #777;
+		top: 27px;
+		left: 95px;
+	}
+
+	/*핸드폰 버튼 */
+	.m_btn {
+		width: 30px;
+		height: 30px;
+		bottom: 11px;
+		left: 95px;
+		border-radius: 50%;
+		background-color: silver;
+	}
+
+	.m_btn_bt {
+		display: block;
+		width: 28px;
+		height: 28px;
+		bottom: 30px;
+		left: 1px;
+		top: 1px;
+		border-radius: 50%;
+		background-color: #343434;
+	}
+
+	/*------------------------------ sct04 --------------------------------*/
+	.sct04 {
+		width: calc(100% - 120px);
+		max-width: 784px;
+		padding-top: 42px;
+		padding-bottom: 50px;
+		margin: 0 auto;
+	}
+
+	.f_icon {
+		width: 100%;
+	}
+
+	.f_icon ul {
+		text-align: center;
+	}
+
+	.f_icon ul li {
+		display: inline;
+	}
+	.f_icon ul li img {
+		width: 40px
+	}
+
+	.f_icon ul li:nth-child(1) {
+		padding-right: 10px;
+	}
+
+	.f_address {
+		width: 100%;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.f_address p {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+}
+
+/* 작은 기기들 (모바일, 321px 이상) */
+@media screen and (min-width:321px) and (max-width:640px) {
+
+	/*------------------------------ M_txt --------------------------------*/
+	.M_txt {
+		width: 100%;
+		height: 100%;
+		z-index: -9999;
+		position: fixed;
+	}
+
+	.m_txt {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*--------------t01----------------*/
+	/*.t01 { height: 300px;}*/
+	.m_txt div {
+		height: 150px;
+	}
+
+	.m_txt div p {
+		font-size: 4em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.t01 {
+		margin-top: 160px;
+	}
+
+	/*--------------t02----------------*/
+	.t02 {}
+
+	.t02::before {
+		content: "";
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		display: block;
+		border-top: 1px solid #000;
+	}
+
+	.m_txt .my_gr {
+		width: 100%;
+		height: 100%;
+	}
+
+	.m_txt .my_gr img {
+		margin: 0 auto;
+		display: block;
+		width: 300px;
+		height: 400px;
+	}
+
+
+	/*------------------------------ sct01 --------------------------------*/
+	.about_txt {
+		width: 80%;
+		height: 850px;
+		padding-top: 20px;
+		margin: 0px auto;
+	}
+
+	.about_txt p {
+		font-weight: bold;
+		font-family: 'NanumGothic';
+		font-size: 16px;
+		color: #222;
+		line-height: 2.5;
+		letter-spacing: 1.6px;
+	}
+
+	/*------------------------------ sct02 --------------------------------*/
+	.sct02 {
+		_background: #777;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.Technics_txt {
+		width: 95%;
+		height: 100%;
+		margin: 100px auto;
+	}
+
+
+	.Technics_txt div {
+		height: 280px;
+		background: #fff;
+		text-align: center;
+	}
+
+	.Technics_txt div:nth-child(1) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(3) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div p {
+		width: 100%;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		font-weight: bold;
+		font-size: 11vw;
+		color: #fff;
+		text-shadow:
+			-1px -1px 0 #999,
+			1px -1px 0 #999,
+			-1px 1px 0 #999,
+			1px 1px 0 #999;
+		position: relative;
+		letter-spacing: 0.15em;
+		line-height: 1.5;
+		opacity: 1;
+	}
+
+	.Technics_txt div p:nth-child(1) {
+		float: none;
+	}
+
+	.Technics_txt div p:nth-child(2) {
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) p {
+		text-align: center;
+	}
+
+	.Technics_txt div p .o_txt {
+		opacity: 0;
+		position: relative;
+	}
+
+
+
+	/*------- ★ 모달 ★-------*/
+
+	.modal {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 800px;
+		left: 5%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 800px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 100px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 10px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 700px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 700px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 800px;
+	}
+
+
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 1000px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+	.mobile {
+		width: 100%;
+		height: 100%;
+		margin: 60px auto 0 auto;
+	}
+
+
+}
+
+/* 작은 기기들 (태블릿, 767px 이상) */
+@media screen and (min-width:641px) and (max-width:767px) {
+
+
+	/*------------------------------ M_txt --------------------------------*/
+	.M_txt {
+		max-width: 1920px;
+		width: 100%;
+		height: 100%;
+		z-index: -9999;
+		position: fixed;
+	}
+
+	.m_txt {
+		width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*--------------t01----------------*/
+	/*.t01 { height: 300px;}*/
+	.m_txt div {
+		height: 150px;
+	}
+
+	.m_txt div p {
+		font-size: 5em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.t01 {
+		margin-top: 160px;
+	}
+
+	/*--------------t02----------------*/
+	.t02 {}
+
+	.t02::before {
+		content: "";
+		width: 600px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+		display: block;
+		border-top: 1px solid #000;
+	}
+
+	.m_txt .my_gr {
+		width: 100%;
+		height: 100%;
+	}
+
+	.m_txt .my_gr img {
+		margin: 0 auto;
+		display: block;
+		width: 300px;
+		height: 400px;
+	}
+
+
+	/*------------------------------ sct01 --------------------------------*/
+	.about_txt {
+		width: 80%;
+		height: 750px;
+		padding-top: 20px;
+		margin: 0px auto;
+	}
+
+	.about_txt p {
+		font-weight: bold;
+		font-family: 'NanumGothic';
+		font-size: 16px;
+		color: #222;
+		line-height: 2.5;
+		letter-spacing: 1.6px;
+	}
+
+	/*------------------------------ sct02 --------------------------------*/
+	.sct02 {
+		_background: #777;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.Technics_txt div {
+		height: 280px;
+		background: #fff;
+		text-align: center;
+	}
+
+	.Technics_txt div:nth-child(1) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(3) {
+		width: 100%;
+		height: 100%;
+		float: none;
+	}
+
+	.Technics_txt div p {
+		width: 100%;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		font-weight: bold;
+		font-size: 11vw;
+		color: #fff;
+		text-shadow:
+			-1px -1px 0 #999,
+			1px -1px 0 #999,
+			-1px 1px 0 #999,
+			1px 1px 0 #999;
+		position: relative;
+		letter-spacing: 0.15em;
+		line-height: 1.5;
+		opacity: 1;
+	}
+
+	.Technics_txt div p:nth-child(1) {
+		float: none;
+	}
+
+	.Technics_txt div p:nth-child(2) {
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) p {
+		text-align: center;
+	}
+
+	.Technics_txt div p .o_txt {
+		opacity: 0;
+		position: relative;
+	}
+
+
+
+	/*------- ★ 모달 ★-------*/
+
+	.Technics_txt {
+		width: 95%;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.modal {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 800px;
+		left: 5%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 800px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 100px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 10px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 700px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 700px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 800px;
+	}
+
+
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 1000px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px) {
+
+	/*------------------------------ M_txt --------------------------------*/
+	.M_txt {
+		max-width: 1920px;
+		width: 100%;
+		height: 100%;
+		z-index: -9999;
+		position: fixed;
+	}
+
+	.m_txt {
+		width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/*--------------t01----------------*/
+	/*.t01 { height: 300px;}*/
+	.m_txt div {
+		height: 150px;
+	}
+
+	.m_txt div p {
+		font-size: 5em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.t01 {
+		margin-top: 160px;
+	}
+
+	/*--------------t02----------------*/
+	.t02 {}
+
+	.t02::before {
+		content: "";
+		width: 600px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+		display: block;
+		border-top: 1px solid #000;
+	}
+
+	.m_txt .my_gr {
+		width: 100%;
+		height: 100%;
+	}
+
+	.m_txt .my_gr img {
+		margin: 0 auto;
+		display: block;
+		width: 300px;
+		height: 400px;
+	}
+
+
+	/*------------------------------ sct01 --------------------------------*/
+	.about_txt {
+		width: 80%;
+		height: 750px;
+		padding-top: 20px;
+		margin: 0px auto;
+	}
+
+	.about_txt p {
+		font-weight: bold;
+		font-family: 'NanumGothic';
+		font-size: 16px;
+		color: #222;
+		line-height: 2.5;
+		letter-spacing: 1.6px;
+	}
+
+	/*------------------------------ sct02 --------------------------------*/
+	.sct02 {
+		_background: #777;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.Technics_txt div {
+		height: 280px;
+		background: #fff;
+		text-align: center;
+	}
+
+	.Technics_txt div:nth-child(1) {
+		width: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) {
+		width: 100%;
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(3) {
+		width: 100%;
+		float: none;
+	}
+
+	.Technics_txt div p {
+		width: 100%;
+		display: block;
+		cursor: pointer;
+		position: relative;
+		font-weight: bold;
+		font-size: 11vw;
+		color: #fff;
+		text-shadow:
+			-1px -1px 0 #999,
+			1px -1px 0 #999,
+			-1px 1px 0 #999,
+			1px 1px 0 #999;
+		position: relative;
+		letter-spacing: 0.15em;
+		line-height: 1.5;
+		opacity: 1;
+	}
+
+	.Technics_txt div p:nth-child(1) {
+		float: none;
+	}
+
+	.Technics_txt div p:nth-child(2) {
+		float: none;
+	}
+
+	.Technics_txt div:nth-child(2) p {
+		text-align: center;
+	}
+
+	.Technics_txt div p .o_txt {
+		opacity: 0;
+		position: relative;
+	}
+
+
+
+	/*------- ★ 모달 ★-------*/
+
+	.Technics_txt {
+		width: 95%;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.modal {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 800px;
+		left: 5%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 800px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 100px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 10px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 700px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 700px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 800px;
+	}
+
+
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 1000px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+}
+
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+
+	/*------------------------------ sct01 --------------------------------*/
+	.about_txt {
+		width: 90%;
+		height: 600px;
+		padding-top: 20px;
+		margin: 0px auto;
+	}
+
+	.about_txt p {
+		font-weight: bold;
+		font-family: 'NanumGothic';
+		font-size: 16px;
+		color: #222;
+		line-height: 2.5;
+		letter-spacing: 1.6px;
+	}
+
+	/*------------------------------ sct02 --------------------------------*/
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.modal {
+		position: absolute;
+		top: 0;
+		width: 900px;
+		left: 10%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 1000px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 110px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 10px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 890px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 890px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 1000px;
+	}
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 1100px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+	/*---- mobile* ----*/
+	.mobile {
+		width: 50%;
+		height: 100%;
+		margin: 0 auto;
+
+	}
+
+	.mobile_box {
+		position: relative;
+		width: 300px;
+		height: 600px;
+		margin: 0 auto;
+		background: #000;
+		border-radius: 55px;
+		margin-bottom: 50px;
+	}
+
+	.m_ain {
+		position: absolute;
+		overflow: hidden;
+		left: 5%;
+		top: 60px;
+		width: 90%;
+		height: 450px;
+		background: #fff;
+		margin: 0 auto;
+	}
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+
+	/*------------------------------ sct02 --------------------------------*/
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.modal {
+		position: absolute;
+		top: 0;
+		width: 1000px;
+		left: 5%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.m_brackets {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+	}
+
+	/*-- 메뉴 --*/
+	.top {
+		padding: 5px 0 0 10px;
+		z-index: 1;
+		width: 1000px;
+		height: 40px;
+		background: #3c3f41;
+		border-radius: 5px 5px 0 0;
+	}
+
+	.top ul {
+		text-align: left;
+	}
+
+	.top ul li {
+		padding: 5px 0 0 10px;
+		display: inline;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 100;
+	}
+
+	.left {
+		width: 110px;
+		height: 600px;
+		background: #3c3f41;
+		float: left;
+	}
+
+	.left .le,
+	.left .ri {
+		padding: 5px 0 0 10px;
+	}
+
+	.left .le p,
+	.left .ri p {
+		padding-bottom: 10px;
+		color: #a3a3a3;
+		font-size: 13px;
+		letter-spacing: 0.1em;
+	}
+
+	.left .le ul li,
+	.left .ri ul li {
+		font-size: 11px;
+		padding-left: 0px;
+		padding-bottom: 5px;
+		color: #a3a3a3;
+		font-weight: 100;
+	}
+
+	.left .le ul li span,
+	.left .ri ul li span {
+		color: #eee;
+	}
+
+
+
+	/*-- 내용 --*/
+
+	.mo_html,
+	.mo_css,
+	.mo_jQ,
+	.mo_java {
+		display: block;
+		width: 890px;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 600px;
+		background: #eee;
+		float: left;
+	}
+
+	.mo_html img,
+	.mo_css img,
+	.mo_jQ img,
+	.mo_java img {
+		width: 890px;
+	}
+
+	.mo_photo img,
+	.mo_Illust img {
+		width: 1000px;
+	}
+
+
+
+	/*------------------------------ sct03 --------------------------------*/
+	.sct03 {
+		height: 900px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 9vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+
+	/*---- mobile* ----*/
+	.mobile {
+		width: 50%;
+		height: 100%;
+		margin: 0 auto;
+
+	}
+
+	.mobile_box {
+		position: relative;
+		width: 300px;
+		height: 600px;
+		margin: 0 auto;
+		background: #000;
+		border-radius: 55px;
+		margin-bottom: 50px;
+	}
+
+	.m_ain {
+		position: absolute;
+		overflow: hidden;
+		left: 5%;
+		top: 60px;
+		width: 90%;
+		height: 450px;
+		background: #fff;
+		margin: 0 auto;
+	}
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+
+	/*------------------------------ sct02 --------------------------------*/
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.modal {
+		position: absolute;
+		top: 0;
+		width: 80%;
+		left: 10%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 100%;
+		height: 750px;
+		background: #eee;
+		float: left;
+	}
+
+	/*------------------------------ sct03 --------------------------------*/
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 10vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+
+}
