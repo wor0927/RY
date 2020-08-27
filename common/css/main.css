@@ -102,7 +102,7 @@ a:visited {
 
 /*---------------------------- 공통 ---------------------------*/
 .container {
-	top: 1000px;
+	top: 800px;
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
@@ -2412,7 +2412,80 @@ sct02::after {
 }
 
 /* 큰 기기들 (큰 데스크탑, 1280px 이상) */
-@media screen and (min-width:1280px) and (max-width:1920px) {
+@media screen and (min-width:1280px) and (max-width:1498px) {
+
+	/*------------------------------ sct02 --------------------------------*/
+	.Technics_txt {
+		width: 95%;
+		height: 100vh;
+		margin: 0 auto;
+	}
+
+	.modal {
+		position: absolute;
+		top: 0;
+		width: 80%;
+		left: 10%;
+		margin: 0 auto;
+		z-index: 999;
+	}
+    .m_brackets {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 1100px;
+        box-shadow: 30px 41px 66px -60px #777;
+    }
+
+    .top {
+        padding: 5px 0 0 10px;
+        z-index: 1;
+        width: 1100px;
+        height: 40px;
+        background: #3c3f41;
+        border-radius: 5px 5px 0 0;
+    }
+    .mo_html, .mo_css, .mo_jQ, .mo_java {
+        display: block;
+        width: 980px;
+        height: 700px;
+        background: #eee;
+        float: left;
+    }    
+
+    .mo_html img, .mo_css img, .mo_jQ img, .mo_java img {
+        width: 980px;
+        height: 100%;
+    }
+    
+
+	.mo_photo,
+	.mo_Illust {
+		display: block;
+		width: 1100px;
+		height: 750px;
+		background: #eee;
+		float: left;
+	}
+    .mo_photo img, .mo_Illust img {
+        width: 1100px;
+        height: 100%;
+    }
+    
+/*------------------------------ sct03 --------------------------------*/
+
+	.sct03 h1 {
+		text-align: center;
+		font-size: 10vw;
+		z-index: -1;
+		color: #eee;
+	}
+
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1499px) and (max-width:1920px) {
 
 	/*------------------------------ sct02 --------------------------------*/
 	.Technics_txt {
