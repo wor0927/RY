@@ -1,0 +1,199 @@
+<head profile="http://www.w3.org/2005/10/profile">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="css/header.css">
+</head>
+
+<div class="header">
+	<div class="logo">
+		<a href="./index.html">N<span>U</span></a>
+	</div>
+	<div class="nav">
+		<ul>
+			<li class="ALL">
+				<a href="./PRODUCT.html"><span>PRODUCT</span></a>
+				<div class="nav_box">
+					<div class="category">
+						<ul>
+							<li><a href="./PRODUCT_body.html"><span>BODY</span></a></li>
+<!--
+							<li><a href="#">바디클렌저</a></li>
+							<li><a href="#">바디에멀전 / 크림</a></li>
+							<li><a href="#">바디오일 / 미스트</a></li>
+-->
+						</ul>
+						<ul>
+							<li><a href="./PRODUCT_hair.html"><span>HAIR</span></a></li>
+<!--
+							<li><a href="#">샴푸/린스</a></li>
+							<li><a href="#">에센스 / 트린트먼트</a></li>
+							<li><a href="#">스케일링</a></li>
+-->
+						</ul>
+						<ul>
+							<li><a href="./PRODUCT_Make.html"><span>MAKEUP</span></a></li>
+<!--
+							<li><a href="#">페이스</a></li>
+							<li><a href="#">아이 / 립</a></li>
+-->
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a href="./SUB01.html">STORY</a></li>
+			<li><a href="./SUB02.html">BRAND</a></li>
+		</ul>
+	</div>
+	<div class="login">
+
+		<ul>
+			<li>
+				<a  class="a_in" href="#"><i class="f_login fas fa-search"></i>
+				<input class="search_box" type="text"></a>
+			</li>
+			<li><a href="./Login.html"><i class="f_login fas fa-user"></i></a></li>
+<!--			<li><a href="#"><i class="f_login fas fa-shopping-cart"></i></a></li>-->
+		</ul>
+	</div>
+</div>
+
+<!-------- --mobile ------>
+ <div id="nav-container">
+    <div id="nav-overlay"></div>
+    <nav id="nav-fullscreen">
+        <div class="m_login">
+            <a  class="m_in" href="#">
+                <i class="m_f_login fas fa-search m_f_search"></i>
+                <input class="m_search_box" type="text">
+            </a>
+            <a href="./Login.html">
+                <i class="m_f_login fas fa-user m_f_login"></i>
+            </a>
+        </div>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./PRODUCT.html">PRODUCT</a></li>
+            <li><a href="./SUB01.html">STORY</a></li>
+            <li><a href="./SUB02.html">BRAND</a></li>
+        </ul>
+    </nav>
+
+    <a id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+</div>
+
+
+<script>
+//-------------------------------- MENU 나오기 -------------------------------	
+	$(".ALL").mouseenter(function() {
+		$(".nav_box").stop().slideDown();
+		$(".header").css({
+			background: "rgba(255, 255, 255, .8)"
+		});
+		$(".nav > ul > li >a ").css({
+			color: "#000"
+		});
+	});
+
+	$(".ALL").mouseleave(function() {
+		$(".nav_box").stop().slideUp(300);
+	});
+	$(".nav_box").mouseleave(function() {
+		$(".nav_box").stop().slideUp(100);
+	});
+
+	$(document).click(function() {
+		$(".Btn01").click(function() {
+			$(".category ul").css({
+				display: "block"
+			});
+			$(".line ul").css({
+				display: "none"
+			});
+		});
+	});
+
+//-------------------------------- Web Search 나오기 ----------------------------	
+
+
+		$('.a_in').on('click', function() {
+			console.log("?")
+			$('.search_box').animate({marginLeft:"40px", zIndex:"1", width:"7vw"});
+			$('.fa-search').animate({paddingRight:"50px"});
+			$('.fa-user').fadeOut();
+			$('.fa-shopping-cart').fadeOut();
+		});
+
+	  $('.a_in').mouseleave(function(){
+			$('.search_box').animate({marginLeft:"40px", zIndex:"0", width:"0px"},10);
+		  $('.fa-search').animate({paddingRight:"0px"});
+		  	$('.fa-user').fadeIn();
+			$('.fa-shopping-cart').fadeIn();
+		});
+    
+//-------------------------------- mobile Search 나오기 ---------------------------	
+
+
+		$('.m_in').on('click', function() {
+			$('.m_search_box').animate({marginLeft:"20px", zIndex:"1", width:"30vw"},1000);
+			$('.m_f_search').animate({paddingRight:"50px"});
+			$('.m_f_login').animate({opacity:"0"});
+		});
+
+	  $('.m_in').mouseleave(function(){
+			$('.m_search_box').animate({marginLeft:"0px", zIndex:"0", width:"0px"},100);
+			$('.m_f_search').animate({paddingRight:"0px"},1000);
+			$('.m_f_login').animate({opacity:"1"});
+		});
+
+//---------------------------------- 헤더 스크롤 반응-------------------------------
+	$(function() {
+		$(window).scroll(function(event) {
+			var lastScrollTop = 50,
+				delta = 15;
+			var st = $(this).scrollTop();
+			
+
+			if (st >= lastScrollTop) {
+				$(".header").css("top", "-90px"); // 스크롤을 내렸을때 #header의 CSS 속성중 top 값을 -50px로 변경한다. 
+			} else {
+				$(".header").css("top", "0px");
+			}
+			lastScrollTop = st;
+		});
+	});
+
+//--------------모바일 버튼---------------------------------------	
+
+function resizeNav() {
+    // Set the nav height to fill the window
+    $("#nav-fullscreen").css({"height": window.innerHeight});
+
+    // Set the circle radius to the length of the window diagonal,
+    // this way we're only making the circle as big as it needs to be.
+    var radius = Math.sqrt(Math.pow(window.innerHeight, 1) + Math.pow(window.innerWidth, 1.5));
+    var diameter = radius * 2;
+
+    
+    $("#nav-overlay").width(diameter);
+    $("#nav-overlay").height(diameter);
+    $("#nav-overlay").css({"margin-top": -radius, "margin-left": -radius});
+}
+
+// Set up click and window resize callbacks, then init the nav.
+$(document).ready(function() {
+    $("#nav-toggle").click(function() {
+        $("#nav-fullscreen").fadeIn();
+        $("#nav-toggle, #nav-overlay, #nav-fullscreen").toggleClass("open");
+        
+    });
+
+    $(window).resize(resizeNav);
+
+    resizeNav();
+});
+
+</script>

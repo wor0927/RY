@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+     <link rel="stylesheet" href="css/login.css">
+<!--    <script src="js/jquery.mousewheel.js"></script>-->
+<!--<script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"> </script>
+-->
+    
+<!--    <link rel="stylesheet" href="css/swiper.min.css">-->
+   
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>anthracite login</title>
+</head>
+
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+    $(function(){
+        
+        
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        
+
+
+        
+        //ID,PW 클릭하면 박스 컬러변경
+        $("#J_ID").click(function(){
+            $("#J_ID").css({backgroundColor:"#eee"});
+        });
+        $("#J_PW").click(function(){
+            $("#J_PW").css({backgroundColor:"#eee"});
+        
+        });
+        
+        //CD굴러가유
+        $("#container").stop().animate({left:"-10%"},1100);
+        $(".join_cd").stop().animate({left:"50%"},1500);
+        
+        
+        
+        
+        var playing = false;
+
+       $('.fas').click(function() {
+           $(".X_btn").toggleClass("pop").css({transition:"0.5s"});
+
+           if (playing == false) {
+               document.getElementById("audio").play();
+               playing = true;
+
+           } else {
+               document.getElementById("audio").pause();
+               playing = false;
+           }
+
+
+       });
+
+});  
+   
+</script>
+
+<body>
+<!--skipnavi -->
+<ul class="skipnavi">
+    <li><a href="#container">본문내용</a></li>
+</ul>
+
+<div id="wrap">
+<!-- header-->
+<header id="header"></header>
+    <div id="container"> 
+        <div class="join_box">
+           <div class="join_mini">
+                <form action="#">
+                    <div class="J_box txt01">
+                        <p><label for="J_ID">ID</label></p>
+                        <input id="J_ID" type="text" style="border:none; border-bottom: 2px solid #555; margin-left: 10px;" size="25" required="required"/>
+                    </div>
+                    <div class="J_box txt02">
+                       <p><label for="J_PW">PASSWORD</label></p>
+                        <input id="J_PW" type="password" style="border:none; border-bottom: 2px solid #555; margin-left: 10px;" size="25" required="required"/>
+                   </div>
+                    <div class="J_btn">
+                       <ul>
+                           <li>
+                               <a href="#">
+                                   <input class="jbtn join_btn01" type="submit" value="LOGIN" />
+                               </a>
+                           </li>
+                           <li>
+                               <a class="jbtn join_btn02" href="membership.html">
+                                   <p>JOIN</p>
+                               </a>
+                           </li>
+                       </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!--SOUND ICON--> 
+        <div class="sound_icon">
+            <ul>
+                <li class="O_btn"><i class="fas fa-volume-off "></i></li>
+                <li class="X_btn"><i class="fas fa-volume-mute"></i></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+<!--CD -->
+        <div class="join_cd" >
+                <img src="IMAGE/hwanji_CD.png" alt="hwanji_glass" />
+        </div>
+
+    
+<!--AUDIO -->    
+        <div class="cd_audio">
+            <video id="audio" src="IMAGE/hwanji_glass_video.mp4" allow="autoplay"></video>
+        </div>
+ 
+    
+<!-- footer-->
+<div id="footer"></div>
+</div>
+</body>
+</html>

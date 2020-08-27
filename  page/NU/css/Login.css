@@ -1,0 +1,421 @@
+.contanier {
+            width: 100vw;
+            height: 1500px;	
+}
+		.contanier::before{
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 1500px;
+            background-image: url("../img/WATER.gif");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            filter: blur(10px);
+        }
+        .contact-form
+        {	
+			border-radius: 50%;
+			position: absolute;
+			top: 50vh;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 700px;
+			height: 700px;
+			padding: 80px 40px;
+			box-sizing: border-box;
+			background: rgba(255,255,255,.5);
+        }
+
+		.contact-form form {
+			width: 60%;
+			margin: 60px auto;
+
+		}
+
+        .contact-form h2 {
+            margin: 0;
+            padding: 0 0 20px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .contact-form p
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            color: #fff;
+        }
+        .contact-form input
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .in_login,
+        .in_member
+        {
+            display: block;
+            text-align: center;
+            width: 185px;
+            float: left;
+        }
+        .contact-form input[type="submit"]:hover,
+        .contact-form input[type="button"]:hover
+        {
+
+            background: #fff;
+            color: #a9bacf;
+            -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+            -webkit-animation-name: joing;
+                animation-name: joing;
+        }	
+
+        @-webkit-keyframes joing {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+            40% {-webkit-transform: translateY(-10px) }
+            60% {-webkit-transform: translateY(-5px);}
+        } 
+        @keyframes joing {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        } 
+
+
+
+        .contact-form input[type="text"],
+        .contact-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+    .contact-form input[type="submit"] {
+        font-weight: bold;
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        background: #a9bacf;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        margin-top: 15%;
+    }        
+    .contact-form input[type="button"] {
+        font-weight: bold;
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        background: #a9bacf;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+    }
+    .contact-form a
+    {
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none;
+    }
+    input[type="checkbox"] {
+        width: 20%;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder{
+        color: black;
+        opacity: 0.2;
+    }
+    input[type="text"]:active::placeholder,
+    input[type="password"]:active::placeholder{
+        
+        opacity: 0;
+    }
+
+
+
+
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){ 
+
+
+    .contact-form
+    {	
+        border-radius: 0%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 600px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background: rgba(255,255,255,.5);
+    }
+    
+    .contact-form form {
+            width: 60%;
+            margin: 50px auto;
+
+        }
+
+    .contact-form h2 {
+        margin: 0;
+        padding: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .contact-form p
+    {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+
+    }
+    .in_login,
+    .in_member
+    {
+        display: block;
+        text-align: center;
+        width: 50%;
+        float: left;
+    }
+        .contact-form input[type="submit"]:hover,
+        .contact-form input[type="button"]:hover
+        {
+
+            background: #fff;
+            color: #a9bacf;
+            -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+            -webkit-animation-name: joing;
+                animation-name: joing;
+        }	
+
+        @-webkit-keyframes joing {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+            40% {-webkit-transform: translateY(-10px) }
+            60% {-webkit-transform: translateY(-5px);}
+        } 
+        @keyframes joing {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        } 
+
+
+
+        .contact-form input[type="text"],
+        .contact-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form input[type="submit"] {
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            color: #fff;
+            font-size: 15px;
+            background: #a9bacf;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            margin-top: 15%;
+        }        
+        .contact-form input[type="button"] {
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            color: #fff;
+            font-size: 15px;
+            background: #a9bacf;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+        }
+        .contact-form a
+        {
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        input[type="checkbox"] {
+            width: 20%;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder{
+            color: black;
+            opacity: 0.2;
+        }
+        input[type="text"]:active::placeholder,
+        input[type="password"]:active::placeholder{
+
+            opacity: 0;
+        }	
+}
+
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:641px) and (max-width:767px){
+
+
+    .contact-form
+    {	
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        height: 600px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background: rgba(255,255,255,.5);
+    }
+    
+    .contact-form form {
+            width: 60%;
+            margin: 50px auto;
+
+        }
+
+    .contact-form h2 {
+        margin: 0;
+        padding: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .contact-form p
+    {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+
+    }
+    .in_login,
+    .in_member
+    {
+        display: block;
+        text-align: center;
+        width: 155px;
+        float: left;
+    }
+        .contact-form input[type="submit"]:hover,
+        .contact-form input[type="button"]:hover
+        {
+
+            background: #fff;
+            color: #a9bacf;
+            -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+            -webkit-animation-name: joing;
+                animation-name: joing;
+        }	
+
+        @-webkit-keyframes joing {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+            40% {-webkit-transform: translateY(-10px) }
+            60% {-webkit-transform: translateY(-5px);}
+        } 
+        @keyframes joing {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        } 
+
+
+
+        .contact-form input[type="text"],
+        .contact-form input[type="password"]
+        {
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+    .contact-form input[type="submit"] {
+        font-weight: bold;
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        background: #a9bacf;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        margin-top: 15%;
+    }        
+    .contact-form input[type="button"] {
+        font-weight: bold;
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        background: #a9bacf;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+    }
+    .contact-form a
+    {
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none;
+    }
+    input[type="checkbox"] {
+        width: 20%;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder{
+        color: black;
+        opacity: 0.2;
+    }
+    input[type="text"]:active::placeholder,
+    input[type="password"]:active::placeholder{
+        
+        opacity: 0;
+    }
+
+}
+
+
+
+	
+

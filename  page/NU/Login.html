@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<link rel="stylesheet" href="css/Login.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<title>Login</title>
+</head>
+<script>
+////////////////////header, footer로드//////////////////////
+$(function () {
+	$("header").load("header.html");
+	$("footer").load("footer.html");
+
+	new WOW().init();
+	AOS.init();
+});
+	
+	
+</script>
+<body>
+<header></header>
+
+	<div class="contanier">
+       	<div class="contact-form">
+<!--			<img src="./img/2.PNG" class="avatar">-->
+			<h2>로그인</h2>
+			<form>
+				<p><label for="login">이메일</label></p>
+				<input type="text" id="login" placeholder="Enter Email" required="required">
+				<p><label for="pass">비밀번호</label></p>
+				<input type="password" id="pass" placeholder="Enter Password" required="required">
+				<p class="in_login"><input type="submit" value="로그인"></p>
+				<p class="in_member"><input type="button" value="회원가입"></p>
+			</form>		
+			<div class="login_box"></div>
+        </div>
+	</div>
+	
+<footer class="footer"></footer>
+</body>
+</html>

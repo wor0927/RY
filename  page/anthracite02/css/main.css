@@ -1,0 +1,2681 @@
+ <meta charset="UTF-8" > <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no" > <link rel="stylesheet"href="css/swiper.min.css" > * {
+     font-family: "NanumMyeongjo-Bold";
+ }
+
+ /*container*/
+ #container {
+     padding-top: 100px;
+     width: 100%;
+     height: 100%;
+ }
+
+
+ /*--------------------- section01 ---------------------*/
+ .section01 {
+     width: 100%;
+     height: 950px;
+ }
+
+ .section01 .main_menu {
+     margin: 0 auto;
+     width: 80%;
+     height: 950px;
+
+ }
+
+ .section01 .main_menu ul {
+     margin: 0 auto;
+     margin-top: 35px;
+     width: 100%;
+     height: 350px;
+
+ }
+
+ .section01 .main_menu ul li {
+     text-align: center;
+     width: 25%;
+     height: 290px;
+     float: left;
+ }
+
+ .section01 .main_menu ul li img {
+     width: 290px;
+     height: 290px;
+     transition: all 2s ease;
+ }
+
+ .section01 .main_menu ul li img:hover {
+     transform: rotateY(540deg);
+     transition: all 1s infinite;
+     -webkit-backface-visibility: visible;
+     backface-visibility: visible;
+
+ }
+
+
+ /*--------------------- section02 ---------------------*/
+
+ .container {
+     display: -webkit-box;
+     display: flex;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     flex-direction: row;
+ }
+
+ .container section.forward {
+     -webkit-box-flex: 1;
+     flex-grow: 1;
+     cursor: pointer;
+ }
+
+ .container section.back {
+     -webkit-box-flex: 1;
+     flex-grow: 1;
+     cursor: pointer;
+     background: #52F9D4;
+     background: #eeeeee;
+     display: -webkit-box;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+     -webkit-box-align: center;
+     align-items: center;
+     -webkit-box-pack: center;
+     justify-content: center;
+ }
+
+ .nautilus {
+     background: #ddd;
+     position: relative;
+     min-width: 161.8034vh;
+     height: 100vh;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+
+ .nautilus > div {
+     position: absolute;
+     z-index: 900;
+     -webkit-transition: all 400ms ease-out;
+     transition: all 400ms ease-out;
+     -webkit-animation: genie 400ms forwards ease-out;
+     animation: genie 400ms forwards ease-out;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center center;
+     width: 9.016986vh;
+     height: 5.57280vh;
+     left: 114.59055442vh;
+     top: 70.820377901vh;
+     opacity: 0;
+ }
+
+ .nautilus > div:nth-child(1) {
+     opacity: 1;
+     width: 100vh;
+     height: 100vh;
+     top: 0;
+     left: 0;
+     background-color: #52F9D4;
+     z-index: 999;
+ }
+
+ .nautilus > div:nth-child(2) {
+     opacity: 1;
+     width: 61.8034vh;
+     height: 61.8034vh;
+     top: 0vh;
+     left: 100vh;
+     background-color: #51E3C2;
+     z-index: 998;
+ }
+
+ .nautilus > div:nth-child(3) {
+     opacity: 1;
+     width: 38.19783669vh;
+     height: 38.19783669vh;
+     top: 61.8034vh;
+     left: 123.60615331vh;
+     background-color: #53C7AD;
+     z-index: 997;
+ }
+
+ .nautilus > div:nth-child(4) {
+     opacity: 1;
+     width: 23.60778717vh;
+     height: 23.60778717vh;
+     top: 76.39221283vh;
+     left: 100vh;
+     background-color: #51AF9A;
+     z-index: 996;
+ }
+
+ .nautilus > div:nth-child(5) {
+     opacity: 1;
+     height: 14.59055442vh;
+     width: 14.59055442vh;
+     top: 61.8034vh;
+     left: 100vh;
+     background: #4D9686;
+     z-index: 995;
+ }
+
+ .nautilus > div:nth-child(6) {
+     opacity: 1;
+     height: 9.016986vh;
+     width: 9.016986vh;
+     top: 61.8034vh;
+     left: 114.59055442vh;
+     background: #498376;
+     z-index: 994;
+ }
+
+ .nautilus > div:nth-child(7) {
+     opacity: 1;
+     width: 9.016986vh;
+     height: 5.57280vh;
+     left: 114.59055442vh;
+     top: 70.820377901vh;
+     z-index: 993;
+ }
+
+ @-webkit-keyframes genie {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ @keyframes genie {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ button {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 60px;
+     width: 200px;
+ }
+
+ .column {
+     padding: 1rem;
+     color: #333;
+ }
+
+ .column h1,
+ .column h2,
+ .column h3,
+ .column h4 {
+     font-weight: 300;
+ }
+
+ .column h1 {
+     font-size: 48px;
+ }
+
+ .column h2 {
+     font-size: 24px;
+     text-align: center;
+ }
+
+ /*--------------------- section03 ---------------------*/
+
+ .section03 {
+     position: relative;
+     width: 100%;
+     height: 950px;
+ }
+
+ .swiper-container {
+     width: 100%;
+     height: 100%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+
+ /*연희*/
+ .Yeonhui,
+ .Seogyo,
+ .Jeju {
+     width: 100%;
+     height: 960px;
+     overflow: hidden;
+ }
+
+ .v_img01 {
+     width: 50%;
+     height: 950px;
+     float: left;
+ }
+
+ .v_img01 ul {
+     position: relative;
+     width: 100%;
+     height: 950px;
+ }
+
+ .v_img01 ul li {
+     position: absolute;
+ }
+
+ .v_img01 ul li:nth-child(1) {
+     width: 620px;
+     height: 100%;
+ }
+
+ .v_img01 ul li:nth-child(2) {
+     width: 620px;
+     height: 100%;
+     right: 0px;
+     bottom: 0px;
+     padding-top: 20px;
+ }
+
+
+ .visual_Roll div.on {
+     display: block;
+ }
+
+ /*img shadow */
+ .v_img01 ul li img {
+     box-shadow: -3px 2px 20px -9px;
+ }
+
+ .v_text01 {
+     width: 50%;
+     height: 950px;
+     text-align: center;
+     float: left;
+     position: relative;
+     overflow: hidden;
+     opacity: 0;
+     transition: 0.4s;
+     background-image: url(../IMAGE/membership_back.png);
+ }
+
+ .v_text01 ul {
+     margin: 0 auto;
+     width: 50%;
+     height: 300px;
+     margin-top: 350px;
+ }
+
+ .v_text01 ul li {
+     width: 100%;
+     height: 50px;
+ }
+
+ .v_text01 ul li span,
+ p {
+     font-size: 23px;
+     font-family: "HYMyeongJo-Extra";
+     color: rgb(0, 0, 0);
+     line-height: 1.5;
+     -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     z-index: 28;
+ }
+
+ .v_text01 ul li span {
+     font-size: 30px;
+     line-height: 0;
+ }
+
+ /*서교*/
+ .Seogyo {
+     display: none;
+ }
+
+ .v_img02 {
+     width: 50%;
+     height: 950px;
+     float: left;
+     _overflow: hidden;
+
+ }
+
+ .v_img02 ul {
+     position: relative;
+     width: 75%;
+     height: 950px;
+     margin: 0 auto;
+     text-align: center;
+
+ }
+
+ .v_img02 ul li {
+     position: absolute;
+     width: 100%;
+     height: 950px;
+ }
+
+ .v_img02 ul li:nth-child(1) {
+     width: 620px;
+     height: 830px;
+ }
+
+ /*img shadow */
+ .v_img02 ul li img {
+     box-shadow: -3px 2px 20px -9px;
+ }
+
+
+ .v_text02 {
+     width: 50%;
+     height: 950px;
+     text-align: center;
+     float: left;
+     position: relative;
+     overflow: hidden;
+     background-image: url(../IMAGE/membership_back.png);
+ }
+
+ .v_text02 ul {
+     margin: 0 auto;
+     width: 50%;
+     height: 300px;
+     margin-top: 350px;
+ }
+
+ .v_text02 ul li {
+     width: 100%;
+     height: 50px;
+ }
+
+ .v_text02 ul li span,
+ p {
+     font-size: 23px;
+     font-family: "HYMyeongJo-Extra";
+     color: rgb(0, 0, 0);
+     line-height: 1.5;
+     -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     z-index: 28;
+ }
+
+ .v_text02 ul li span {
+     font-size: 30px;
+     line-height: 0;
+ }
+
+ /*제주*/
+ .Jeju {
+     display: none;
+ }
+
+ .v_img03 {
+     width: 50%;
+     height: 950px;
+     float: left;
+     _overflow: hidden;
+ }
+
+ .v_img03 ul {
+     position: relative;
+     width: 100%;
+     height: 950px;
+ }
+
+ .v_img03 ul li {
+     position: absolute;
+ }
+
+ .v_img03 ul li:nth-child(1) {
+     width: 620px;
+     height: 830px;
+     bottom: 610px;
+     left: 0px;
+ }
+
+ .v_img03 ul li:nth-child(2) {
+     width: 575px;
+     height: 700px;
+     bottom: 0px;
+     right: 25px;
+ }
+
+ /*img shadow */
+ .v_img03 ul li img {
+     width: 100%;
+     height: 100%;
+     box-shadow: -3px 2px 20px -9px;
+ }
+
+ .v_text03 {
+     width: 50%;
+     height: 950px;
+     text-align: center;
+     float: left;
+     position: relative;
+     overflow: hidden;
+     background-image: url(../IMAGE/membership_back.png);
+ }
+
+ .v_text03 ul {
+     margin: 0 auto;
+     width: 70%;
+     height: 300px;
+     margin-top: 350px;
+ }
+
+ .v_text03 ul li {
+     width: 100%;
+     height: 50px;
+ }
+
+ .v_text03 ul li span,
+ p {
+     font-size: 23px;
+     font-family: "HYMyeongJo-Extra";
+     color: rgb(0, 0, 0);
+     line-height: 1.5;
+     -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+     z-index: 28;
+ }
+
+ .v_text03 ul li span {
+     font-size: 30px;
+     line-height: 0;
+ }
+
+ .v_ston {
+     display: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /*★★★★★★★★★★★★★★★★★ 반응형 ★★★★★★★★★★★★★★★★*/
+
+
+
+
+ /* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+ @media screen and (min-width:320px) and (max-width:640px) {
+     .section01 {
+         width: 100%;
+         height: 100%;
+     }
+
+     .section01 .main_menu {
+         margin: 0 auto;
+         width: 90%;
+         height: 100%;
+
+     }
+
+     .section01 .main_menu ul {
+         margin: 0 auto;
+         margin-top: 0x;
+         width: 100%;
+         height: 500px;
+
+     }
+
+     .section01 .main_menu ul li {
+         text-align: center;
+         width: 50%;
+         height: 250px;
+         float: left;
+     }
+
+     .section01 .main_menu ul li img {
+         width: 150px;
+         height: 150px;
+         transition: all 2s ease;
+     }
+
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         position: relative;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         z-index: 2;
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: none;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+         
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 100%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+         z-index: 1;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+        .column {
+            padding: 1rem;
+            color: #fff;
+        }
+
+     /*--------------------- section03 ---------------------*/
+
+     .section03.swiper-container {
+         position: relative;
+         width: 100%;
+         height: 700px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .swiper-slide {
+         text-align: center;
+         font-size: 16px;
+
+
+
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+     }
+
+     /*연희*/
+     .v_img01 {
+         width: 100%;
+         height: 500px;
+     }
+
+     .v_img01 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img01 ul li {
+         position: absolute;
+     }
+
+     .v_img01 ul li:nth-child(1) {
+         width: 100%;
+         height: 100%;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         display: none;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: 0px 2px 30px -3px;
+         filter: blur(2px);
+     }
+
+     .v_text01 {
+         z-index: 2;
+         width: 100%;
+         height: 500px;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: none;
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 90%;
+         height: 300px;
+         margin-top: 80px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 16px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         line-height: 2;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+         font-weight: bold;
+     }
+
+     .v_text01 ul li span {
+         font-size: 10vw;
+         line-height: 0;
+         color: #fff;
+     }
+
+     /*서교*/
+
+
+     .v_img02 {
+         width: 100%;
+         height: 500px;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+     }
+
+     .v_img02 ul li:nth-child(1) {
+
+         width: 100%;
+         height: 100%;
+     }
+
+     .v_img02 ul li:nth-child(2) {
+         display: none;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: 0px 2px 30px -3px;
+         filter: blur(2px);
+     }
+
+
+
+     .v_text02 {
+         z-index: 2;
+         width: 100%;
+         height: 500px;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         transition: 0.4s;
+         background-image: none;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 90%;
+         height: 300px;
+         margin-top: 80px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text02 ul li p {
+         font-size: 16px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         font-weight: bold;
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 10vw;
+         line-height: 0;
+         color: #fff;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 100%;
+         height: 500px;
+         z-index: 0;
+
+
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         width: 100%;
+         height: 100%;
+         bottom: 350px;
+         left: 0px;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         display: none;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img03 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: 0px 2px 30px -3px;
+         filter: blur(2px);
+     }
+
+     .v_text03 {
+         z-index: 10;
+         width: 100%;
+         height: 500px;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         _opacity: 0;
+         transition: 0.4s;
+         background-image: none;
+
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 90%;
+         height: 300px;
+         margin-top: 80px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 16px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         font-weight: bold;
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 10vw;
+         line-height: 0;
+         color: #fff;
+     }
+
+ }
+
+ /* 작은 기기들 (태블릿, 640px 이상) */
+ @media screen and (min-width:641px) and (max-width:767px) {
+     .section01 {
+         width: 100%;
+         height: 100%;
+     }
+
+     .section01 .main_menu {
+         margin: 0 auto;
+         width: 90%;
+         height: 100%;
+
+     }
+
+     .section01 .main_menu ul {
+         margin: 0 auto;
+         margin-top: 0x;
+         width: 70%;
+         height: 500px;
+
+     }
+
+     .section01 .main_menu ul li {
+         text-align: center;
+         width: 50%;
+         height: 250px;
+         float: left;
+     }
+
+     .section01 .main_menu ul li img {
+         width: 200px;
+         height: 200px;
+         transition: all 2s ease;
+     }
+
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: #52F9D4;
+         background: #eeeeee;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 70%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         z-index: 900;
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+
+
+     /*--------------------- section03 ---------------------*/
+
+
+     /*section03*/
+
+     /*section03*/
+
+     .section03.swiper-container {
+         position: relative;
+         width: 100%;
+         height: 700px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .swiper-slide {
+         text-align: center;
+         font-size: 16px;
+
+
+
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+     }
+
+     /*연희*/
+     .v_img01 {
+         width: 100%;
+         height: 500px;
+     }
+
+     .v_img01 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img01 ul li {
+         position: absolute;
+     }
+
+     .v_img01 ul li:nth-child(1) {
+         width: 100%;
+         height: 100%;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         display: none;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 100%;
+         box-shadow: 0px 2px 30px -3px;
+     }
+
+     .v_text01 {
+         z-index: 2;
+         width: 100%;
+         height: 100%;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: none;
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 200px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 14px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         line-height: 2;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text01 ul li span {
+         font-size: 30px;
+         line-height: 0;
+         color: #fff;
+     }
+
+     /*서교*/
+
+
+     .v_img02 {
+         width: 100%;
+         height: 500px;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+     }
+
+     .v_img02 ul li:nth-child(1) {
+
+         width: 100%;
+         height: 100%;
+     }
+
+     .v_img02 ul li:nth-child(2) {
+         display: none;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: 0px 2px 30px -3px;
+     }
+
+
+
+     .v_text02 {
+         z-index: 2;
+         width: 100%;
+         height: 700px;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         transition: 0.4s;
+         background-image: none;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 85%;
+         height: 300px;
+         margin-top: 200px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text02 ul li p,
+     span {
+         font-size: 14px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         line-height: 2;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 30px;
+         line-height: 0;
+         color: #fff;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 100%;
+         height: 500px;
+         z-index: 0;
+
+
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         width: 100%;
+         height: 100%;
+         bottom: 350px;
+         left: 0px;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         display: none;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img03 ul li img {
+         width: 100%;
+         box-shadow: 0px 2px 30px -3px;
+     }
+
+     .v_text03 {
+         z-index: 10;
+         width: 100%;
+         height: 700px;
+         text-align: center;
+         float: left;
+         position: absolute;
+         overflow: hidden;
+         _opacity: 0;
+         transition: 0.4s;
+         background-image: none;
+
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 85%;
+         height: 300px;
+         margin-top: 200px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 65px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 14px;
+         font-family: "HYMyeongJo-Extra";
+         color: #fff;
+         line-height: 2;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 30px;
+         line-height: 0;
+         color: #fff;
+     }
+ }
+
+ /* 작은 기기들 (태블릿, 768px 이상) */
+ @media screen and (min-width:768px) and (max-width:991px) {
+
+     .section01 {
+         width: 100%;
+         height: 100%;
+     }
+
+     .section01 .main_menu {
+         margin: 0 auto;
+         width: 90%;
+         height: 100%;
+
+     }
+
+     .section01 .main_menu ul {
+         margin: 0 auto;
+         margin-top: 0x;
+         width: 70%;
+         height: 500px;
+
+     }
+
+     .section01 .main_menu ul li {
+         text-align: center;
+         width: 50%;
+         height: 250px;
+         float: left;
+     }
+
+     .section01 .main_menu ul li img {
+         width: 200px;
+         height: 200px;
+         transition: all 2s ease;
+     }
+
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: #52F9D4;
+         background: #eeeeee;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 70%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         z-index: 900;
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+
+
+     /*--------------------- section03 ---------------------*/
+
+     .v_img01 ul li:nth-child(1) {
+         width: 320px;
+         height: 100%;
+         left: 10px;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         width: 400px;
+         height: 100%;
+         right: 0px;
+         bottom: 0px;
+         padding-top: 20px;
+         z-index: 1;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         background-color: beige;
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 380px;
+         height: 520px;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+     .v_text01 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: url(../IMAGE/membership_back.png);
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+         left: 10px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text01 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*서교*/
+     .Seogyo {
+         display: none;
+
+     }
+
+     .v_img02 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 80%;
+         height: 100%;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+         width: 100%;
+         height: 950px;
+         right: 25px;
+         top: 60px;
+
+     }
+
+     .v_img02 ul li:nth-child(1) {
+         width: 100%;
+         height: 830px;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+
+     .v_text02 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text02 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+         z-index: 2;
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 950px;
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         display: none;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         width: 500px;
+         height: 611px;
+         bottom: 100px;
+         right: -10px;
+     }
+
+     /*img shadow */
+
+     .v_text03 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+ }
+
+ /* 중간 기기들 (데스크탑, 992px 이상) */
+ @media screen and (min-width:992px) and (max-width:1024px) {
+
+     .section01 {
+         width: 100%;
+         height: 950px;
+     }
+
+     .section01 .main_menu {
+         margin: 0 auto;
+         width: 90%;
+         height: 950px;
+
+     }
+
+     .section01 .main_menu ul {
+         margin: 0 auto;
+         margin-top: 35px;
+         width: 100%;
+         height: 350px;
+
+     }
+
+     .section01 .main_menu ul li img {
+         width: 200px;
+         height: 200px;
+         transition: all 2s ease;
+     }
+
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: #52F9D4;
+         background: #eeeeee;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 70%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         z-index: 900;
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+
+
+     /*--------------------- section03 ---------------------*/
+
+     .v_img01 ul li:nth-child(1) {
+         width: 320px;
+         height: 100%;
+         left: 10px;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         width: 400px;
+         height: 100%;
+         right: 0px;
+         bottom: 0px;
+         padding-top: 20px;
+         z-index: 1;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         background-color: beige;
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 380px;
+         height: 520px;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+     .v_text01 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: url(../IMAGE/membership_back.png);
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+         left: 10px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text01 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*서교*/
+     .Seogyo {
+         display: none;
+
+     }
+
+     .v_img02 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 80%;
+         height: 100%;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+         width: 100%;
+         height: 950px;
+         right: 25px;
+         top: 60px;
+
+     }
+
+     .v_img02 ul li:nth-child(1) {
+         width: 100%;
+         height: 830px;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+
+     .v_text02 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text02 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+         z-index: 2;
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 950px;
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         display: none;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         width: 500px;
+         height: 611px;
+         bottom: 100px;
+         right: -10px;
+     }
+
+     /*img shadow */
+
+     .v_text03 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+ }
+
+ /* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+ @media screen and (min-width:1025px) and (max-width:1279px) {
+     /*--------------------- section01 ---------------------*/
+
+     .section01 {
+         width: 100%;
+         height: 950px;
+     }
+
+     .section01 .main_menu {
+         margin: 0 auto;
+         width: 90%;
+         height: 950px;
+
+     }
+
+     .section01 .main_menu ul {
+         margin: 0 auto;
+         margin-top: 35px;
+         width: 100%;
+         height: 350px;
+
+     }
+
+     .section01 .main_menu ul li img {
+         width: 230px;
+         height: 230px;
+         transition: all 2s ease;
+     }
+
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: #52F9D4;
+         background: #eeeeee;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 70%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         z-index: 900;
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+
+
+     /*--------------------- section03 ---------------------*/
+
+     .v_img01 ul li:nth-child(1) {
+         width: 320px;
+         height: 100%;
+         left: 10px;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         width: 400px;
+         height: 100%;
+         right: 0px;
+         bottom: 0px;
+         padding-top: 20px;
+         z-index: 1;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         background-color: beige;
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 380px;
+         height: 520px;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+     .v_text01 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: url(../IMAGE/membership_back.png);
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+         left: 10px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text01 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*서교*/
+     .Seogyo {
+         display: none;
+
+     }
+
+     .v_img02 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 80%;
+         height: 100%;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+         width: 100%;
+         height: 950px;
+         right: 25px;
+         top: 60px;
+
+     }
+
+     .v_img02 ul li:nth-child(1) {
+         width: 100%;
+         height: 830px;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+
+     .v_text02 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text02 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+         z-index: 2;
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 950px;
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         display: none;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         width: 500px;
+         height: 611px;
+         bottom: 100px;
+         right: -10px;
+     }
+
+     /*img shadow */
+
+     .v_text03 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+ }
+
+ /* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+ @media screen and (min-width:1280px) and (max-width:1920px) {
+
+
+     /*--------------------- section01 ---------------------*/
+
+     .section01 {
+         width: 100%;
+         height: 950px;
+     }
+
+     /*--------------------- section02 ---------------------*/
+
+     .container {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: horizontal;
+         -webkit-box-direction: normal;
+         flex-direction: row;
+     }
+
+     .container section.forward {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+     }
+
+     .container section.back {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         cursor: pointer;
+         background: #52F9D4;
+         background: #eeeeee;
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         flex-direction: column;
+         -webkit-box-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         justify-content: center;
+     }
+
+     .nautilus {
+         background: #ddd;
+         position: relative;
+         min-width: 70%;
+         height: 100vh;
+         margin: 0 auto;
+         overflow: hidden;
+     }
+
+     .nautilus > div {
+         position: absolute;
+         z-index: 900;
+         -webkit-transition: all 400ms ease-out;
+         transition: all 400ms ease-out;
+         -webkit-animation: genie 400ms forwards ease-out;
+         animation: genie 400ms forwards ease-out;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         width: 9.016986vh;
+         height: 5.57280vh;
+         left: 114.59055442vh;
+         top: 70.820377901vh;
+         opacity: 0;
+     }
+
+
+
+     /*--------------------- section03 ---------------------*/
+
+     .v_img01 ul li:nth-child(1) {
+         width: 320px;
+         height: 100%;
+         left: 10px;
+     }
+
+     .v_img01 ul li:nth-child(2) {
+         width: 350px;
+         height: 100%;
+         right: 0px;
+         bottom: 0px;
+         padding-top: 20px;
+         z-index: 1;
+     }
+
+     .fadein_down {
+         opacity: 0;
+         margin-top: -900px;
+         max-height: 100%;
+     }
+
+     .fadein_up {
+         opacity: 0;
+         margin-top: 500px;
+         max-height: 100%;
+     }
+
+     .visual_Roll div.on {
+         background-color: beige;
+         display: block;
+     }
+
+     /*img shadow */
+     .v_img01 ul li img {
+         width: 460px;
+         height: 525px;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+     .v_text01 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+         opacity: 0;
+         transition: 0.4s;
+         background-image: url(../IMAGE/membership_back.png);
+
+     }
+
+     .v_text01 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+         left: 10px;
+     }
+
+     .v_text01 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text01 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text01 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*서교*/
+     .Seogyo {
+         display: none;
+
+     }
+
+     .v_img02 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+     }
+
+     .v_img02 ul {
+         position: relative;
+         width: 80%;
+         height: 100%;
+         margin: 0 auto;
+         text-align: center;
+     }
+
+     .v_img02 ul li {
+         position: absolute;
+         width: 100%;
+         height: 950px;
+         right: 25px;
+         top: 60px;
+
+     }
+
+     .v_img02 ul li:nth-child(1) {
+         width: 100%;
+         height: 830px;
+     }
+
+
+     /*img shadow */
+     .v_img02 ul li img {
+         width: 100%;
+         height: 100%;
+         box-shadow: -3px 2px 20px -9px;
+     }
+
+
+     .v_text02 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text02 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text02 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_text02 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text02 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+     /*제주*/
+     .Jeju {
+         display: none;
+     }
+
+     .v_img03 {
+         width: 50%;
+         height: 950px;
+         float: left;
+         _overflow: hidden;
+         z-index: 2;
+     }
+
+     .v_img03 ul {
+         position: relative;
+         width: 100%;
+         height: 950px;
+     }
+
+     .v_img03 ul li {
+         position: absolute;
+     }
+
+     .v_img03 ul li:nth-child(1) {
+         width: 620px;
+         height: 830px;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         width: 575px;
+         height: 605px;
+         bottom: 0;
+         right: -110px;
+     }
+
+     /*img shadow */
+
+     .v_text03 {
+         width: 50%;
+         height: 950px;
+         text-align: center;
+         float: left;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .v_text03 ul {
+         margin: 0 auto;
+         width: 80%;
+         height: 300px;
+         margin-top: 330px;
+     }
+
+     .v_text03 ul li {
+         width: 100%;
+         height: 50px;
+     }
+
+     .v_img03 ul li:nth-child(2) {
+         width: 500px;
+         height: 611px;
+         bottom: 0;
+         right: -34px;
+     }
+
+     .v_text03 ul li p {
+         font-size: 18px;
+         font-family: "HYMyeongJo-Extra";
+         color: rgb(0, 0, 0);
+         line-height: 1.5;
+         -moz-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -webkit-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         -ms-transform: matrix(1, 0, 0, 0.99885930643423, 0, 0);
+         z-index: 28;
+     }
+
+     .v_text03 ul li span {
+         font-size: 30px;
+         line-height: 0;
+     }
+
+
+ }

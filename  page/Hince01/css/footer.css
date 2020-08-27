@@ -1,0 +1,311 @@
+/*  푸터*/
+footer {
+	width: 100%;
+}
+#footer {
+	width: 100%;
+	background: #717f65;
+	font-size: 16px;
+}
+/*----- f_txt -----*/
+.f_txt {
+	width: 50%;
+	height: 360px;
+	float: left;
+	margin: 0 auto;
+}
+/*----- b_link -----*/
+#b_link {
+	float: left;
+	width: 50%;
+	height: 360px;
+	margin: 0 auto;
+}
+
+/*----------- PARTNERSHIP ---------*/
+
+
+#PARTNERSHIP {
+	width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+	padding: 40px 0;
+}
+
+#footer #PARTNERSHIP > h3 {
+	margin-bottom: 10px;
+	color: white;
+}
+
+#footer #PARTNERSHIP > span {
+	color: white;
+}
+
+#footer #PARTNERSHIP > p {
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+/*----------- FLAGSHIP_STORE ---------*/
+#FLAGSHIP_STORE {
+	width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#FLAGSHIP_STORE > h3 {
+	margin-bottom: 10px;
+	color: white;
+}
+
+#FLAGSHIP_STORE > span {
+	color: white;
+}
+
+#FLAGSHIP_STORE > p {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+
+
+/*-- link_img --*/
+.link_img {
+	width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+	padding: 40px 0;
+}
+
+#b_link .link_img ul {
+	text-align: center;
+}
+#b_link .link_img ul li{
+	display: inline;
+	padding-left: 10px;
+}
+/*-- copyright --*/
+.copyright {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.copyright > h3 {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.copyright > h1 > a {
+	margin: 10px;
+	color: white;
+}
+
+.copyright > p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: white;
+}
+
+#footer #b_link .copyright > h1:hover a {
+	color: darkseagreen;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+/*----- address -----*/
+address {
+	width: 100%;
+}
+address > p {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	color: white;
+	font-weight: normal;
+}
+
+
+
+
+
+/* 매우 작은 기기들 (모바일폰, SE) */
+@media screen and (max-width:991px){
+	#footer {
+		width: 100%;
+	}
+	/*----- f_txt -----*/
+	.f_txt {
+		display: none;
+	}	
+	
+	/*----------- b_link ---------*/
+	#b_link {
+		display: none;	
+	}
+	/*----- address -----*/
+	address {
+		width: 50%;
+		margin: 0 auto;
+	}
+	address > p {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 20px 0;
+		color: white;
+		font-weight: normal;
+	}	
+}
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+	/*----- f_txt -----*/
+	.f_txt {
+		width: 50%;
+		height: 340px;
+		float: left;
+		margin: 0 auto;
+	}
+	/*----------- PARTNERSHIP ---------*/
+	#PARTNERSHIP {
+		width: 80%;
+		text-align: justify;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	
+	/*----------- FLAGSHIP_STORE ---------*/
+	#FLAGSHIP_STORE {
+		width: 80%;
+	}	
+	
+	/*----------- b_link ---------*/
+	#b_link {
+		float: left;
+		width: 50%;
+		height: 340px;
+		margin: 0 auto;
+	}
+	/*-- link_img --*/
+	.link_img {
+		width: 80%;
+		text-align: justify;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+
+	.link_img ul li{
+		display: inline;
+		padding-left:30px;
+	}	
+	/*-- copyright --*/
+	.copyright {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.copyright > h3 {
+		margin-left: 10px;
+		margin-bottom: 10px;
+		color: white;
+	}
+
+	.copyright > h1 > a {
+		margin: 10px;
+		color: white;
+	}
+
+	.copyright > p {
+		font-size: 13px;
+		margin: 10px 10px 10px 0;
+		color: white;
+	}
+
+
+	/*----- address -----*/
+	address > p {
+		font-size: 12px;
+	}	
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+
+	/*----- f_txt -----*/
+	.f_txt {
+		width: 50%;
+		height: 340px;
+		float: left;
+		margin: 0 auto;
+	}
+	/*----------- PARTNERSHIP ---------*/
+	#PARTNERSHIP {
+		width: 80%;
+		text-align: justify;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	
+	/*----------- FLAGSHIP_STORE ---------*/
+	#FLAGSHIP_STORE {
+		width: 80%;
+	}	
+	
+	/*----------- b_link ---------*/
+	#b_link {
+		float: left;
+		width: 50%;
+		height: 340px;
+		margin: 0 auto;
+	}
+	/*-- link_img --*/
+	.link_img {
+		width: 80%;
+		text-align: justify;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+
+	.link_img ul li{
+		display: inline;
+		padding-left:30px;
+	}	
+	/*-- copyright --*/
+	.copyright {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.copyright > h3 {
+		margin-left: 10px;
+		margin-bottom: 10px;
+		color: white;
+	}
+
+	.copyright > h1 > a {
+		margin: 10px;
+		color: white;
+	}
+
+	.copyright > p {
+		font-size: 13px;
+		margin: 10px 10px 10px 0;
+		color: white;
+	}
+
+
+	/*----- address -----*/
+	address > p {
+		font-size: 12px;
+	}
+	
+}

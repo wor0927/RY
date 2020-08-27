@@ -1,0 +1,1575 @@
+
+* {margin: 0; padding: 0;list-style: none; text-decoration: none;}
+a,p,sapn {font-family: "Bookman Old Style";}
+
+.ston { width: 325px; height: 435px; position: absolute; top: -435px; right: 0; opacity: 0.7;}
+
+
+#container {
+    width: 60%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #666; 
+}
+
+
+#join_box {
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+    position: relative;
+}
+
+#join_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#join_box > h4 {
+    font-size: 20px;
+}
+
+form {
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 20%;
+    display: inline-block;
+    line-height: 50px;
+}
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="password"] {
+    height: 17px;
+}
+form > p > select {
+    height: 25px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 25px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    width: auto;
+    font-size: 14px;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 0px;
+}
+
+
+form > .join_terms {
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*★★중간★★*/
+@media all and (min-width:1735px) and (max-width:1847px){
+    .ston { width: 325px; height: 435px; position: absolute; top: -435px; right: 0; opacity: 0.7;}
+
+
+#container {
+    width: 70%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #666; 
+}
+
+
+#join_box {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#join_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+form {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 17%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="password"] {
+    height: 17px;
+}
+form > p > select {
+    height: 25px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 25px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 0px;
+}
+
+
+form > .join_terms {
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    _background-color: #eeeeee;
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+    
+    
+    
+    
+}
+
+/*★★두번째★★*/
+@media all and (min-width:1280px) and (max-width:1735px){
+    .ston { width: 325px; height: 435px; position: absolute; top: -435px; right: 0; opacity: 0.7;}
+
+
+#container {
+    width: 70%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #666; 
+}
+
+
+#join_box {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#join_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+form {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 17%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="password"] {
+    height: 17px;
+}
+form > p > select {
+    height: 25px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 25px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 0px;
+}
+
+
+form > .join_terms {
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    _background-color: #eeeeee;
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+    
+    
+    
+    
+}
+
+/*★★세번째★★*/
+@media screen and (min-width:1024px) and (max-width:1279px){
+    
+ .ston { width: 325px; height: 435px; position: absolute; top: -435px; right: 0; opacity: 0.7;}
+
+
+#container {
+    width: 70%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #666; 
+}
+
+
+#join_box {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#join_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+form {
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 17%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="password"] {
+    height: 17px;
+}
+form > p > select {
+    height: 25px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 25px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 13px;
+    padding-left: 20%;
+    line-height: 0px;
+}
+
+
+form > .join_terms {
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    _background-color: #eeeeee;
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+    
+    
+    
+        
+        
+}
+/*★★hahaha★★*/
+@media screen and (min-width:640px) and (max-width:1023px){
+        
+.ston { 
+        width: 325px; height: 435px; 
+        position: absolute; 
+        top: -435px; 
+        right: 0; 
+        opacity: 0.7;
+    }
+
+
+#container {
+    width: 90%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    _background-color: goldenrod;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #666; 
+}
+
+
+#join_box {
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+form {
+    max-width: 500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p > span {
+    width: 18%;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="NAME"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > input[type="password"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > input[type="ID"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > select {
+    height: 25px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 22px;
+    line-height: 21px;
+    padding: 0 5px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    display: none;
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 11px;
+    padding-left: 15%;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+
+form > .join_terms {
+    margin: 40px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 49px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+    
+    
+        
+        
+}
+/*★★다섯번째★★*/
+@media screen and (min-width:480px) and (max-width:639px) {
+.ston { 
+        width: 200px; height: 160px; 
+        position: absolute; 
+        top: -435px; 
+        right: 0; 
+        opacity: 0.7;
+        
+    }
+    .ston img {width: 145px;}
+    
+
+
+#container {
+    width: 90%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+
+}
+#join > .join_title > h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #888; 
+}
+
+
+#join_box {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+form {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p:nth-child(3) { display: none;}   
+.choice {display: none;}    
+form > p {width: 100%;  padding-bottom: 20px; margin: 0 auto; text-align:center; font-size: 15px;}    
+
+
+form > p > span:before {
+    content: "*";
+    color: red;
+    margin-right: 10px;
+}    
+    
+form > p > span {
+
+    margin:0 auto;
+    width:100%;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form > p > input[type="text"] {
+    
+    height: 17px;
+}
+form > p > input[type="NAME"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="password"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="ID"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > select {
+    height: 23px;
+    line-height: 23px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 22px;
+    line-height: 21px;
+    padding: 0 5px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    display: none;
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 11x;
+    padding-left: 4%;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+
+form > .join_terms {
+    margin: 40px auto 0 auto;
+    border: 1px solid #bbbbbb;
+    width: 90%;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 60px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    overflow: scroll;
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 49px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+	
+.ston img {width: 145px; float: right;}        
+        
+}
+/*★★여섯번째★★*/
+@media screen and (max-width:479px) {
+	
+	
+.ston { 
+	width: 145px; height: 160px; 
+	position: absolute; 
+	top: -435px; 
+	right: 0; 
+	opacity: 0.7;
+}
+
+.ston img {width: 145px; float: right;}
+    
+
+#container {
+    width: 90%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#join > .join_title > h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #888; 
+}
+
+
+#join_box {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+form {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p:nth-child(3) { display: none;}   
+.choice {display: none;}    
+form > p {width: 100%;  padding-bottom: 20px; margin: 0 auto; text-align:center; font-size: 15px;}    
+    
+    
+form > p > span {
+    margin:0 auto;
+    width:100%;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form > p > input[type="text"] {
+    
+    height: 17px;
+}
+form > p > input[type="NAME"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="password"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="ID"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > select {
+    height: 23px;
+    line-height: 23px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 22px;
+    line-height: 21px;
+    padding: 0 5px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    display: none;
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 11x;
+    padding-left: 4%;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+
+form > .join_terms {
+    margin: 40px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 49px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+        
+}
+/*★★일곱번째(아이폰SE)★★*/
+@media screen and (max-width:320px) {
+        
+        
+.ston { 
+        width: 145px; height: 160px; 
+        position: absolute; 
+        top: -435px; 
+        right: 0; 
+        opacity: 0.7;
+        
+    }
+    .ston img {width: 145px;}
+    
+
+
+
+#container {
+    width: 90%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 15px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+
+}
+#join > .join_title > h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #888; 
+}
+
+
+#join_box {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+form {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p:nth-child(3) { display: none;}   
+.choice {display: none;}    
+form > p {width: 100%;  padding-bottom: 20px; margin: 0 auto; text-align:center; font-size: 15px;}    
+
+
+form > p > span:before {
+    content: "*";
+    color: red;
+    margin-right: 10px;
+}    
+    
+form > p > span {
+
+    margin:0 auto;
+    width:100%;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form > p > input[type="text"] {
+    
+    height: 17px;
+}
+form > p > input[type="NAME"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="password"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="ID"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > select {
+    height: 23px;
+    line-height: 23px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 22px;
+    line-height: 21px;
+    padding: 0 5px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+}
+
+.condition {
+    display: none;
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 11x;
+    padding-left: 4%;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+
+form > .join_terms {
+    margin: 40px auto 0 auto;
+    border: 1px solid #bbbbbb;
+    width: 90%;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 60px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   
+}
+form > .join_terms > li > span {
+    padding-left: 20px;
+    font-size: 15px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+    overflow: scroll;
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 49px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+        
+        
+}
+/*★★여섯번째★★*/
+@media screen and (max-width:479px) {
+       
+    
+.ston { 
+        width: 145px; height: 160px; 
+        position: absolute; 
+        top: -435px; 
+        right: 0; 
+        opacity: 0.7;
+        
+    }
+    .ston img {width: 145px;}
+    
+
+
+#container {
+    width: 95%; height: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-shadow: 0px 1px 19px rgba(0,0,0,0.4); 
+    position: relative; 
+    border-radius: 5px; 
+    left: 0; 
+    top: 1500px;
+    background-image: url(../IMAGE/membership_back.png);
+    
+}
+#container > #join{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#join > .join_title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#join > .join_title > h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #eee; 
+    text-shadow:-1px -1px white, 1px 1px #888; 
+}
+
+
+#join_box {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+form {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px  0;
+}
+form > p:nth-child(3) { display: none;}   
+.choice { display: none; }    
+form > p { width: 100%;  padding-bottom: 20px; margin: 0 auto; text-align:center; font-size: 15px; }    
+    
+    
+form > p > span {
+    margin:0 auto;
+    width:100%;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form > p > input[type="text"] {
+    height: 17px;
+}
+form > p > input[type="NAME"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="password"] {
+    width: 140px;
+    height: 17px;
+}
+form > p > input[type="ID"] {
+    width: 100px;
+    height: 17px;
+}
+form > p > select {
+    height: 23px;
+    line-height: 23px;
+}
+form > p > input[type="button"] {
+    font-family: "NanumSquare";
+    font-weight: bold;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 5px;
+    background: #efeeee;
+    border: 1px solid #bbbbbb;
+    font-size: 11px;
+}
+
+.condition {
+    display: none;
+    width: auto;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.choice {
+    width: auto;
+    height: 20px;
+    font-size: 11x;
+    padding-left: 4%;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+
+form > .join_terms {
+    margin: 40px auto 0 auto;
+    border: 1px solid #bbbbbb;
+}
+form > .join_terms > li {
+    position: relative;
+    line-height: 55px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid #bbbbbb;
+}
+form > .join_terms > li:nth-child(4) {
+    border: 0;
+}
+form > .join_terms > li > input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   
+}
+form > .join_terms > li > span {
+    padding-left: 5px;
+    font-size: 11px;
+}
+form > .join_terms > li > .join_down {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.pop {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+    position: relative;
+    top: 12px;
+}
+
+form > .join_terms > li > textarea {
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    width: 93%;
+
+}
+
+.SEND {width: 100%; height: 100px;}
+.join_btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 49px;
+    background: #39528a;
+    border-radius: 30%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+}
+}

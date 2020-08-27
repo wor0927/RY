@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 , user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon_hince.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon_hince.ico" type="image/x-icon">
+	<!-- JS -->
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/hince.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<title>Hince</title>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//////////////////// header, footer로드 //////////////////////	
+			$("header").load("header.html");
+			$("footer").load("footer.html");
+
+			new WOW().init();
+			AOS.init();
+
+
+			//////////////////// 자동재생//////////////////////
+			var promise = document.querySelector('video').play();
+			if (promise !== undefined) {
+
+				promise.then(_ => {
+					// 자동 재생 시작!
+				}).catch(error => {
+					// 자동 재생이 막힘.
+					// "Play" 버튼을 노출해 유저가 재생을 시작할 수 있도록 한다
+				});
+			}
+
+
+
+			//////////////////// 컬렉션 스크롤 애니메이션 ////////////////////// 
+			/* 1 */
+			$(window).scroll(function() {
+				/* 2 */
+				$(".IMAGE").each(function(i) {
+					var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+					var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+					/* 3 */
+					if (bottom_of_window > bottom_of_object / 2) {
+						$(this).animate({
+							'opacity': '1'
+						}, 900);
+					}
+				});
+			});
+
+			//////////////////// TOP 스크롤 애니메이션 //////////////////////  
+			$(window).scroll(function() {
+
+				var footer = $("footer").offset().top;
+
+
+
+				if ($(this).scrollTop() >= 800) {
+					$("#BOTTON").fadeIn();
+				} else {
+					$("#BOTTON").fadeOut();
+				}
+
+				$("#BOTTON").click(function() {
+					$('html, body').animate({
+						scrollTop: 9999
+					}, 1500);
+
+
+				});
+			});
+
+
+
+
+
+			//			//mousewhell.min.js를 difine한 경우
+			//			//////////////////// box 위에서 마우스 휠을 움직이면 ////////////////////// 
+			//			$(".box").on("mousewheel", function(event, delta) {
+			//
+			//				//마우스 휠을 올렸을 때
+			//				if (delta > 0) {
+			//					//변수  prev에 현재 휠을 움직인 section에서 이전section의 offset().top위치 저장
+			//					try {
+			//						var prev = $(this).prev().offset().top;
+			//					} catch (e) {}
+			//					//문서 전체를 prev에 저장된 위치로 이동
+			//					$("html,body").stop().animate({
+			//						"scrollTop": prev
+			//					}, 1000);
+			//
+			//
+			//					//마우스 휠을 내렸을 때
+			//				} else if (delta < 0) {
+			//					//변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장 
+			//					try {
+			//						var next = $(this).next().offset().top;
+			//					} catch (e) {}
+			//
+			//					//문서 전체를 next에 저장된 위치로 이동
+			//					$("html,body").stop().animate({
+			//						"scrollTop": next
+			//					}, 1000);
+			//				}
+			//
+			//			});
+		});
+	</script>
+
+</head>
+
+
+
+<body>
+	<ul class="skipnavi">
+		<li><a href="#container">본문내용</a></li>
+	</ul>
+	<header></header>
+
+	<!-- 백그라운드 이미지-->
+	<div id="hince_movei" class="box">
+		<video src="img/hicemovie.mp4" width="100%" height="600" border="0" muted="muted"></video>
+		<!--            <img src="img/jeju_3.jpg" alt="백그라운드 이미지">-->
+	</div>
+
+	<!--container-->
+	<div id="container" class="box">
+		<section id="top">
+			<div class="IMAGE">
+				<img class="IMAGE img1 wow animate fadeInRight" data-wow-duration=".8s" data-wow-delay=".2s" src="img/모델이미지.png" alt="모델사진" />
+			</div>
+			<div class="t_text text01 wow animate fadeInLeft" data-wow-duration=".8s" data-wow-delay=".2s">
+				<span>Glow from Within</span>
+				<p>섬세하게 차오르는 본연의 빛.</p>
+				<p>글로우 업 컬렉션 </p>
+			</div>
+			<div class="IMAGE">
+				<img class="IMAGE img2 wow animate fadeInLeft" data-wow-duration=".8s" data-wow-delay=".6s" src="img/물결그라데이션.png" alt="물결그라데이션" />
+			</div>
+			<div class="t_text text02 wow animate fadeInRight" data-wow-duration=".8s" data-wow-delay=".6s">
+				<span>Shine Your True Light</span>
+				<p>과장되지않은, 지금 그대로의</p>
+				<p>당신을 더욱 빛나게할</p>
+				<p>미러라이크 컬렉션</p>
+			</div>
+			<div class="IMAGE">
+				<img class="IMAGE img3 wow animate fadeInRight" data-wow-duration=".8s" data-wow-delay=".8s" src="img/유리.png" alt="" />
+			</div>	
+			<div class="t_text text03 wow animate fadeInLeft" data-wow-duration=".8s" data-wow-delay=".8s">
+				<span>New Depth Inside You</span>
+				<p>새로운 면모의 발견.</p>
+				<p>뉴 뎁스 컬렉션</p>
+			</div>
+		</section>
+	</div>
+
+	<!-- slidebar -->
+	<div id="slidebar" class="box">
+		<section id="middle">
+			<div class="glowbox">
+				<img class="glow1" src="img/립스틱.png" alt="hince립스틱">
+				<img class="glow2" src="img/입술.png" alt="입술사진">
+				<img class="glow3" src="img/립스틱느낌.png" alt="립스틱텍스쳐">
+
+				<button class="btn">
+					<p>more</p>
+				</button>
+			</div>
+		</section>
+	</div>
+
+	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide simg01"></div>
+			<div class="swiper-slide simg02"></div>
+			<div class="swiper-slide simg03"></div>
+		</div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			spaceBetween: 10, //마진값
+			centeredSlides: true,
+			initialSlide: 0, //시작위치값
+			effect: 'fade', //페이드효과
+			loop: true,
+			loopedSlides: 3,
+			autoplay: 3000,
+			// 반응형
+//			breakpoints: {
+//				// when window width is >= 320px
+//				320: {
+//					slidesPerView: 1, //한번에 보여지는 슬라이드 개수
+//					spaceBetween: 0 //마진값
+//				},
+//				// when window width is >= 480px
+//				480: {
+//					slidesPerView: 1,
+//					spaceBetween: 0
+//				},
+//				// when window width is >= 640px
+//				640: {
+//					slidesPerView: 1,
+//					spaceBetween: 0
+//				}
+//			}
+		});
+	</script>
+
+	<!-- BOTTON 버튼 -->
+	<div id="BOTTON">
+		<a href="#">
+			<i class="fas fa-chevron-circle-down"></i>
+		</a>
+	</div>
+	<footer></footer>
+</body></html>

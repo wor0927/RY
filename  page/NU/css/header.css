@@ -1,0 +1,589 @@
+* {
+	list-style: none;
+	font-style: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*
+@font-face {
+    font-family: 'vhs font';
+    src: url('VCR_OSD_MONO_1.001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@charset "UTF-8"
+    
+html, body, header, footer,
+ul, li, p, span, b, strong, ins, sub, sup,
+h1, h2, h3, h4, h5, h6,
+a, button, input, form, ul, li {margin: 0; padding: 0;}
+a, button, input, form, fieldset {border: 0; outline: none; background: transparent; text-decoration: none}
+button, input, form, fieldset {font-family: 'NanumSquare', 'sans-serif';}
+ul, li{list-style: none;}
+body {
+    font-family: 'NanumSquare', 'sans-serif';
+    font-weight: normal;
+    font-size: 16px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+
+.wrap {
+	position: relative;
+	width: 100%;
+}
+
+/* mobile 메뉴 버튼 */
+#nav-container {
+    display: none;
+}
+
+
+/* 헤더 HEADER */
+.header {
+	width: 100%;
+    height: 90px;
+	position: fixed;
+	margin: 0 auto;
+	top: 0; 
+	opacity: 1;
+	z-index: 999;
+	transition: top 0.5s ease-in-out, opacity 0.6s ease;
+	font-weight: bold;
+	background: rgba(255, 255, 255, .8);
+}
+
+.header-up {opacity: 0; top: -90px;}
+
+/*------------ logo ------------*/
+.logo {
+	float: left;
+    width: 15%;
+    height: 100%;
+    margin: 0 auto;
+	text-align: center;
+}
+.logo a {
+	font-size: 60px; 
+	  color: #e7dfd2;
+  	text-shadow: 1px 1px 1px #9b8f81;
+}
+.logo a span {
+	font-size: 50px;
+}
+/*------------ nav ------------*/
+.nav {
+	float: left; 
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.nav > ul > li >a { color: #000; font-size: 20px;}
+
+.nav ul {
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav > ul > li {
+    position: relative;
+    line-height: 4;
+    display: inline-block;
+    width: 150px;
+}
+
+.nav_box {
+	display: none;
+	position: absolute;
+	width: 100vh;
+	height: 100px;
+	top: 90px;
+	left: -400px;
+	background: rgba(255, 255, 255, .8);
+}
+
+
+.nav_box > ul { width: 100%; height: 90px;  text-align: center;}
+.nav_box > ul > li { 
+	width: 100px; 	height:
+	90px; line-height: 3;
+	font-weight: bold;  
+	display: inline-block; 
+}
+.nav_box > ul > li> a { color: #000; font-size: 25px; }
+
+
+/*--------------------------------------- category ---------------------------------------*/
+.category { 
+	width: 100vh;
+    height: 200px; 
+}
+
+
+.category ul
+{
+	padding-top: 30px;
+	float: left;
+    width: 33.33%;
+}
+.category ul li
+{
+	font-size: 15px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	line-height: 2.5;
+}
+
+.category ul li a { color: #000;}
+.category ul li span
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}
+
+
+/*-- hover --*/
+.category ul li a:hover {color: #7cl77; }
+
+
+/*--------------------------------------- login ---------------------------------------*/
+.login {
+	float: right;
+	width: 15%;
+	height: 100%;
+	_padding-right: 60px;
+}
+.login ul {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.login ul li {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	line-height: 5.5;
+}
+.login > ul > li > a> .f_login { width: 100%; font-size: 25px; color: #000; }
+
+.search_box {
+    position: absolute;
+   	margin-left: 40px;
+    width: 0px;
+	top: 0px;
+    background: none;
+    border-bottom: 2px solid #000;
+    transition: all .3s ease;
+	display: block;
+}
+
+
+/*----------------------------------------------*/
+
+#nav-fullscreen {
+    display: none;
+}
+
+/*--------------------------*/
+
+#nav-container {
+  position: relative;
+ _overflow: hidden;
+}
+
+#nav-toggle {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#nav-toggle span {
+  background-color: black;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+  top: 4px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(2) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+#nav-toggle span:nth-child(3) {
+  top: 24px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+#nav-toggle.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 3px;
+  left: 4px;
+}
+
+#nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-toggle.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 25px;
+  left: 4px;
+}
+
+#nav-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale3d(0, 0, 0);
+          transform: scale3d(0, 0, 0);
+}
+
+#nav-overlay.open {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+#nav-fullscreen {
+    overflow: hidden;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  _visibility: hidden;
+  opacity: 0;
+}
+#nav-fullscreen ul {
+  list-style: none;
+}
+/*    텍스트*/
+#nav-fullscreen a { 
+  color: #000;
+  text-decoration: none;
+}
+
+#nav-fullscreen.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+
+
+#nav-overlay {
+    
+    background: beige;
+/*
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff512f), color-stop(50%, #ff512f), color-stop(90%, #dd2476));
+  background: linear-gradient(180deg, #ff512f 10%, #ff512f 50%, #dd2476 90%);
+*/
+}
+
+/*메뉴버튼 컬러*/
+#nav-toggle span {
+  background-color: #000;
+}
+
+#nav-fullscreen {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 10vh;
+}
+#nav-fullscreen li:hover {
+  list-style: disc;
+    color: beige;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+/* 매우 작은 기기들 (모바일폰, SE) */
+@media screen and (max-width:319px){ 
+        .header {
+            display: none;
+        }
+
+    #nav-container {
+        display: block;
+      position: absolute;
+        z-index: 9999;
+    }
+    .m_login {
+        right: 7%;
+        top: -4%;
+        position: absolute;
+    }
+
+    .m_login a i {
+        font-size: 25px
+    }
+
+    .m_login a .m_search_box {
+        position: absolute;
+        margin-left: 30px;
+        width: 0px;
+        top: 0px;
+        background: none;
+        border-bottom: 2px solid #000;
+        transition: all .3s ease;
+        display: block;
+    } 
+}
+
+
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){
+    
+    #nav-fullscreen {
+        display: none;
+    }
+    .header {
+        display: none;
+    }   
+
+    #nav-container {
+        display: block;
+      position: absolute;
+        z-index: 9999;
+    }
+
+    #nav-toggle {
+      display: block;
+      width: 30px;
+      height: 30px;
+        margin: 15px 10px 10px 15px;
+      cursor: pointer;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+
+    #nav-toggle span {
+      background-color: black;
+      width: 100%;
+      height: 4px;
+      border-radius: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      content: "";
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+    }
+
+    #nav-toggle span:nth-child(1) {
+      top: 4px;
+      -webkit-transform-origin: left center;
+              transform-origin: left center;
+    }
+
+    #nav-toggle span:nth-child(2) {
+      top: 14px;
+      -webkit-transform-origin: left center;
+              transform-origin: left center;
+    }
+
+    #nav-toggle span:nth-child(3) {
+      top: 24px;
+      -webkit-transform-origin: left center;
+              transform-origin: left center;
+    }
+
+    #nav-toggle.open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 3px;
+      left: 4px;
+    }
+
+    #nav-toggle.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    #nav-toggle.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 25px;
+      left: 4px;
+    }
+
+    #nav-overlay {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: -1;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 50%;
+      -webkit-transition: 1s;
+      transition: 1s;
+      -webkit-transform: scale3d(0, 0, 0);
+              transform: scale3d(0, 0, 0);
+    }
+
+    #nav-overlay.open {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+
+    #nav-fullscreen {
+        display: none;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        -webkit-transition: ease-in-out 0.25s;
+                transition: ease-in-out 0.25s;
+        -webkit-transition-delay: 0s;
+                transition-delay: 0s;
+        opacity: 0;
+
+    }
+    #nav-fullscreen ul {
+      list-style: none;
+    }
+    /*    텍스트*/
+    #nav-fullscreen a { 
+      color: darkseagreen;
+      text-decoration: none;
+    }
+
+    #nav-fullscreen.open {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: ease-in-out 0.5s;
+      transition: ease-in-out 0.5s;
+      -webkit-transition-delay: 0.25s;
+              transition-delay: 0.25s;
+    }
+
+    #nav-overlay {
+        background: #fff;
+    }
+
+    .m_login {
+        right: 7%;
+        top: -6%;
+        position: absolute;
+    }
+
+    .m_login a i {
+        font-size: 25px
+    }
+
+    .m_login a .m_search_box {
+        position: absolute;
+        margin-left: 30px;
+        width: 0px;
+        top: 40%;
+        background: none;
+        border-bottom: 2px solid #000;
+        transition: all .3s ease;
+        display: block;
+        font-size: 6vw;
+    }  
+   
+    
+
+    /*메뉴버튼 컬러*/
+    #nav-toggle span {
+      background-color: darkseagreen;
+    }
+
+    #nav-fullscreen {
+
+        display: none;
+      _display: -webkit-box;
+      _display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
+      color: white;
+      font-family: sans-serif;
+      font-size: 10vh;
+    }
+    #nav-fullscreen ul {
+        list-style: none;
+        padding-top: 150px;
+    }
+    #nav-fullscreen ul li:hover {
+        list-style: disc;
+        color: beige;
+        margin-left: 50px;
+        transition: .5s ease-in-out;
+
+    }
+	
+}
+
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:640px) and (max-width:767px){
+
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px){
+    .nav {
+        float: left;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+}

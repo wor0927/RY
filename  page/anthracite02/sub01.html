@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"> </script>
+    
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/sub01.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>anthracite_Sub01</title>
+</head>
+
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script>
+$(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        
+                 
+         
+        //메뉴스와이퍼
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay:1500,
+            speed : 2000,
+            autoplayDisableOnInteraction: false,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            type: 'bullets',
+        });
+    
+    
+    
+        
+    // 버튼 클릭, 상품 더 나오기
+        $(".S_Btn01").click(function(){
+            $(".S_Btn01").hide();
+            $(".S_Btn02").show(); $('.S_text02').stop().slideToggle('slow','linear');
+            
+        });
+        $(".S_Btn02").click(function(){
+            $(".S_Btn01").show();
+            $(".S_Btn02").hide();
+            $('.S_text02').stop().slideToggle(500);
+            
+        
+        });
+        
+    // 메뉴 마우스호버 
+    var one = $(".Txt01 >li:nth-child(1)> a> p"); 
+    var two = $(".Txt01 >li:nth-child(2)> a> p"); 
+    var three = $(".Txt01 >li:nth-child(3)> a> p"); 
+    var four = $(".Txt02 >li:nth-child(1)> a> p"); 
+    var five = $(".Txt02 >li:nth-child(2)> a> p"); 
+    var six = $(".Txt02 >li:nth-child(3)> a> p");
+    var seven = $(".Txt03 >li:nth-child(1)> a> p");
+    var eight = $(".Txt03 >li:nth-child(2)> a> p");
+    var nine = $(".Txt03 >li:nth-child(3)> a> p");
+    
+    
+    one.hover(function(){
+        var x = $(".Txt01 >li:nth-child(1)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "공기와 꿈") {
+            x.addClass("on");
+            x.text("air and dream");
+        } else {
+            x.removeClass("on");
+            x.text("공기와 꿈");
+        }
+     });
+    two.hover(function(){
+        var x = $(".Txt01 >li:nth-child(2)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "파블로네루다") {
+            x.addClass("on");
+            x.text("Pablo Neruda");
+        } else {
+            x.removeClass("on");
+            x.text("파블로네루다");
+        }
+     });
+    three.hover(function(){
+        var x = $(".Txt01 >li:nth-child(3)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "나쓰메소세키") {
+            x.addClass("on");
+            x.text("Natsume Sōseki");
+        } else {
+            x.removeClass("on");
+            x.text("나쓰메소세키");
+        }
+     });
+    four.hover(function(){
+        var x = $(".Txt02 >li:nth-child(1)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "버터펫트리오") {
+            x.addClass("on");
+            x.text("Butter Fat Trio");
+        } else {
+            x.removeClass("on");
+            x.text("버터펫트리오");
+        }
+     });
+    five.hover(function(){
+        var x = $(".Txt02 >li:nth-child(2)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "윌리엄블레이크") {
+            x.addClass("on");
+            x.text("William Blake");
+        } else {
+            x.removeClass("on");
+            x.text("윌리엄블레이크");
+        }
+     });
+    six.hover(function(){
+        var x = $(".Txt02 >li:nth-child(3)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "히스토리미스터리") {
+            x.addClass("on");
+            x.text("History Mystery");
+        } else {
+            x.removeClass("on");
+            x.text("히스토리미스터리");
+        }
+     });
+    seven.hover(function(){
+        var x = $(".Txt03 >li:nth-child(1)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "Blend Drip Bag Set") {
+            x.addClass("on");
+            x.text("BLEND DRIP BAG SET");
+        } else {
+            x.removeClass("on");
+            x.text("Blend Drip Bag Set");
+        }
+     }); 
+    eight.hover(function(){
+        var x = $(".Txt03 >li:nth-child(2)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "Hario v60 Dripper") {
+            x.addClass("on");
+            x.text("HARIO V60 DRIPPER");
+        } else {
+            x.removeClass("on");
+            x.text("Hario v60 Dripper");
+        }
+     });
+    nine.hover(function(){
+        var x = $(".Txt03 >li:nth-child(3)> a> p"); 
+        console.log("x.text():"+x.text())
+        if (x.text() === "Anthracite Coffee Server") {
+            x.addClass("on");
+            x.text("COFFEE SERVER");
+        } else {
+            x.removeClass("on");
+            x.text("Hario v60 Dripper");
+        }
+     });
+        
+
+    
+});    
+</script>
+
+
+<body>
+<!--skipnavi -->
+<ul class="skipnavi">
+    <li><a href="#container">본문내용</a></li>
+</ul>
+
+<div id="wrap">
+    <!-- header-->
+    <header id="header"></header>
+    
+    <div id="container">
+        
+        <div class="section01">
+            <div class="slide_shop swiper-container">
+                <ul class="S_img swiper-wrapper">
+                    <li class="swiper-slide"><img src="IMAGE/SET.jpg" alt="SET"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_01.png" alt="공기와꿈" style="width:208px" height="405px"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_02.png" alt="파블로네루다" style="width:208px" height="405px"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_03.png" alt="나쓰메소세키" style="width:208px" height="405px"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_04.png" alt="버터펫트리오" style="width:208px" height="405px"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_05.png" alt="윌리엄블레이크" style="width:208px" height="405px"></li>
+                    <li class="swiper-slide"><img src="IMAGE/C_06.png" alt="히스토리미스터리" style="width:208px" height="405px"></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        <div class="section02">
+            <div class="Shop">
+                <p>All</p>
+                <div class="S_text01">
+                    <ul class="Txt01">
+                        <li><a href="javascript:;"><p>공기와 꿈</p></a></li>
+                        <li><a href="javascript:;"><p>파블로네루다</p></a></li>
+                        <li><a href="javascript:;"><p>나쓰메소세키</p></a></li>
+                    </ul>
+                    <ul class="Txt02">
+                        <li><a href="javascript:;"><p>버터펫트리오</p></a></li>
+                        <li><a href="javascript:;"><p>윌리엄블레이크</p></a></li>
+                        <li><a href="javascript:;"><p>히스토리미스터리</p></a></li>
+                    </ul>
+                    <div class="S_Btn01">
+                        <a href="javascript:;"><img class="btn" src="IMAGE/+.png" alt="더보기"></a>
+                    </div>
+                </div>
+                <div class="S_text02">
+                    <ul class="Txt03">
+                        <li><a href="javascript:;"><p>Blend Drip Bag Set</p></a></li>
+                        <li><a href="javascript:;"><p>Hario v60 Dripper</p></a></li>
+                        <li><a href="javascript:;"><p>Anthracite Coffee Server</p></a></li>
+                    </ul>
+                    <div class="S_Btn02">
+                        <a href="javascript:;">
+                            <img class="btn" src="IMAGE/-.png" alt="더보기">
+                       </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer-->
+    <div id="footer"></div>
+</div>
+</body>
+</html>

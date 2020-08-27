@@ -1,0 +1,80 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<header>
+	<div class="h_logo">
+		<p>KIM X 國 現</p>
+	</div>
+	
+	<!-- 햄버거 -->
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	  </div>
+	</div>
+	<span style="font-size:40px;cursor:pointer;margin-left: 20px;" onclick="openNav()">&#9776;</span>
+
+	<!-- 네모 메뉴 -->
+	<div class="h_nav" onclick="nemoFunction(this)">
+	  <div class="nemo1"></div>
+	  <div class="nemo2"></div>
+	  <div class="nemo3"></div>
+	  <div class="nemo4"></div>
+	</div>
+</header>
+<script>
+	
+			//	메뉴(햄버거)
+			function openNav() {
+			  document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			  document.getElementById("myNav").style.width = "0%";
+			}
+	
+			//	네모 메뉴
+			function nemoFunction(x) {
+			  x.classList.toggle("on");
+			}
+	
+	
+//        $(window).scroll(function(){
+//            console.log("container : "+ $(".container").offset().top);
+//            
+//            var win_sc = $(window).scrollTop();
+//            var this_sc = $(this).scrollTop();
+//            var container =  $(".container").offset().top;
+//            var h_txt = $(".h_txt");
+//            
+//            
+//        
+//            if ( win_sc > container-500) {
+//                h_txt.addClass("visible");
+//            } else {
+//                h_txt.removeClass("visible");
+//            }
+//        });
+	
+	
+	
+//		$(document).ready(function(){
+//			$('#About').click(function(){
+//				var offset = $('.container').offset();
+//				$('html').animate({scrollTop : offset.top}, 800);
+//			});
+//			$('#Skill').click(function(){
+//				var offset = $('.sct02').offset();
+//				$('html').animate({scrollTop : offset.top}, 800);
+//			});
+//			$('#Share').click(function(){
+//				var offset = $('.sct03').offset();
+//				$('html').animate({scrollTop : offset.top}, 800);
+//			});
+//			
+//		});
+
+
+</script>

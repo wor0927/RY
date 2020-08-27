@@ -1,0 +1,71 @@
+<head profile="http://www.w3.org/2005/10/profile">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+
+
+
+<script>
+	$(".letter_In").fadeOut();
+	$(".letter").click(function(){
+		$(".letter").fadeOut();
+		$(".letter_In").fadeIn();
+	});
+
+	
+   $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1000) {
+                $(".TOP_btn").fadeIn(1000);
+            } else {
+                $(".TOP_btn").fadeOut(1000);
+            }
+        });
+        
+        $(".TOP_btn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 1000);
+            return false;
+        });
+    });
+
+
+</script>
+
+
+<i class="TOP_btn fas fa-chevron-circle-up"></i>
+<div class="f_nav">
+	<ul>
+		<li><a href="javascript:;">이용약관</a></li>
+		<li><a href="javascript:;"><span>개인정보처리방침</span></a></li>
+		<li><a href="javascript:;">이메일무단수집거부</a></li>
+	</ul>
+
+</div>
+<div class="f_container">
+	<div class="form">
+		<p><span>가장 빠르게 NATURE 소식을 만나는 법 :) </span></p>
+		<p>지금 뉴스레터를 구독하세요. </p>
+			<form  method="get">
+				<input name='userEmail' placeholder="  이메일 주소를 입력해주세요"/>
+				<button name="userEmail" value="구독하기"  value="버튼" disabled="disabled" readonly>
+					<i class="letter far fa-envelope"></i>
+					<i class="letter_In far fa-envelope-open"></i>
+				</button>
+			</form>
+		<address>
+			<p>서울특별시 서운로134(동아타워)11층 | 사이트 운영자:주식회사 네이처코리아 | 대표이사:김우리</p>
+			<p>Copyright © NATURE Household. All Rights Reserved.</p>
+		</address>
+	</div>
+	<div class="center">
+		<ul>
+			<li><span>고객센터</span></li>
+			<li><a href="tel:1640-1111">1640-1111</a></li>
+			<li><a href="mailto:wor0927@gmail.com">wor0927@gmail.com</a></li>
+			<li>상담시간 13:00 ~ 16:00(평일)</li>
+			<li>TALK 10:00 ~ 16:00(평일)</li>
+		</ul>
+	</div>	
+</div>

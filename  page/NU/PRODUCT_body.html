@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>PRODUCT</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<link rel="stylesheet" href="css/PRODUCT_body.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/aos.css">
+</head>
+<script>
+////////////////////header, footer로드//////////////////////
+$(function () {
+	$("header").load("header.html");
+	$("footer").load("footer.html");
+
+	new WOW().init();
+	AOS.init();
+});
+	
+$(function () {	
+	$(".PRO").eq(0).css("visibility","visible");
+	$(".a_box2 ul li").eq(0).css("font-weight","bold");
+
+	
+	$(".a_box2 ul li").click(function(){
+		
+		var i = $(this).index();
+		
+		$(".a_box2 ul li").css("font-weight","normal");
+		$(".a_box2 ul li").eq(i).css("font-weight","bold");
+		
+		
+		$(".a_box1 ul li").css("visibility","hidden");
+		$(".a_box1 ul li").eq(i).css("visibility","visible");
+		
+		
+		$(".content02 > div").css("visibility","hidden");
+		$(".content02 > div").eq(i).css("visibility","visible");
+	});
+});
+		
+	
+</script>
+<body>
+<header></header>
+	<div class="container">
+		<div class="P_main" >
+			<h1> GLOWING SKIN </h1>
+		</div>
+		
+		<!--content 01-->
+		<div class="content01">
+			<div class="a_box1" >
+				<ul>
+					<li class="BODY"><h1>BODY</h1></li>
+					<li class="HAIR"><h1>HAIR</h1></li>
+					<li class="MAKE"><h1>MAKE UP</h1></li>
+				</ul>
+			</div>		
+			<div class="a_box2" >
+				<ul>
+					<li><a href="javascript:;">BODY(6)</a></li>
+					<li><a href="javascript:;">HAIR(2)</a></li>
+					<li><a href="javascript:;">MAKE UP(3)</a></li>
+				</ul>
+			</div>	
+		</div>
+		
+		<!--content 02-->
+		<div class="content02">
+			<div class="PRO product01">
+				<div class="b_box1" >
+					<div class="PRO01">
+						<img src="img/body1.png" alt="바디로션">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">쿨 바디스크럽</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body2.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body3.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">카타스트로피</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="b_box2" >
+					<div class="PRO01">
+						<img src="img/body4.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">텐저린 스크럽로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body5.png" alt="바디로션">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">소프트 베이직로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body2.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="PRO product02">
+				<div class="b_box1" >
+					<div class="PRO01">
+						<img src="img/body7.png" alt="헤어샴푸">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">쿨 바디스크럽</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body8.png" alt="헤어스킨">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body9.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">카타스트로피</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="b_box2" >
+					<div class="PRO01">
+						<img src="img/body10.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">텐저린 스크럽로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body6.png" alt="바디로션">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">소프트 베이직로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body7.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="PRO product03">
+				<div class="b_box1" >
+					<div class="PRO01">
+						<img src="img/body1.png" alt="바디로션">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">쿨 바디스크럽</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body2.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body3.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">카타스트로피</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="b_box2" >
+					<div class="PRO01">
+						<img src="img/body4.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">텐저린 스크럽로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body5.png" alt="바디로션">
+						<ul>
+							<li><span class="VEGAN">VEGAN</span></li>
+							<li><p class="txt">소프트 베이직로션</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+					<div class="PRO01">
+						<img src="img/body2.png" alt="바디로션">
+						<ul>
+							<li><span class="NEW">NEW</span></li>
+							<li><p class="txt">바디 오브 매그너민트</p></li>
+							<li><p class="one"> ￦ 15,000 <p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>				
+	</div>
+
+<footer class="footer"></footer>
+</body>
+</html>

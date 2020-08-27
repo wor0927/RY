@@ -1,0 +1,22 @@
+
+
+/* Hover over a card to flip, can tab too. */
+
+
+
+/* 매우 작은 기기들 (모바일폰, 768px 보다 작은) */
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: @screen-sm-min) {
+	...
+}
+
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: @screen-md-min) {
+	...
+}
+
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: @screen-lg-min) {
+	...
+}

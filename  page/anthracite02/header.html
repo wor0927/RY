@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">    
+<!--    <script src="js/jquery-3.4.1.min.js"></script>-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <title>header</title>
+    
+<script>
+    $(function(){
+        //nav bar 아래로 슬라이드
+        var btn_main = $("#header > .h_btn > ul")
+        var icon_main = $("#header > .h_btn > ul > li")
+        var IMG = $("#header > .h_btn > ul > li > img")
+        var search = $("#search")
+        
+      
+        icon_main.click(function(){ 
+			IMG.toggleClass("on").css({'transition':'0.5s'}),
+			search.slideToggle();
+        });
+        
+        //검색창 나오기
+        $(".fa-search").click(function(){
+            $(".fa-search").toggleClass('in');
+            $('.S_box').toggleClass('open');
+            $("input[type=search]").toggleClass('inopen');
+        });     
+        
+        $('.h_btn').click(function(){
+            $(".hit01").stop().toggleClass("hit_on").css({transition:"0.5s"});
+            $(".hit02").stop().toggleClass("hit_on").css({transition:"0.6s"});
+            $(".hit03").stop().toggleClass("hit_on").css({transition:"0.7s"});
+        });
+        
+        
+
+
+  
+}); 
+  
+</script>
+
+</head>
+<body>
+    <header id="header">
+        <div id="Logo">
+           <h1>anthracite</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="index.html"></a></li>
+                <li><a href="sub01.html"></a></li>
+<!--                <li><a href="sub02.html"></a></li>-->
+                <li><a href="sub03.html"></a></li>
+            </ul>
+        </div>
+        <div class="h_btn">
+            <ul>
+                <li class="Btn"><img src="IMAGE/menu02.png" alt="menu01"></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <div id="search">
+       <img src="IMAGE/background.png" alt="">
+        <div class="s_icon">
+            <ul>
+                <li id="login">
+                    <a  href="login.html"><p>Login</p></a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="cart" alt="cart"><i class="fas fa-shopping-cart" ></i></a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="search" alt="search"><i class="fas fa-search"  ></i></a>
+                </li>
+            </ul>
+            <div class="S_box">
+               <from >
+                   <input id="Search_box" type="search" style="border: 2px solid #ccc; ">
+                </from>
+            </div>
+        </div>
+        <div class="s_Text">
+            <ul>
+                <li><a href="sub01.html"><p class="hit01 hit">SHOP</p></a></li>
+                <li><a href="#"><p class="hit02 hit">JOURNAL</p></a></li>
+                <li><a href="sub03.html"><p class="hit03 hit">CONTACT…</p></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>

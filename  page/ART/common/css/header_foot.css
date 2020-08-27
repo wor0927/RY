@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'MomentumSansVariable', 'MomentumSansText', 'sans-serif';
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+}
+
+/*------------ logo ----------*/
+.h_logo {
+	writing-mode: vertical-rl;
+	width: 50px;
+	height: 200px;
+	top: 700px;
+	position: absolute;
+	text-align: center;
+}
+.h_logo p {
+	font-weight: bold;
+}
+
+
+/*---------- h_menu -----------*/
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	margin-left: 40px;
+
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 70px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+	margin-left:40px;
+
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px
+	}
+
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+/*---------- h_nav -----------*/
+
+.h_nav {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-right: 30px;
+	margin-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.nemo1,
+.nemo2,
+.nemo3,
+.nemo4 {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #333;
+	transition: 0.4s;
+}
+
+.nemo1 {
+	top: 0;
+	left: 0;
+}
+
+.nemo3 {
+	top: 0;
+	right: 0;
+}
+
+.nemo2 {
+	bottom: 0;
+	left: 0;
+}
+
+.nemo4 {
+	bottom: 0;
+	right: 0;
+}
+
+.on .nemo1 {
+	top: 7px;
+	left: 7px;
+}
+
+.on .nemo3 {
+	top: 7px;
+	right: 7px;
+}
+
+.on .nemo2 {
+	bottom: 7px;
+	left: 7px;
+}
+
+.on .nemo4 {
+	bottom: 7px;
+	right: 7px;
+}

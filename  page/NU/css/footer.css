@@ -1,0 +1,414 @@
+.TOP_btn {
+	display: none;
+    font-size: 50px;
+    position: fixed;
+    color: #7a8875;
+    cursor: pointer;
+    right: 50px;
+    bottom: 50%;
+}
+
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color:#f3f3f3;
+}
+.f_nav { 
+	padding: 30px 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+
+.f_nav h1 {
+	margin: 0;
+    display: inline;
+    float: left;
+    font-size: 3em;    
+	line-height: 0.4;
+	color: #7a8875;
+}
+
+
+.f_nav ul {
+    display: inline;
+    width: 80%;
+}
+
+.f_nav ul li {
+	padding: 0px 80px 0;
+	text-align: center;
+    display: inline;
+}
+.f_nav ul li a{
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+}
+.f_nav ul li a span {
+	font-weight: bold;
+}
+/*
+.f_nav::after{
+  content:'';
+  display:inline-block;
+  width:8px;
+  height:2px;
+  background:red
+}*/
+.f_container {
+	width:80%;
+    height: 100%;
+	margin: 0 auto;
+}
+
+/*--- center ---  */
+
+	.center { 
+		display: block;
+		float: left;
+		width: 30%;
+		text-align: right;
+	}
+	.center ul  {
+		padding: 20px 0;
+	}
+	.center ul li {
+		font-weight: bold;
+		line-height: 1.5;
+		
+	}
+	.center ul li a {
+		color: #000;
+	}
+	.center ul li:nth-child(2) a {
+		font-size: 20px;
+	}
+.center ul li span {
+	font-size: 23px;
+	font-weight: bol
+}
+/*--- class= "form" ---*/
+.form { 
+		display: block;
+		width: 70%;
+		float: left;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 5px 0;
+	}
+/*--- form,input, button ---*/
+form {
+	margin: 0px 0 25px 0;
+}
+input {
+	margin-top: 20px;
+    background: #fff;
+    width: 300px;
+    height: 40px;
+}
+input::placeholder {
+	font-size: 16px;
+	font-weight: bold;
+	color: #999;
+}
+button {
+	position: relative;
+	background-color: none;
+}
+.letter {
+	position: absolute;
+	top: -27px;
+    left: 10px;
+	font-size: 40px;
+	cursor: pointer;
+}
+.letter_In {
+	display: none;
+	position: absolute;
+	top: -30px;
+    left: 10px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+/*------------------------*/
+
+address{
+	font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*------------------------*/
+
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){ 
+.footer {
+	position: relative;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+    .f_container {
+        width:100%;
+        height: 150px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*--- center ---  */
+    .form {
+        display: block;
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+    input {
+        width: 250px;
+    }
+    input::placeholder {
+        font-size: 14px;
+        font-weight: bold;
+        color: #999;
+    }  
+    address {
+        display: none;
+    }
+    
+    /*--- center ---  */
+    .center { 
+        display: none;
+    }    
+
+    
+    .f_nav {
+        padding: 30px 0;
+        width: 90%;
+        margin: 0 auto;
+        text-align: -webkit-center;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    .f_nav ul {
+        display: inline;
+        width: 100%;
+    }
+    .f_nav ul li {
+        padding: 0px 5px 0 0;
+        text-align: center;
+        display: inline;
+    } 
+    .f_nav ul li a {
+        font-size: 12px;
+    }
+
+	
+}
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:640px) and (max-width:767px){
+.footer {
+	position: relative;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+    .f_container {
+        width:90%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    /*--- center ---  */
+    .form {
+        display: block;
+        width: 70%;
+        float: left;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+    form {
+        margin: 0px 0 5px 0;
+    }
+    address {
+        font-size: 10px;
+    }
+    input {
+        margin-top:20px;
+    }
+    
+    /*--- center ---  */
+    .center { 
+        display: block;
+        float: left;
+        width: 30%;
+        text-align: right;
+    }    
+    
+    .center ul {
+        padding: 0;
+    }
+    
+    .center ul li:nth-child(2) a {
+        font-size: 18px;
+    }
+    .center ul li:nth-child(4),
+    .center ul li:nth-child(5){
+        font-size: 14px;
+    }
+    
+    .f_nav {
+        padding: 30px 0;
+        width: 100%;
+        margin: 0 auto;
+        text-align: -webkit-center;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    .f_nav ul {
+        display: inline;
+        width: 100%;
+    }
+    .f_nav ul li {
+        padding: 0px 20px 0 0;
+        text-align: center;
+        display: inline;
+    }    
+
+
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px){
+    .footer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .f_container {
+        width:90%;
+        height: 250px;
+        margin: 0 auto;
+    }
+}
+ 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+     .footer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .f_container {
+        width:90%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    /*--- center ---  */
+    .form {
+        display: block;
+        width: 70%;
+        float: left;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 5px 0;
+    }
+    form {
+        margin: 0px 0 5px 0;
+    }
+    address {
+        font-size: 10px;
+    }
+    /*--- center ---  */
+    .center { 
+        display: block;
+        float: left;
+        width: 30%;
+        text-align: right;
+    }    
+    
+    .center ul {
+        padding: 0;
+    }
+    
+    .center ul li:nth-child(2) a {
+        font-size: 18px;
+    }
+    .center ul li:nth-child(4),
+    .center ul li:nth-child(5){
+        font-size: 14px;
+    }
+    
+    .f_nav {
+        padding: 30px 0;
+        width: 100%;
+        margin: 0 auto;
+        text-align: justify;
+        border-bottom: 1px solid #eee;
+    }
+    .f_nav ul {
+        display: inline;
+        width: 100%;
+    }
+    .f_nav ul li {
+        padding: 0px 20px 0 0;
+        text-align: center;
+        display: inline;
+    }    
+
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+       .footer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .f_container {
+        width:80%;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .center {
+        display: block;
+        float: left;
+        width: 30%;
+        text-align: right;
+    }
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+
+    .footer {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .f_container {
+        width:80%;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .center {
+        display: block;
+        float: left;
+        width: 30%;
+        text-align: right;
+    }
+    
+    
+}
+
+
+
+
+

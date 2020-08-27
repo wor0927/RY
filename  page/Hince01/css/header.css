@@ -1,0 +1,516 @@
+@charset "UTF-8"
+
+/*----------- 헤더----------- */
+* {
+	list-style: none;
+    font-family: 'NotoSansKR', '나눔고딕', 'NanumGothic', sans-serif;
+    box-sizing: border-box;
+	text-decoration: none;
+	padding: 0;
+    margin: 0; 
+}
+
+#header {
+	width: 100%;
+	height: 90px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	position: fixed;
+	z-index: 50;
+	box-sizing: border-box;
+	transition: top 0.2s ease-in-out;
+	background: #a9c29a;
+}
+
+/*--- t_logo ---- */
+.t_logo {
+	width: 10%;
+	height: 90px;
+	float: left;
+}
+
+.t_logo a {
+	font-size: 50px;
+	line-height: 1.5;
+	color: #fff;
+}
+
+/*--- t_nav ---- */
+.t_nav {
+	width: 80%;
+	font-size: 35px;
+	text-align: center;
+	float: left;
+}
+
+.t_nav ul {
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+
+.t_nav ul li {
+	display: inline;
+	padding: 0 50px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	box-sizing: border-box;
+	line-height: 2;
+}
+
+.t_nav ul li a {
+	color: #fff;
+	font-size: 23px;
+}
+
+.t_nav ul li:hover a {
+	opacity: 0.9;
+	color: #6d947f;
+	border-width: 100%;
+	transition: all 0.8s;
+	border-bottom: 2px solid #6d947f;
+}
+
+/*----------- top_img -----------*/
+#top_img {
+	float: left;
+	width: 10%;
+}
+
+#top_img ul {
+	width: 100%;
+	height: 90px;
+	text-align: center;
+}
+
+#top_img ul li {
+	line-height: 3.5;
+	display: inline;
+}
+
+#top_img ul li a {
+	margin-right: 30px;
+	font-size: 25px;
+	color: #fff;
+}
+
+#top_img ul li a:hover {
+	opacity: 0.3;
+	transition: all 0.5s;
+}
+
+/*------- 검색창 -------*/
+
+.text_h {
+	width: 300px;
+	height: 60px;
+	background: #6d947f;
+	position: absolute;
+	right: 1%;
+	top: 10%;
+	border-radius: 10px;
+	padding: 10px 0;
+	display: none;
+	z-index: 51;
+}
+
+.text_h::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 25%;
+	width: 0;
+	height: 0;
+	background: none;
+	display: block;
+	float: right;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent #6d947f transparent;
+}
+
+.frm {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.frm .input_h {
+	width: 100%;
+}
+
+.input_h input[type="search"] {
+	border: 0;
+	width: 80%;
+	height: 40px;
+	font-size: 14px;
+	padding: 10px;
+	background: #fff;
+	color: #4f645a;
+	border-radius: 5px 0 0 5px;
+	float: left;
+	cursor: pointer;
+}
+
+.input_h button {
+	width: 20%;
+	height: 40px;
+	border: 0;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.input_h a {
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	color: #4f645a;
+	cursor: pointer;
+}
+
+.input_h a:active {
+	color: #eee;
+}
+
+.input_h input[type="search"]:hover {
+	opacity: 0.5;
+}
+
+/*-- 스크롤감지--*/
+
+.nav-up {
+	top: -90px;
+}
+
+
+/*-------------- 모바일 메뉴----------*/
+.sidebar {
+	display: none;
+}
+#main {
+	display: none;
+}
+
+
+
+
+
+
+/*################## 반응형 ################## */
+
+/* 매우 작은 기기들 (모바일폰, SE/ 320px 보다 작은) */
+@media screen and (max-width:640px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	#header {display: none;}
+	
+	.text_h {display: none;}
+	
+	/*햄버거 버튼*/
+	#main {
+		width: 70px;
+    	height: 80px;
+		position: fixed;
+		display: block;
+		_transition: margin-right .5s;
+		padding: 0;
+		top: 0;
+		z-index: 9998;
+	}
+	
+	.openbtn {
+		font-size: 40px;
+		cursor: pointer;
+		background-color: none;
+		color: #000;
+		background: none;
+		padding: 10px 15px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.openbtn:hover {
+		color: #fff;
+		transition: all .5s ease;
+	}
+	
+	/*슬라이드 메뉴*/
+	.sidebar {
+		display: block;
+		padding-top: 15px;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		z-index: 9999;
+	}
+
+	.sidebar a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 50px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		
+	}
+
+	.sidebar a:hover {
+		color: #f1f1f1;
+		padding-left: 50px;
+	}
+
+	.sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
+
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:641px) and (max-width:767px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	#header {display: none;}
+	
+	.text_h {display: none;}
+	
+	/*햄버거 버튼*/
+	#main {
+		width: 70px;
+    	height: 80px;
+		position: fixed;
+		display: block;
+		_transition: margin-right .5s;
+		padding: 0;
+		top: 0;
+		z-index: 9998;
+		cursor: pointer;
+	}
+	
+	.openbtn {
+		font-size: 40px;
+		cursor: pointer;
+		background-color: none;
+		color: #000;
+		background: none;
+		padding: 10px 15px;
+		border: none;
+	}
+
+	.openbtn:hover {
+		color: #fff;
+		transition: all .5s ease;
+	}
+	
+	/*슬라이드 메뉴*/
+	.sidebar {
+		display: block;
+		padding-top: 15px;
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		z-index: 9999;
+	}
+
+	.sidebar a {
+		padding: 10px 10px 20px 32px;
+		text-decoration: none;
+		font-size: 50px;
+		color: #818181;
+		display: block;
+		transition: 0.6s;
+		
+	}
+
+	.sidebar a:hover {
+		color: #f1f1f1;
+		padding-left: 80px;
+	}
+
+	.sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px) {
+	/*--- t_logo ---- */
+	.t_logo {
+		width: 15%;
+
+	}
+	.t_logo a {
+		text-align: center;
+		font-size: 3em;
+	}
+
+	/*--- t_nav ---- */
+	.t_nav {
+		width: 70%;
+	}
+
+	.t_nav ul {
+		width: 100%;
+	}
+
+	.t_nav ul li {
+		padding: 0 20px;
+	}
+
+	.t_nav ul li a {
+		font-size: 18px;
+	}
+
+
+	/*----------- top_img -----------*/
+	#top_img {
+		float: left;
+		width: 15%;
+	}
+
+	/*------- 검색창 -------*/
+
+	.text_h {
+		top: 10%;
+	}
+
+	.text_h::before {
+		right: 10%;
+	}	
+}
+
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+	/*--- t_logo ---- */
+	.t_logo {
+		width: 15%;
+
+	}
+
+	.t_logo a {
+		text-align: center;
+		font-size: 3em;
+	}
+
+	/*--- t_nav ---- */
+	.t_nav {
+		width: 70%;
+	}
+
+	.t_nav ul {
+		width: 100%;
+	}
+
+	.t_nav ul li {
+		padding: 0 40px;
+	}
+
+	.t_nav ul li a {
+		font-size: 18px;
+	}
+
+
+	/*----------- top_img -----------*/
+	#top_img {
+		float: left;
+		width: 15%;
+	}
+
+	/*------- 검색창 -------*/
+
+	.text_h {
+		top: 10%;
+	}
+
+	.text_h::before {
+		right: 15%;
+	}	
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+
+	/*--- t_logo ---- */
+	.t_logo {
+		width: 15%;
+
+	}
+
+	.t_logo a {
+		text-align: center;
+		font-size: 3em;
+	}
+
+	/*--- t_nav ---- */
+	.t_nav {
+		width: 70%;
+	}
+
+	.t_nav ul {
+		width: 100%;
+	}
+
+	.t_nav ul li {
+		padding: 0 40px;
+	}
+
+	.t_nav ul li a {
+		font-size: 18px;
+	}
+
+
+	/*----------- top_img -----------*/
+	#top_img {
+		float: left;
+		width: 15%;
+	}
+
+	/*------- 검색창 -------*/
+
+	.text_h {
+		top: 10%;
+	}
+
+	.text_h::before {
+		right: 15%;
+	}
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+	/*------- 검색창 -------*/
+
+	.text_h {
+		right: 1%;
+	}
+
+	.text_h::before {
+		top: -20px;
+		right: 15%;
+	}	
+}

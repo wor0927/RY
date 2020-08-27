@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 , user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="IMAGE/favicon_hince.ico" type="image/x-icon" />
+    <link rel="icon" href="IMAGE/favicon_hince.ico" type="image/x-icon">
+    <title>anthracite</title>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+
+<script>
+    $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+
+
+
+        //mousewhell.min.js를 difine한 경우
+        //box 위에서 마우스 휠을 움직이면
+        $(".box").on("mousewheel", function(event, delta) {
+
+            //마우스 휠을 올렸을 때
+            if (delta > 0) {
+                //변수  prev에 현재 휠을 움직인 section에서 이전section의 offset().top위치 저장
+                try {
+                    var prev = $(this).prev().offset().top;
+                } catch (e) {}
+                //문서 전체를 prev에 저장된 위치로 이동
+                $("html,body").stop().animate({
+                    "scrollTop": prev
+                }, 1000);
+
+
+                //마우스 휠을 내렸을 때
+            } else if (delta < 0) {
+                //변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장 
+                try {
+                    var next = $(this).next().offset().top;
+                } catch (e) {}
+
+                //문서 전체를 next에 저장된 위치로 이동
+                $("html,body").stop().animate({
+                    "scrollTop": next
+                }, 1000);
+            }
+
+        });
+    });
+
+    //section02 (이미지 슬라이드)
+    var wnum = 0;
+    var wwslidingAuto = null;
+
+    function play_w(directw) {
+        if (directw == "right") {
+            wnum++;
+            if (wnum > 2) wnum = 0;
+        } else if (directw == "left") {
+            wnum--;
+            if (wnum < 0) wnum = 2;
+        } else {
+            wnum = directw;
+        }
+        if (wnum == 0) {
+            $(".viewImgList li.imglist1").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist2").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist0").animate({
+                'opacity': 1
+            }, 1000);
+        } else if (wnum == 1) {
+            $(".viewImgList li.imglist0").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist2").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist1").animate({
+                'opacity': 1
+            }, 1000);
+        } else if (wnum == 2) {
+            $(".viewImgList li.imglist0").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist1").animate({
+                'opacity': 0
+            }, 1000);
+            $(".viewImgList li.imglist2").animate({
+                'opacity': 1
+            }, 1000);
+        }
+
+        if (wwslidingAuto) clearTimeout(wwslidingAuto);
+        wwslidingAuto = setTimeout("play_w('right')", 5000);
+    }
+    var wwslidingAuto = setTimeout("play_w('right')", 5000);
+
+
+
+    //section03
+    $(window).scroll(function() {
+        var sct = $(window).scrollTop();
+        var visual = $(".box");
+        var Roll = $(".visual_Roll > div > .v_img01 > ul");
+
+        var tg = $(".visual_Roll");
+        var th = $(".visual_Roll").offset().top;
+
+        if (th <= sct) {
+            $('.fadein_down').animate({
+                'opacity': '1',
+                'margin-top': '0px',
+                'transition': '0s'
+            }, 1100);
+            $('.fadein_up').animate({
+                'opacity': '1',
+                'margin-top': '350px',
+                'transition': '0s'
+            }, 1100);
+            $('.v_text01').animate({
+                'opacity': '1'
+            }, 1000);
+            $('.v_ston').animate({
+                'opacity': '1'
+            }, 1000);
+        } else if (th > sct) {
+            $('.fadein_down').css({
+                'opacity': '0',
+                'margin-top': '-900px',
+                'max-height': '100%',
+                'transition': '1s'
+            });
+            $('.fadein_up').css({
+                'opacity': '0',
+                'margin-top': '500px',
+                'max-height': '100%',
+                'transition': '0.6s'
+            });
+            $('.v_text01').css({
+                'opacity': '0',
+                'transition': '0.6s'
+            });
+            $('.v_ston').animate({
+                'opacity': '0'
+            }, 450);
+        };
+
+    });
+
+
+    // section02   
+$(function(){
+      var interval = 500;
+
+    var slide;
+
+    $('section.back').click(function() {
+        var slide = $('.nautilus div:last-child').remove();
+        $('.nautilus').prepend(slide);
+    });  
+});
+
+    
+    
+</script>
+
+<body>
+    <!--skipnavi -->
+    <ul class="skipnavi">
+        <li><a href="#container">본문내용</a></li>
+    </ul>
+
+    <!-- wrap-->
+    <div id="wrap">
+        <!-- header-->
+        <header id="header"></header>
+
+        <div id="container">
+            <div class="section01 box">
+                <div class="main_menu">
+                    <ul>
+                        <li class="M_img"><img src="IMAGE/1.png" alt="히스토리미스터리"></li>
+                        <li class="M_img"><img src="IMAGE/2.png" alt="윌리엄브레이크"></li>
+                        <li class="M_img"><img src="IMAGE/3.png" alt="공기와꿈"></li>
+                        <li class="M_img"><img src="IMAGE/4.png" alt="버터펫트리오"></li>
+                    </ul>
+                    <ul>
+                        <li><img src="IMAGE/5.png" alt="파블로네루다"></li>
+                        <li><img src="IMAGE/6.png" alt="나쓰메소세키"></li>
+                        <li><img src="IMAGE/7.png" alt="Hario v60 Dripper"></li>
+                        <li><img src="IMAGE/8.png" alt="Anthracite Coffee Server"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <section class="nautilus">
+                    <div style="background: url('IMAGE/an01.jpg') center center / cover no-repeat "></div>
+                    <div style="background: url('IMAGE/an02.jpg') center center / cover no-repeat "></div>
+                    <div style="background:url('IMAGE/an03.jpg') center center / cover no-repeat "></div>
+                </section>
+                <section class="back">
+                    <div class="column">
+                        <h1>Anthracite</h1>
+                        <h2>Click Here</h2>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section03 box swiper-container">
+                <div class="visual_Roll swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="v_img01">
+                            <ul>
+                                <li><img class="fadein_down" src="IMAGE/Yeonhui02.png" alt="연희의 빛"></li>
+                                <li><img class="fadein_up" src="IMAGE/Yeonhui01.png" alt="연희의 그림자"></li>
+                            </ul>
+                        </div>
+                        <div class="v_text01">
+                            <ul>
+                                <li><span>연희</span></li>
+                                <li>
+                                    <p>어두운 통로를 지나 넓은 창으로 쏟아지는 빛을<br>마주하면, 잠시 시간은 아득해집니다.<br>이 여백은 어떤 감각으로 남게될까요.<br><br>발자국 소리와 그림자의 움직임이 익숙한듯<br>낯설게 다가오는 이곳에서, 단지 모든 빛을<br>흡수한 검정의 고요를 가늠하고 싶을 뿐입니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="v_img02">
+                            <ul>
+                                <li><img class="fadein_down" src="IMAGE/Seogyo.png" alt="연희의 그림자"></li>
+                            </ul>
+                        </div>
+                        <div class="v_text02">
+                            <ul>
+                                <li><span>서교</span></li>
+                                <li>
+                                    <p>서울 망원동 오래된 저택이었던 이곳은<br>바람과 바람 사이로 지나가는 시간의 소리,<br>커피를 만들어내는 몇몇 소리들만 존재합니다.<br><br>시간이 축적된 결과의 산물을 위해<br>정원을 가꾸고, 한 잔의 커피에 움직임을 더하는 적요한 이 공간은 결을 만드는 소리로만 채워집니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide">
+                        <div class="v_img03">
+                            <ul>
+                                <li><img class="fadein_up" src="IMAGE/Jeju01.png" alt="제주 숲과 자연"></li>
+                                <li><img class="fadein_down" src="IMAGE/Jeju02.png" alt="제주 시멘트사이 풀"></li>
+                            </ul>
+                        </div>
+                        <div class="v_text03">
+                            <ul>
+                                <li><span>제주</span></li>
+                                <li>
+                                    <p>천창을 통해 볕이 모이는 부분에 씨를 심고,<br>물을 주면 자라지 않을까?<br><br>아주 단순한 생각이 모여 공간을 만들었습니다.<br>돌이 많고 땅이 고르지 않은 공장 바닥에서 매일 볕을 받고 자라난 식물을 계속해서 키워나가는 것,<br>제주 한림읍 전분공장을 두 번째 앤트러사이트 공간으로 만들면서 우리는 하나의 생명력을 심었습니다.<br><br>온전한 자연의 흐름과 커피를 즐길 수 있는 공간이되길 바랍니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="v_ston"><img src="IMAGE/ston1.png" alt="ston"></div>
+                    </div>
+                    <div class="v_ston"><img src="IMAGE/ston1.png" alt="ston"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--// section03 -->
+        </div>
+        <!--// conrainer -->
+
+        <!-- footer-->
+        <div id="footer"></div>
+
+        <!-- // wrap -->
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerview: 1,
+            speed: 500,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+
+        });
+    </script>
+</body></html>
+
+
+
+
+
+

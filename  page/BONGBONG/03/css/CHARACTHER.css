@@ -1,0 +1,2512 @@
+/* [class*="span"]  클래스이름 스판 모두 다 / 스크롤 위치값 나오기  */
+
+@font-face {
+    font-family: 'vhs font';
+    src: url('VCR_OSD_MONO_1.001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@charset "utf-8"
+		html {
+			scroll-behavior: smooth;
+		}
+        body {width: 100%; height: 100%; box-sizing: border-box;}
+		
+
+/*---------------- content --------------------*/
+
+
+#content { width: 100%; height: 100%; margin-top: 50px; }
+
+.callout-title 
+{
+	margin: 0px;
+	padding: 0;
+}
+.text_name {
+	margin-left: 15px;
+	font-size: 15px; 
+	color: #777;
+}
+
+ul, li 
+{
+	list-style: none;
+	line-height: 35px;		/*줄간격 조절 : 행간*/
+	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+	word-spacing:3px;		/*단어사이 간격 : 어간*/
+}
+
+.text_li {padding-bottom: 10px; }
+.text_li_li {color: #fff;}
+
+.TEXT_ALL {padding-bottom: 100px;}
+
+/*-----------------------------------------------------------------------------------------*/
+		
+/* ★ 설국열차 ★ */
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 600px; margin: 0 auto;}
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li{ text-align: justify; font-size: 18px; font-weight: bold;  padding-bottom: 20px; }
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { color: #eee; }	
+
+/*-----------------------------------------------------------------------------------------*/
+
+        .Snowpiercer {  
+			width: 100%; 
+			margin: 0 auto; 
+			-webkit-transition: all 1s ease; transition: all 1s ease;
+			transition: all 1s ease; transition: all 1s ease;
+			padding-bottom: 300px;
+}
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+		.Snow-txt {	
+			width: 100%;
+			font-family: 'vhs font';
+			font-size: 10vw;
+			text-align: center;
+			color: #fff;
+		}
+		.Snow-txt:after {
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.Snow-img { 
+            width: 60%; 
+            margin: 0 auto;
+		}
+
+
+		/*-----------------------------------------------------------------------------------------*/
+			.C-img {transition:all 0.5s ease;}
+			.C-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible; 
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/curtis.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		
+			
+			.Cur-img {width: 30%; float: left;}
+				.C-img {
+					width: 350px; 
+					height:350px; 
+					margin-bottom: 30px;
+					background: #fff; 
+					border-radius: 50%; 
+					background-image: url(../img/mama_idle.gif);
+					background-size: 120px 160px;
+					background-repeat: no-repeat;
+					background-position: center;
+					visibility: visible; 
+					animation-delay: 0.5s; 
+					animation-name: rollInLeft;
+				}
+				@keyframes rollInLeft {
+					0% {
+						opacity: 1;
+						-webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						-ms-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			.Cur-txt {
+				width: 65%; 
+				float: left;
+                text-align: justify;
+			}
+			.bounceInRight {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInRight;
+			}
+		
+			@keyframes bounceInRight {
+				0% 	{
+					opacity: 0; 
+					transform: translate3d(3000px,0,0);
+					-webkit-transform: translate3d(3000px,0,0);
+    				-ms-transform: translate3d(3000px,0,0);	
+				}
+				60% {
+					opacity: 1; 
+					transform: translate3d(-25px,0,0);
+					-webkit-transform: translate3d(-25px,0,0);
+    				-ms-transform: translate3d(-25px,0,0);
+				}
+				75% {
+					transform: translate3d(10px,0,0);
+					-webkit-transform: translate3d(10px,0,0);
+    				-ms-transform: translate3d(10px,0,0);
+				}
+				90% {
+					transform: translate3d(-5px,0,0);
+					-webkit-transform: translate3d(-5px,0,0);
+    				-ms-transform: translate3d(-5px,0,0);
+				}
+				100% {
+					transform: none;
+					-webkit-transform: none;
+    				-ms-transform: none;
+				}
+				
+			}			
+		
+			
+		/*-----------------------------------------------------------------------------------------*/
+			.N-img {transition:all 0.5s ease;}
+			.N-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible;
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/songgangho.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.Nam-img {width: 30%; float: right;}
+				.N-img {
+						float: right;
+						width: 350px; 
+						height:350px; 
+						margin-bottom: 30px;
+						background: #fff; 
+						border-radius: 50%; 
+						background-image: url(../img/nam_run_left.gif);
+						background-size: 130px 170px;
+						background-repeat: no-repeat;
+						background-position: center;
+						visibility: visible; 
+						animation-delay: 0.5s; 
+						animation-name: rollInRight;
+					}
+				@keyframes rollInRight {
+					0% {
+						opacity: 0;
+						-webkit-transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+						-ms-transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+						transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			.Nam-txt {
+                width: 60%; 
+				float: right;
+                text-align: justify;
+			}
+			.bounceInLeft {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInLeft;
+			}
+		
+			@keyframes bounceInLeft {
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(-3000px,0,0);
+					-ms-transform: translate3d(-3000px,0,0);
+					transform: translate3d(-3000px,0,0);
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: translate3d(25px,0,0);
+					-ms-transform: translate3d(25px,0,0);
+					transform: translate3d(25px,0,0);
+				}
+				75% {
+					-webkit-transform: translate3d(-10px,0,0);
+					-ms-transform: translate3d(-10px,0,0);
+					transform: translate3d(-10px,0,0);
+				}
+				90% {
+					-webkit-transform: translate3d(5px,0,0);
+					-ms-transform: translate3d(5px,0,0);
+					transform: translate3d(5px,0,0);
+				}
+				100% {
+					-webkit-transform: none;
+					-ms-transform: none;
+					transform: none;
+				}
+				
+			}
+		/*-----------------------------------------------------------------------------------------*/
+			.Y-img {transition:all 0.5s ease;}
+			.Y-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible;
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/yona_back.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.Yo-img {width: 30%; float: left;}
+				.Y-img {
+					width: 350px; 
+					height:350px; 
+					margin-bottom: 30px;
+					background: #fff; 
+					border-radius: 50%; 
+					background-image: url(../img/yona_dath.gif);
+					background-size: 150px 160px;
+					background-repeat: no-repeat;
+					background-position: center;
+					visibility: visible; 
+					animation-delay: 0.5s; 
+					animation-name: rollInLeft;
+				}
+				@keyframes rollInLeft {
+					0% {
+						opacity: 0;
+						-webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						-ms-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			
+			.Yo-txt {
+                width: 65%; 
+				float: left;
+                text-align: justify;
+            }
+			.bounceInRight {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInRight;
+			}
+		
+			@keyframes bounceInRight {
+				0% 	{
+					opacity: 0; transform: translate3d(3000px,0,0);
+					-webkit-transform: translate3d(3000px,0,0);
+    				-ms-transform: translate3d(3000px,0,0);	
+				}
+				60% {
+					opacity: 1; transform: translate3d(-25px,0,0);
+					-webkit-transform: translate3d(-25px,0,0);
+    				-ms-transform: translate3d(-25px,0,0);
+				}
+				75% {
+					transform: translate3d(10px,0,0);
+					-webkit-transform: translate3d(10px,0,0);
+    				-ms-transform: translate3d(10px,0,0);
+				}
+				90% {
+					transform: translate3d(-5px,0,0);
+					-webkit-transform: translate3d(-5px,0,0);
+    				-ms-transform: translate3d(-5px,0,0);
+				}
+				100% {
+					transform: none;
+					-webkit-transform: none;
+    				-ms-transform: none;
+				}
+				
+			}	
+/*---------------------------------------------------------------------------------------------------*/	
+	/* ★ 옥자 ★ */
+
+  		.OKJA {  
+			width: 100%; 
+			margin: 0 auto; 		
+			-webkit-transition: all 1s ease; transition: all 1s ease;
+			transition: all 1s ease; transition: all 1s ease;
+			padding-bottom: 300px;
+		}
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+		.OKJA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 10vw; 
+			text-align: center;
+		}
+		.OKJA-img { 
+            width: 60%; 
+            margin: 0 auto;
+		}
+		.O-txt {color: #dfa29d;}
+		
+        /*------------------------------------------------------------------------------------*/
+		 #hippo, #Devils{ width: 100%; height: 600px; margin: 0 auto;}
+		.hip-txt ul li, .DE-txt  ul li {text-align: justify; font-size: 18px; font-weight: bold;  padding-bottom: 20px;}		
+		.hip-txt ul li h1, .DE-txt  ul li h1 { color: #eee; }	
+
+		/*--------------------------------------------------------------------------------------*/
+			.h-img {transition:all 0.5s ease;}
+			.h-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible; 
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/OKJA.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		
+			
+			.hip-img {width: 30%; float: left;}
+				.h-img {
+					width: 350px; 
+					height:350px; 
+					margin-bottom: 30px;
+					background: #fff; 
+					border-radius: 50%; 
+					background-image: url(../img/OKJA_idle.gif);
+					background-size: 180px 150px;
+					background-repeat: no-repeat;
+					background-position: center;
+					visibility: visible; 
+					animation-delay: 0.5s; 
+					animation-name: rollInLeft;
+				}
+				@keyframes rollInLeft {
+					0% {
+						opacity: 1;
+						-webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						-ms-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			.hip-txt {
+				width: 65%; 
+				float: left;
+                text-align: justify;
+			}
+			.bounceInRight {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInRight;
+			}
+		
+			@keyframes bounceInRight {
+				0% 	{
+					opacity: 0; transform: translate3d(3000px,0,0);
+					-webkit-transform: translate3d(3000px,0,0);
+    				-ms-transform: translate3d(3000px,0,0);	
+				}
+				60% {
+					opacity: 1; transform: translate3d(-25px,0,0);
+					-webkit-transform: translate3d(-25px,0,0);
+    				-ms-transform: translate3d(-25px,0,0);
+				}
+				75% {
+					transform: translate3d(10px,0,0);
+					-webkit-transform: translate3d(10px,0,0);
+    				-ms-transform: translate3d(10px,0,0);
+				}
+				90% {
+					transform: translate3d(-5px,0,0);
+					-webkit-transform: translate3d(-5px,0,0);
+    				-ms-transform: translate3d(-5px,0,0);
+				}
+				100% {
+					transform: none;
+					-webkit-transform: none;
+    				-ms-transform: none;
+				}
+				
+			}			
+			
+/*---------------------------------------------------------------------------------------------------*/		
+            .D-img {transition:all 0.5s ease;}
+			.D-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible;
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/OKJA_back.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			    
+            .DE-img {width: 30%; float: right;}
+				.D-img {
+						float: right;
+						width: 350px; 
+						height:350px; 
+						margin-bottom: 30px;
+						background: #fff; 
+						border-radius: 50%; 
+						background-image: url(../img/villain.gif);
+						background-size: 270px 160px;
+						background-repeat: no-repeat;
+						background-position: center;
+						visibility: visible; 
+						animation-delay: 0.5s; 
+						animation-name: rollInRight;
+					}
+				@keyframes rollInRight {
+					0% {
+						opacity: 0;
+						-webkit-transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+						-ms-transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+						transform: translate3d(150%,0,0) rotate3d(0,0,1,180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			.DE-txt {
+                width: 65%; 
+				float: right;
+                text-align: justify;
+        }
+			.bounceInLeft {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInLeft;
+			}
+		
+			@keyframes bounceInLeft {
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(-3000px,0,0);
+					-ms-transform: translate3d(-3000px,0,0);
+					transform: translate3d(-3000px,0,0);
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: translate3d(25px,0,0);
+					-ms-transform: translate3d(25px,0,0);
+					transform: translate3d(25px,0,0);
+				}
+				75% {
+					-webkit-transform: translate3d(-10px,0,0);
+					-ms-transform: translate3d(-10px,0,0);
+					transform: translate3d(-10px,0,0);
+				}
+				90% {
+					-webkit-transform: translate3d(5px,0,0);
+					-ms-transform: translate3d(5px,0,0);
+					transform: translate3d(5px,0,0);
+				}
+				100% {
+					-webkit-transform: none;
+					-ms-transform: none;
+					transform: none;
+				}
+				
+			}
+        
+
+/*-----------------------------------------------------------------------------------------*/
+
+        #songkangho {width: 100%; height: 600px; margin: 0 auto;}
+		.song-txt ul li { text-align: justify; font-size: 18px; font-weight: bold;  padding-bottom: 20px;}	
+		.song-txt ul li h1 { color: #eee; }	
+
+        /*-----------------------------------------------------------------------------------------*/	
+        .PARASITE {			
+			width: 100%; 
+			margin: 0 auto; 		
+			-webkit-transition: all 1s ease; transition: all 1s ease;
+			transition: all 1s ease; transition: all 1s ease;
+		}
+		.PARASITE:after {
+			background-image: url(../img/03_PARA.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+		.PARA-txt {	
+			width: 100%;
+			font-family: 'vhs font';
+			font-size: 10vw;
+			text-align: center;
+			color: #fff;
+		}
+		.PARA-img { 
+            width: 60%; 
+			height: 100vh;
+            _opacity: 0;
+            margin: 0 auto;
+		}
+		/*-----------------------------------------------------------------------------------------*/
+			.s-img {transition:all 0.5s ease;}
+			.s-img:hover {
+				-webkit-transform: rotateY(180deg);     /* Chrome and other webkit browsers */
+				-moz-transform: rotateY(180deg);        /* FF */
+				-o-transform: rotateY(180deg);          /* Opera */
+				-ms-transform: rotateY(180deg);         /* IE9 */
+				transform: rotateY(180deg);             /* W3C compliant browsers */
+				transition: all 0.1s infinite;
+				-webkit-backface-visibility: visible;
+				transform-origin: center center;
+				backface-visibility: visible;	
+				background-image: url(../img/song_back.png);
+				background-size: 350px 350px;
+				background-repeat: no-repeat;
+				background-position: center;
+				
+			}
+
+
+			.song-img {width: 30%; float: left;}
+				.s-img {
+					width: 350px; 
+					height:350px; 
+					margin-bottom: 30px;
+					background: #fff; 
+					border-radius: 50%; 
+					background-image: url(../img/song.gif);
+					background-size: 100px 140px;
+					background-repeat: no-repeat;
+					background-position: center;
+					visibility: visible; 
+					animation-delay: 0.5s; 
+					animation-name: rollInLeft;
+				}
+				@keyframes rollInLeft {
+					0% {
+						opacity: 1;
+						-webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						-ms-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+						transform: translate3d(-100%,0,0) rotate3d(0,0,1,-180deg);
+					}
+					100% {
+						opacity: 1;
+						-webkit-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+				}
+			.song-txt {
+				width: 65%; 
+				float: left;
+                text-align: justify;
+			}
+			.bounceInRight {
+				visibility: visible; 
+				animation-delay: 1.5s; 
+				animation-name: bounceInRight;
+			}
+		
+			@keyframes bounceInRight {
+				0% 	{
+					opacity: 0; transform: translate3d(3000px,0,0);
+					-webkit-transform: translate3d(3000px,0,0);
+    				-ms-transform: translate3d(3000px,0,0);	
+				}
+				60% {
+					opacity: 1; transform: translate3d(-25px,0,0);
+					-webkit-transform: translate3d(-25px,0,0);
+    				-ms-transform: translate3d(-25px,0,0);
+				}
+				75% {
+					transform: translate3d(10px,0,0);
+					-webkit-transform: translate3d(10px,0,0);
+    				-ms-transform: translate3d(10px,0,0);
+				}
+				90% {
+					transform: translate3d(-5px,0,0);
+					-webkit-transform: translate3d(-5px,0,0);
+    				-ms-transform: translate3d(-5px,0,0);
+				}
+				100% {
+					transform: none;
+					-webkit-transform: none;
+    				-ms-transform: none;
+				}
+				
+			}			
+
+
+/*★★★★★★★★★★★★★★★ 반응형시작 ★★★★★★★★★★★★★★★★★★★★★*/
+
+
+@media all and (min-width: 1202px) and (max-width: 1499px){
+
+/*---------------------------------------------------------------------------------------------------*/
+		#content { width: 100%; height: 100%; margin-top: 50px; }
+
+		.TEXT_ALL { 
+			padding-bottom: 100px;
+
+		}
+		.text_name {
+			margin-left: 15px;
+			font-size: 15px; 
+			_font-weight: normal; 
+			color: #777;
+		}
+
+		ul, li 
+		{
+			list-style: none;
+			line-height: 28px;		/*줄간격 조절 : 행간*/
+			letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+			word-spacing:3px;		/*단어사이 간격 : 어간*/
+		}
+
+		.text_li {padding-bottom: 10px; }
+		.text_li_li {color: #fff;}
+/*---------------------------------------------------------------------------------------------------*/
+/* ★ 설국열차 ★ */
+
+		.Snowpiercer {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		}	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%;
+			font-family: 'vhs font'; 
+			font-size: 10vw; 
+			text-align: center;
+            color: #fff;
+			
+		}
+	
+		.Snow-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 400px; margin: 0 auto;}
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li{ text-align: justify; font-size: 18px; font-weight: bold;}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { color: #eee; }	
+	
+/*------------------------------------------------------------------------------------*/
+	/* ★ 옥자 ★ */
+		.OKJA {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+
+		.OKJA-txt {	
+            width: 100%;
+			font-family: 'vhs font'; 
+			font-size: 10vw;  
+			text-align: center;
+		}
+
+		.OKJA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+
+		#hippo, #Devils { width: 100%; height: 400px; margin: 0 auto;}
+		.hip-txt ul li, .DE-txt  ul li { text-align: justify; font-size: 18px; font-weight: bold;}
+		.hip-txt ul li h1, .DE-txt  ul li h1 { color: #eee;  }	
+	
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+		#content > .PARASITE {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+	
+		.PARASITE:after {
+			background-image: url(../img/03_PARA.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 10vw; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.PARA-img { 
+            width: 90%;  
+            margin: 0 auto;
+		}
+	
+        #songkangho {width: 100%; height: 300px; margin: 0 auto;}
+		.song-txt ul li { text-align: justify; font-size: 18px; font-weight: bold;}
+		.song-txt ul li h1 { color: #eee; }
+	
+}		
+
+/*---------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 902px) and (max-width: 1201px){
+
+
+		.text_name {
+			margin-left: 15px;
+			font-size: 15px; 
+			color: #777;
+		}
+
+		ul, li 
+		{
+			list-style: none;
+			line-height: 35px;		/*줄간격 조절 : 행간*/
+			letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+			word-spacing:3px;		/*단어사이 간격 : 어간*/
+			padding-left: 0;
+		}
+
+	
+		.Cur-img { width: 35%; float: left;}
+		.Cur-txt { width: 60%; float: right; text-align: justify; }
+	
+		.Nam-img { width: 30%; float: right;}
+		.Nam-txt { width: 60%; float: left; text-align: justify;  }
+	
+		.Yo-img { width: 35%; float: left;}
+		.Yo-txt { width: 60%; float: right; text-align: justify; }
+	
+		.hip-img { width: 35%; float: left;}
+		.hip-txt { width: 60%; float: right; text-align: justify; }
+	
+        .DE-img { width: 30%; float: right;}
+		.DE-txt { width: 60%; float: left; text-align: justify;  }
+	
+		.song-img { width: 35%; float: left;}
+		.song-txt { width: 60%; float: right; text-align: justify; }
+	
+/*---------------------------------------------------------------------------------------------------*/
+/* ★ 설국열차 ★ */
+
+		.Snowpiercer {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		}	
+	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%;
+			font-family: 'vhs font'; 
+			font-size: 100px; 
+			text-align: center;
+            color: #fff;
+			
+		}
+	
+		.Snow-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 400px; margin: 0 auto;}
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li{ text-align: justify; font-size: 17px; font-weight: bold;}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { color: #eee; }	
+	
+/*------------------------------------------------------------------------------------*/
+	/* ★ 옥자 ★ */
+	
+		#content > .OKJA {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+
+		.OKJA-txt {	
+            width: 100%;
+			font-family: 'vhs font'; 
+			font-size: 100px; 
+			text-align: center;
+		}
+
+		.OKJA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+
+		#hippo, #Devils { width: 100%; height: 400px; margin: 0 auto;}
+		.hip-txt ul li, .DE-txt  ul li{ text-align: justify; font-size: 17px;  font-weight: bold;}
+		.hip-txt ul li h1, .DE-txt  ul li h1 { color: #eee;  }	
+	
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+		#content > .PARASITE {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+		} 
+	
+		.PARASITE:after {
+			background-image: url(../img/03_PARA.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.4.5!important;
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%;
+			font-family: 'vhs font'; 
+			font-size: 100px;  
+			text-align: center;
+            color: #fff;
+		}
+	
+		.PARA-img { 
+            width: 90%;  
+            margin: 0 auto;
+		}
+	
+        #songkangho {width: 100%; height: 300px; margin: 0 auto;}
+		.song-txt ul li { text-align: justify; font-size: 17px;  font-weight: bold;}
+		.song-txt ul li h1 { color: #eee; }
+
+}
+
+/*----------------------------------- mobile 모바일, tablet 태블릿 -------------------------------------*/
+
+@media all and (min-width: 500px) and (max-width: 901px){
+
+ul, li {
+	list-style: none;
+	line-height: 34px;		/*줄간격 조절 : 행간*/
+	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+	word-spacing:3px;		/*단어사이 간격 : 어간*/
+	padding-left: 0;
+}
+
+.text_li_li {color: #fff;}
+	
+.S-txt,
+.O-txt,
+.P-txt { font-size: 23vw;}
+	
+.C-img,
+.N-img,
+.Y-img, 
+.h-img,
+.D-img,
+.s-img { 
+	background: none; 		
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+	
+.C-img {
+	background-image: url(../img/mama_idle.gif);
+	background-size: 150px 220px;
+}
+	
+.N-img {
+		background-image: url(../img/nam_run_left.gif);
+		background-size: 160px 220px;
+	}
+	
+.Y-img {
+	background-image: url(../img/yona_dath.gif);
+	background-size: 200px 220px;
+}
+.h-img {
+	background-image: url(../img/OKJA_idle.gif);
+	background-size: 270px 220px;
+}
+	
+.D-img {
+		background-image: url(../img/villain.gif);
+		background-size: 360px 220px;
+	}
+	
+.s-img {
+	background-image: url(../img/song.gif);
+	background-size: 160px 220px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+	.Snowpiercer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+
+	.OKJA {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+	.PARASITE {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* ★ 설국열차 ★ */
+	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.Snow-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+		.Snow-img:after {clear: both;}
+	
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li { 
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { 
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 850px; margin: 0 auto; }
+
+	
+		.C-img {width: 320px; height: 320px; }
+		.N-img {width: 320px; height: 320px; }
+		.Y-img {width: 320px; height: 320px; }
+	
+	
+		/*-- 커티스 --*/
+		.Cur-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Cur-img .C-img {margin: 0 auto;  float: none;}
+	
+		.Cur-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Cur-txt ul {width: 90%; margin: 0 auto;} 
+		
+		.Cur-txt .text_li, 
+		.Nam-txt .text_li, 
+		.Yo-txt .text_li  
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+
+	
+	
+		/*-- 남궁민수 --*/
+		.Nam-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.Nam-img .N-img {margin: 0 auto; float: none; }
+	
+		.Nam-txt {width: 100%; _float: none;margin: 0 auto; padding-bottom: 50px;}
+		.Nam-txt ul {width: 80%; margin: 0 auto;} 
+		
+
+
+	
+		/*-- 요나 --*/
+		.Yo-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Yo-img  .Y-img {margin: 0 auto;  float: none;}
+	
+		.Yo-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Yo-txt ul {width: 80%; margin: 0 auto;} 
+
+
+	
+/*------------------------------------------------------------------------------------*/
+/* ★ 옥자 ★ */
+	
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+		.OKJA-img:after {clear: both;}
+	
+		.OKJA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+
+		.OKJA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+		#hippo, #Devils{ width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.h-img {width: 320px; height: 320px; }
+		.D-img {width: 320px; height: 320px; }
+	
+		.hip-txt ul li, .DE-txt  ul li {
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.hip-txt ul li h1, .DE-txt  ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+
+	
+		/*-- 옥자 --*/
+		.hip-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.hip-img .h-img {margin: 0 auto;  float: none;}
+	
+		.hip-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.hip-txt  ul {width: 80%; margin: 0 auto;} 
+	
+		.hip-txt  .text_name { display: none;}
+		.hip-txt  h1:after { content: "옥자"; position: absolute; left: 48.5%; top: 31.8%; color: #777; font-size: 12px; font-weight: bold;}
+	
+		.hip-txt .text_li,
+		.DE-txt  .text_li
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+	
+		/*-- 악당 --*/
+		.DE-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.DE-img .D-img {margin: 0 auto; float: none; }
+	
+		.DE-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;}
+		.DE-txt ul {width: 80%; margin: 0 auto;} 
+		
+		.DE-txt  .text_name { display: none;}
+		.DE-txt h1:after { content: "악당"; position: absolute; left: 48.5%; top:70.5%; color: #777; font-size: 18px; font-weight: bold;}
+		
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+	
+		.PARASITE:after {
+			background-image: url(../img/para_01.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.PARA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+        #songkangho { width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.s-img {width: 320px; height: 320px; }
+
+	
+		.song-txt ul li { 			
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.song-txt ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		.song-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.song-img .s-img {margin: 0 auto;  float: none;}
+	
+		.song-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.song-txt ul {width: 80%; margin: 0 auto;} 
+	
+
+		.song-txt .text_li 
+		{
+
+			color: #b6b6b6;
+			font-weight: normal;
+		}	
+	
+	
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 376px) and (max-width: 499px){
+	
+ul, li {
+	list-style: none;
+	line-height: 34px;		/*줄간격 조절 : 행간*/
+	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+	word-spacing:3px;		/*단어사이 간격 : 어간*/
+	padding-left: 0;
+}
+
+.text_li_li {color: #fff;}
+	
+.S-txt,
+.O-txt,
+.P-txt { font-size: 23vw;}
+	
+.C-img,
+.N-img,
+.Y-img, 
+.h-img,
+.D-img,
+.s-img { 
+	background: none; 		
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+	
+.C-img {
+	background-image: url(../img/mama_idle.gif);
+	background-size: 150px 220px;
+}
+	
+.N-img {
+		background-image: url(../img/nam_run_left.gif);
+		background-size: 160px 220px;
+	}
+	
+.Y-img {
+	background-image: url(../img/yona_dath.gif);
+	background-size: 200px 220px;
+}
+.h-img {
+	background-image: url(../img/OKJA_idle.gif);
+	background-size: 270px 220px;
+}
+	
+.D-img {
+		background-image: url(../img/villain.gif);
+		background-size: 360px 220px;
+	}
+	
+.s-img {
+	background-image: url(../img/song.gif);
+	background-size: 160px 220px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+	.Snowpiercer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+
+	.OKJA {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+	.PARASITE {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* ★ 설국열차 ★ */
+	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.Snow-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+		.Snow-img:after {clear: both;}
+	
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li { 
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { 
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 1000px; margin: 0 auto; }
+
+	
+		.C-img {width: 320px; height: 320px; }
+		.N-img {width: 320px; height: 320px; }
+		.Y-img {width: 320px; height: 320px; }
+	
+	
+		/*-- 커티스 --*/
+		.Cur-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Cur-img .C-img {margin: 0 auto;  float: none;}
+	
+		.Cur-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Cur-txt ul {width: 90%; margin: 0 auto;} 
+		
+		.Cur-txt .text_li, 
+		.Nam-txt .text_li, 
+		.Yo-txt .text_li  
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+
+	
+	
+		/*-- 남궁민수 --*/
+		.Nam-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.Nam-img .N-img {margin: 0 auto; float: none; }
+	
+		.Nam-txt {width: 100%; _float: none;margin: 0 auto; padding-bottom: 50px;}
+		.Nam-txt ul {width: 80%; margin: 0 auto;} 
+		
+
+
+	
+		/*-- 요나 --*/
+		.Yo-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Yo-img  .Y-img {margin: 0 auto;  float: none;}
+	
+		.Yo-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Yo-txt ul {width: 80%; margin: 0 auto;} 
+
+
+	
+/*------------------------------------------------------------------------------------*/
+/* ★ 옥자 ★ */
+	
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+		.OKJA-img:after {clear: both;}
+	
+		.OKJA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+
+		.OKJA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+		#hippo, #Devils{ width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.h-img {width: 320px; height: 320px; }
+		.D-img {width: 320px; height: 320px; }
+	
+		.hip-txt ul li, .DE-txt  ul li {
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.hip-txt ul li h1, .DE-txt  ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+
+	
+		/*-- 옥자 --*/
+		.hip-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.hip-img .h-img {margin: 0 auto;  float: none;}
+	
+		.hip-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.hip-txt  ul {width: 80%; margin: 0 auto;} 
+	
+		.hip-txt  .text_name { display: none;}
+		.hip-txt  h1:after { content: "옥자"; position: absolute; left: 48.5%; top: 31.8%; color: #777; font-size: 12px; font-weight: bold;}
+	
+		.hip-txt .text_li,
+		.DE-txt  .text_li
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+	
+		/*-- 악당 --*/
+		.DE-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.DE-img .D-img {margin: 0 auto; float: none; }
+	
+		.DE-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;}
+		.DE-txt ul {width: 80%; margin: 0 auto;} 
+		
+		.DE-txt  .text_name { display: none;}
+		.DE-txt h1:after { content: "악당"; position: absolute; left: 48.5%; top:70.5%; color: #777; font-size: 18px; font-weight: bold;}
+		
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+	
+		.PARASITE:after {
+			background-image: url(../img/para_01.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.PARA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+        #songkangho { width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.s-img {width: 320px; height: 320px; }
+
+	
+		.song-txt ul li { 			
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.song-txt ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		.song-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.song-img .s-img {margin: 0 auto;  float: none;}
+	
+		.song-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.song-txt ul {width: 80%; margin: 0 auto;} 
+	
+
+		.song-txt .text_li 
+		{
+
+			color: #b6b6b6;
+			font-weight: normal;
+		}	
+	
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+@media all  and (min-width: 321px) and (max-width: 375px){
+	
+ul, li {
+	list-style: none;
+	line-height: 34px;		/*줄간격 조절 : 행간*/
+	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+	word-spacing:3px;		/*단어사이 간격 : 어간*/
+	padding-left: 0;
+}
+
+.text_li_li {color: #fff;}
+	
+.S-txt,
+.O-txt,
+.P-txt { font-size: 23vw;}
+	
+.C-img,
+.N-img,
+.Y-img, 
+.h-img,
+.D-img,
+.s-img { 
+	background: none; 		
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+	
+.C-img {
+	background-image: url(../img/mama_idle.gif);
+	background-size: 150px 220px;
+}
+	
+.N-img {
+		background-image: url(../img/nam_run_left.gif);
+		background-size: 160px 220px;
+	}
+	
+.Y-img {
+	background-image: url(../img/yona_dath.gif);
+	background-size: 200px 220px;
+}
+.h-img {
+	background-image: url(../img/OKJA_idle.gif);
+	background-size: 270px 220px;
+}
+	
+.D-img {
+		background-image: url(../img/villain.gif);
+		background-size: 360px 220px;
+	}
+	
+.s-img {
+	background-image: url(../img/song.gif);
+	background-size: 160px 220px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+	.Snowpiercer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+
+	.OKJA {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+	.PARASITE {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* ★ 설국열차 ★ */
+	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.Snow-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+		.Snow-img:after {clear: both;}
+	
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li { 
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { 
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 35px; 
+			font-weight: bold;
+		}
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 1100px; margin: 0 auto; }
+
+	
+		.C-img {width: 320px; height: 320px; }
+		.N-img {width: 320px; height: 320px; }
+		.Y-img {width: 320px; height: 320px; }
+	
+	
+		/*-- 커티스 --*/
+		.Cur-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Cur-img .C-img {margin: 0 auto;  float: none;}
+	
+		.Cur-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Cur-txt ul {width: 90%; margin: 0 auto;} 
+		
+		.Cur-txt .text_li, 
+		.Nam-txt .text_li, 
+		.Yo-txt .text_li  
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+
+	
+	
+		/*-- 남궁민수 --*/
+		.Nam-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.Nam-img .N-img {margin: 0 auto; float: none; }
+	
+		.Nam-txt {width: 100%; _float: none;margin: 0 auto; padding-bottom: 50px;}
+		.Nam-txt ul {width: 80%; margin: 0 auto;} 
+		
+
+
+	
+		/*-- 요나 --*/
+		.Yo-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.Yo-img  .Y-img {margin: 0 auto;  float: none;}
+	
+		.Yo-txt {width: 95%; margin: 0 auto; padding-bottom: 50px;  }
+		.Yo-txt ul {width: 80%; margin: 0 auto;} 
+
+
+	
+/*------------------------------------------------------------------------------------*/
+/* ★ 옥자 ★ */
+	
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+		.OKJA-img:after {clear: both;}
+	
+		.OKJA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+
+		.OKJA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+		#hippo, #Devils{ width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.h-img {width: 320px; height: 320px; }
+		.D-img {width: 320px; height: 320px; }
+	
+		.hip-txt ul li, .DE-txt  ul li {
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.hip-txt ul li h1, .DE-txt  ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+
+	
+		/*-- 옥자 --*/
+		.hip-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.hip-img .h-img {margin: 0 auto;  float: none;}
+	
+		.hip-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.hip-txt  ul {width: 80%; margin: 0 auto;} 
+	
+		.hip-txt  .text_name { display: none;}
+		.hip-txt  h1:after { content: "옥자"; position: absolute; left: 48.5%; top: 31.8%; color: #777; font-size: 12px; font-weight: bold;}
+	
+		.hip-txt .text_li,
+		.DE-txt  .text_li
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+	
+		/*-- 악당 --*/
+		.DE-img {width: 100%; height: 350px; float: none; margin: 0 auto; }
+		.DE-img .D-img {margin: 0 auto; float: none; }
+	
+		.DE-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;}
+		.DE-txt ul {width: 80%; margin: 0 auto;} 
+		
+		.DE-txt  .text_name { display: none;}
+		.DE-txt h1:after { content: "악당"; position: absolute; left: 48.5%; top:70.5%; color: #777; font-size: 18px; font-weight: bold;}
+		
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+	
+		.PARASITE:after {
+			background-image: url(../img/para_01.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+		}
+	
+		.PARA-img { 
+            width: 90%; 
+            margin: 0 auto;
+		}
+	
+        #songkangho { width: 100%; height: 850px; margin: 0 auto;}
+
+	
+		.s-img {width: 320px; height: 320px; }
+
+	
+		.song-txt ul li { 			
+			text-align: justify; 
+			font-size: 20px; 
+			font-weight: bold;
+		}
+		.song-txt ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		.song-img {width: 100%; height: 350px;  float: none; margin: 0 auto;}
+		.song-img .s-img {margin: 0 auto;  float: none;}
+	
+		.song-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.song-txt ul {width: 80%; margin: 0 auto;} 
+	
+
+		.song-txt .text_li 
+		{
+
+			color: #b6b6b6;
+			font-weight: normal;
+		}	
+	
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 320px){
+	
+ul, li {
+	list-style: none;
+	line-height: 34px;		/*줄간격 조절 : 행간*/
+	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
+	word-spacing:3px;		/*단어사이 간격 : 어간*/
+	padding-left: 0;
+}
+
+.text_li_li {color: #fff;}
+.TEXT_ALL {
+     padding-bottom: 0px; 
+}
+	
+.Cur-txt ul li, 
+.Nam-txt ul li, 
+.Yo-txt ul li,
+.hip-txt ul li, 
+.DE-txt  ul li,
+.song-txt ul li
+{
+	font-size: 13px;
+    padding-bottom: 0px; 
+}
+	
+.Cur-txt ul li h1, 
+.Nam-txt ul li h1, 
+.Yo-txt ul li h1 
+	
+{
+     padding-bottom: 0px; 
+}
+	
+
+.S-txt,
+.O-txt,
+.P-txt { font-size: 18vw;}
+	
+.C-img,
+.N-img,
+.Y-img, 
+.h-img,
+.D-img,
+.s-img { 
+	background: none; 		
+	background-repeat: no-repeat;
+	background-position: center;
+}
+	
+	
+.C-img {
+	background-image: url(../img/mama_idle.gif);
+	background-size: 110px 150px;
+}
+	
+.N-img {
+		background-image: url(../img/nam_run_left.gif);
+		background-size: 120px 160px;
+	}
+	
+.Y-img {
+	background-image: url(../img/yona_dath.gif);
+	background-size: 160px 150px;
+}
+.h-img {
+	background-image: url(../img/OKJA_idle.gif);
+	background-size: 200px 150px;
+}
+	
+.D-img {
+		background-image: url(../img/villain.gif);
+		background-size: 240px 140px;
+	}
+	
+.s-img {
+	background-image: url(../img/song.gif);
+	background-size: 140px 180px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+	.Snowpiercer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+
+	.OKJA {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+	.PARASITE {
+    width: 100%;
+	height: 1400px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	}
+	
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/* ★ 설국열차 ★ */
+	
+		.Snowpiercer:after {
+			background-image: url(../img/03_SNOW.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100vh;
+		}
+		.Snow-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+			padding-bottom: 50px;
+		}
+	
+		.Snow-img { 
+            width: 100%; 
+            margin: 0 auto;
+		}
+		.Snow-img:after {clear: both;}
+	
+		.Cur-txt ul li, .Nam-txt ul li, .Yo-txt ul li { 
+			text-align: justify;  
+			font-weight: bold;
+		}
+		.Cur-txt ul li h1, .Nam-txt ul li h1, .Yo-txt ul li h1 { 
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 30px; 
+			font-weight: bold;
+		}
+	
+		#Curtis, #Namgungminsu, #Yona { width: 100%; height: 800px;margin: 0 auto; }
+	
+		.C-img, .N-img, .Y-img {width: 250px; height: 250px; }
+
+		.Cur-txt .text_li, 
+		.Nam-txt .text_li, 
+		.Yo-txt .text_li  
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+	
+		/*-- 커티스 --*/
+		.Cur-img {width: 100%; height: 250px;  float: none; margin: 0 auto;}
+		.Cur-img .C-img {margin: 0 auto;  float: none;}
+	
+		.Cur-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Cur-txt ul {width: 80%; margin: 0 auto;} 
+
+	
+		/*-- 남궁민수 --*/
+		.Nam-img {width: 100%; height: 250px;float: none; margin: 0 auto; }
+		.Nam-img .N-img {margin: 0 auto; float: none; }
+	
+		.Nam-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;}
+		.Nam-txt ul {width: 80%; margin: 0 auto;} 
+		
+
+
+	
+		/*-- 요나 --*/
+		.Yo-img {width: 100%; height: 250px; float: none; margin: 0 auto;}
+		.Yo-img  .Y-img {margin: 0 auto;  float: none;}
+	
+		.Yo-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.Yo-txt ul {width: 80%; margin: 0 auto;} 
+
+
+	
+/*------------------------------------------------------------------------------------*/
+/* ★ 옥자 ★ */
+	
+	
+		.OKJA:after {
+			background-image: url(../img/02_OKJA.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+		.OKJA-img:after {clear: both;}
+	
+		.OKJA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+			padding-bottom: 50px;
+		}
+
+		.OKJA-img { 
+          	width: 100%; 
+            margin: 0 auto;
+		}
+	
+		#hippo, #Devils{ width: 100%; height: 800px; margin: 0 auto;}
+		.h-img, .D-img { width: 250px; height: 250px;margin: 0 auto;  float: none;}
+	
+		.hip-txt ul li, .DE-txt  ul li {
+			text-align: justify; 
+			font-weight: bold;
+		}
+	
+		.hip-txt ul li h1, .DE-txt  ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+		.hip-txt .text_li,
+		.DE-txt  .text_li
+		{
+			color: #b6b6b6;
+			font-weight: normal;
+		}
+	
+	
+
+	
+		/*-- 옥자 --*/
+		.hip-img {width: 100%; height: 250px; float: none; margin: 0 auto;}
+		.hip-img .h-img {margin: 0 auto;  float: none;}
+	
+		.hip-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.hip-txt  ul {width: 80%; margin: 0 auto;} 
+	
+
+
+	
+		/*-- 악당 --*/
+		.DE-img {width: 100%;height: 250px; float: none; margin: 0 auto; }
+		.DE-img .D-img {margin: 0 auto; float: none; }
+	
+		.DE-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;}
+		.DE-txt ul {width: 80%; margin: 0 auto;} 
+		
+
+
+		
+/*------------------------------------------------------------------------------------*/
+	/* ★ 기생충 ★ */
+	
+		.PARASITE:after {
+			background-image: url(../img/para_01.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			top:0;
+			left:0;
+			position:absolute;
+			background-size:100%;
+			opacity:0.5!important;
+			filter:alpha(opacity=50);
+			z-index:-1;
+			content:"";
+			width:100%;
+			height:100%;
+		}
+
+
+		.PARA-txt {	
+            width: 100%; 
+			font-family: 'vhs font'; 
+			font-size: 40px; 
+			text-align: center;
+            color: #fff;
+			padding-bottom: 50px;
+		}
+	
+		.PARA-img { 
+            width: 100%; 
+            margin: 0 auto;
+		}
+	
+        #songkangho { width: 100%; height: 800px;  margin: 0 auto;}
+
+	
+		.s-img {width: 250px; height: 250px; }
+
+	
+		.song-txt ul li { 			
+			text-align: justify; 
+			font-weight: bold;
+		}
+		.song-txt ul li h1 {
+			color: #eee; 
+			padding-bottom: 30px;
+			text-align: center; 
+			font-size: 25px; 
+			font-weight: bold;
+		}
+	
+		.song-img {width: 100%; height: 250px;  float: none; margin: 0 auto;}
+		.song-img .s-img {margin: 0 auto;  float: none;}
+	
+		.song-txt {width: 100%; margin: 0 auto; padding-bottom: 50px;  }
+		.song-txt ul {width: 80%; margin: 0 auto;} 
+	
+
+		.song-txt .text_li 
+		{
+
+			color: #b6b6b6;
+			font-weight: normal;
+		}	
+	
+}
+
+
+
+/*		wheel button		*/
+#mouse 
+{ 
+	width: 25px;
+    height: 45px;
+    border: 3px solid #fff;
+    border-radius: 20px 20px;
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+	_opacity: .8;
+	_box-shadow: 0px 0px 8px 2px #999;
+	z-index: 2;
+}
+
+
+#mouse:before {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+	opacity: 0;
+    height: 9px;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    background: #fff;
+    content: "";
+	-moz-animation: blink 1s linear infinite;
+	-ms-animation: blink 1s linear infinite;
+	-o-animation: blink 1s linear infinite;
+	-webkit-animation: blink 1s linear infinite;
+	animation: blink 1s linear infinite;	
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; top: 3px;}
+	10% {top: 5px;}
+	25% {top: 7px;}
+	50% {top: 9px;}
+	75% {top: 11px;}
+    100% {top: 13px; }
+}
+@-moz-keyframes blink {
+    0% { opacity:1; top: 3px;}
+	10% {top: 5px;}
+	25% {top: 7px;}
+	50% {top: 9px;}
+	75% {top: 11px;}
+    100% {top: 13px; }
+}
+@keyframes blink {
+    0% { opacity:1; top: 3px;}
+	10% {top: 5px;}
+	25% {top: 7px;}
+	50% {top: 9px;}
+	75% {top: 11px;}
+    100% {top: 13px; opacity: 0;}
+}
+
+
+/*------------------------------------------------------------------*/
+/* DOWN button		*/
+/*
+.DOWN .down {
+    font-size: 50px;
+}
+a.DOWN {
+	position: fixed;
+	left: 50%;
+	bottom: 50px;
+	display: none;
+	color: #fff;
+	-moz-animation: blink 1.0s linear infinite;
+	-ms-animation: blink 1.0s linear infinite;
+	-o-animation: blink 1.0s linear infinite;
+	-webkit-animation: blink 1.0s linear infinite;
+	animation: blink 1.0s linear infinite;
+}	
+
+@-webkit-keyframes blink {
+    0% {color: 0}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+*/
+
+/* TOP button		*/
+/*
+.UP .up {
+    font-size: 50px;
+}
+a.UP {
+	position: fixed;
+	left: 50%;
+	bottom: 50px;
+	display: none;
+	color: #fff;
+	-moz-animation: blink 1.0s linear infinite;
+	-ms-animation: blink 1.0s linear infinite;
+	-o-animation: blink 1.0s linear infinite;
+	-webkit-animation: blink 1.0s linear infinite;
+	animation: blink 1.0s linear infinite;
+}	
+
+@-webkit-keyframes blink {
+    0% {color: 0}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+*/
+
+/*--------------------------위치값 알아내기--------------------------*/
+
+/*		
+#log{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100px;
+	height:50px;
+	color:red;
+    z-index: 100;
+}	
+*/
+/*------------------------------------------------------------------*/

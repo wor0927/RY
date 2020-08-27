@@ -1,0 +1,103 @@
+<!--<link rel="stylesheet" href="css/hince.css">-->
+<link rel="stylesheet" href="css/header.css">
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+
+<div id="header">
+	<div class="t_logo"><a href="index.html">Hince</a></div>
+	<div class="t_nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li class="review"><a href="review.html">Review</a></li>
+		</ul>
+	</div>
+	<div id="top_img">
+		<ul>
+			<li><a href="login.html"><i class="far fa-user ico1"></i></a></li>
+			<li><a href="#" id="s_bt"><i class="fas fa-search ico2"></i></a></li>
+		</ul>
+	</div>
+</div>
+<!-- 검색창-->
+<div class="text_h">
+	<form action="#" class="frm">
+		<div class="input_h">
+			<input type="search" placeholder="Search">
+			<button><a href="#"><i class="fas fa-search"></i></a></button>
+		</div>
+	</form>
+</div>
+
+<!--##### 모바일 메뉴######-->
+<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<a href="index.html">HOME</a>
+	<a href="#">SHOP</a>
+	<a href="review.html">REVIEW</a>
+</div>
+
+<div id="main">
+	<button class="openbtn" onclick="openNav()">☰</button>
+</div>
+
+
+
+<!-- 스크립트 -->
+<script>
+	////////////////////검색 애니메이션//////////////////////
+	var s_bt = $("#s_bt");
+	var text_h = $(".text_h");
+
+	s_bt.click(function() {
+		text_h.fadeToggle();
+	});
+	s_bt.click(function() {
+		text_h.clearQueue();
+	});
+
+
+	//////////////// 헤더 스크롤 (숨겼다가 나오기) //////////////////////
+
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('header').outerHeight();
+
+	$(window).scroll(function(event) {
+		didScroll = true;
+	});
+
+	setInterval(function() {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+		if (Math.abs(lastScrollTop - st) <= delta) return;
+		if (st > lastScrollTop && st > navbarHeight) {
+			$('header').removeClass('nav-down').addClass('nav-up');
+		} else {
+			if (st + $(window).height() < $(document).height()) {
+				$('header').removeClass('nav-up').addClass('nav-down');
+			}
+		}
+		lastScrollTop = st;
+	}
+	
+	
+	//////////////// 모바일 햄버거 //////////////////////
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "100%";
+//		document.getElementById("main").style.marginRight = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+//		document.getElementById("main").style.marginRight = "0";
+	}
+
+</script>

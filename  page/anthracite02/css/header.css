@@ -1,0 +1,728 @@
+/* reset element */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0; padding:0;
+}
+ h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:inherit;}
+
+
+
+/* 건너뛰기 링크(접근성) */
+.skipnavi {position:absolute; left:0; top:-50px; text-indent:-9999px; font-size:0; width:100%; z-index:999; }
+.skipnavi li a:focus, 
+.skipnavi li a:active {position:absolute; left:0; top:50px; display:block; width:100%; padding:5px 0; text-align:center; text-indent:0px; font-size:12px; font-weight:bold; background:#f2f2f2;}
+
+* {font-family: "Bookman Old Style";}
+ol, ul, li { list-style: none;}
+a {text-decoration:none;}
+
+
+/*wrap*/
+#wrap { width: 100%; height: 100%; }
+#header {width: 100%; height: 105px;  }
+
+
+/*★search*/
+        * a {   font-family: "Bookman Old Style"; }
+        #search {  
+            position: absolute;
+            right: 0;
+            top: 0;
+            float: right;
+            width: 415px;
+            display: none;
+            z-index: 8;
+            overflow: hidden;
+        }
+        #search img {
+            position: absolute;
+            z-index: -1;}
+/*s_icon*/
+       #search .s_icon {
+           padding-left: 50px;
+           padding-top: 20px;
+            width:80%; 
+            height: 100px; 
+            float: left;
+            text-align: left;
+        }
+       #search .s_icon ul {
+            width:100%; height: 100px;
+        }
+
+        #search .s_icon ul li { 
+            text-align: center;
+            float: left; 
+            padding-right: 15px;
+            width:60px;
+            height: 30px;
+            margin-top: 30px;
+          
+        }
+        #search .s_icon ul li a p, .fas{
+            font-size: 20px;
+            line-height: 1.6;
+             color:#616161;
+            font-weight: bold;
+            z-index: 8;
+        }
+.fa-shopping-cart {font-size: 20px; line-height: 1.7; color: #616161;} 
+.fa-search {margin-left: 0px; transition: 0.8s; line-height: 1.7; font-size: 20px; color:#616161;}
+.fa-search.in {margin-left: 15px; transition: 0.8s;}
+
+.S_box{ 
+width: 0px; height: 2em; right: 200px; padding: 5px; transition: 0.8s;  position: absolute; top: 52px; transition: width 300ms ease; overflow: hidden; float: right;  box-sizing: border-box; transition: 0.8s; }
+.S_box.open {
+    width: 170px; padding: 5px;
+    transition: 0.8s;
+}
+
+.S_box from input { right: 10px; padding: 5px; transition: 0.8s;  position: absolute; _transition: width 300ms ease; overflow: hidden;  box-sizing: border-box; top: 0px; border-radius: 10px;}
+.S_box from input.inopen { width: 160px; right: 0px; padding:5px;  background: #fff;}
+
+
+        
+/*s_Text*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 20px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 110px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 3vw;
+            color: #999999;
+            font-weight: bold;
+        }
+
+ #search .s_Text ul li a p:hover 
+    {  color: #2f2f2f; 
+        transition:0.5s;
+        padding-left: 5px;
+    }
+
+/*logo*/
+    #header #Logo {
+        margin: 30px;
+        position: absolute;
+        width: 100px;
+        height: 300px;
+        position: fixed;
+        
+    }
+    #header #Logo img {
+        width: 25px;
+        height: 200px;
+    }
+    #header #Logo h1 {
+        writing-mode:vertical-lr;
+        font-size: 3vw;
+    }
+
+/*list*/
+
+
+    #header .list {
+        position: relative;
+        width: 90%;
+        height: 100px;
+        float: left;
+        justify-content:center;
+        _display:flex;
+        _align-items:center;
+    }
+
+    .list ul { 
+        padding-top:30px;
+        padding-left: 10%;
+        margin: 0 auto;
+        width: 200px; 
+        height: 70px; 
+        
+    }
+
+
+    .list ul li {
+        position: relative;
+        margin: 0 auto;
+        float: left;
+        width: 9px; 
+        height: 35px; 
+        margin-left: 20px;
+        margin-right: 20px;            
+        
+        
+    }
+
+        .list ul li a {  
+            text-align: right;
+            width:10px; 
+            height: 20px;
+            border-radius: 50px;
+           
+            display: block;
+            background-color: #a19e9d;
+}
+
+         .list ul li a:after {
+            top: 6px;
+            right: -6px;
+            content: "";
+            position: absolute;
+            border: 5px solid #a19e9d;
+            border-radius:10px;
+            height: 0;
+            transform: translateX(-50%);
+            
+            transition-duration: 0.4s;
+            margin-top: -9px;
+        }
+        .list ul li a:hover:after{height: 100%;}
+    
+
+
+    
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }
+    
+	.on {margin-left: 25px;}
+	
+    .h_btn ul li:nth-child(1) img { width: 25px; height: 25px; padding-top: 2px;}
+    .h_btn ul li:nth-child(2) img { width: 30px; height: 30px; }
+    
+    .hit {    
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    transition: 1s;
+    }
+    
+    .hit_on {
+    left: 9%;
+    opacity: 1; 
+    }
+    
+    
+     #header:after {content: ""; clear: both;}
+
+
+
+
+
+
+
+/*★★★★★★★★★★★★★★★★★ 반응형 ★★★★★★★★★★★★★★★★*/
+
+
+
+
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){ 
+#header #Logo {
+    margin: 30px;
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    position: fixed;
+}
+    
+/*------------ Logo ------------*/
+    #header > #Logo {
+        z-index: -1;
+        margin: 30px 0 0 5px;
+    }
+    
+    #header > #Logo h1 {
+        writing-mode: vertical-lr;
+        font-size: 8vw;
+        color: #888;
+    }    
+/*------------ search ------------*/
+    #search {
+        position: absolute;
+        right: 0;
+        top: 0;
+        float: right;
+        width: 300px;
+        display: none;
+        z-index: 8;
+        overflow: hidden;
+    }        
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 0px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul {
+             padding-left: 0px;
+             height: 250px;
+        }
+   
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 80px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 5vw;
+            color: #999999;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  
+            color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+    .S_box {
+        width: 0px;
+        height: 2em;
+        left: 40px;
+        padding: 5px;
+        transition: 0.8s;
+        position: absolute;
+        top: 52px;
+        transition: width 300ms ease;
+        overflow: hidden;
+        float: right;
+        box-sizing: border-box;
+        transition: 0.8s;
+    }    
+
+    .S_box.open {
+        width: 150px;
+        left: 50px;
+        padding: 5px;
+        transition: all 0.8s ease 0s;
+    }  
+    
+    .S_box from input.inopen {
+        width: 150px;
+        right: 0px;
+        padding: 5px;
+        background: #fff;
+    }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 50px;
+		height: 25px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 10px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 25px;
+    }
+    .h_btn ul li:nth-child(1) img {
+        width: 20px;
+        height: 20px;
+        padding-top: 2px;
+    }    
+    .on {margin-left: 20px;}    
+    
+}
+
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:641px) and (max-width:767px){
+        #search {
+            position: absolute;
+            right: 0;
+            top: 0;
+            float: right;
+            width: 350px;
+            display: none;
+            z-index: 8;
+            overflow: hidden;
+        }        
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 0px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul {
+             padding-left: 0px;
+             height: 250px;
+        }
+   
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 80px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 5vw;
+            color: #999999;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  
+            color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px){
+      
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 20px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul {
+             height: 250px;
+        }
+   
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 80px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 3vw;
+            color: #999999;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }
+}
+ 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+       
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 20px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul {
+             height: 250px;
+        }
+   
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 80px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 3vw;
+            color: #999999;
+            font-weight: bold;
+            padding-left: 15px;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+       
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 20px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 110px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 3vw;
+            color: #999999;
+            font-weight: bold;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }  
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+        
+/*------------ s_Text ------------*/
+        #search .s_Text {
+            padding-left: 60px;
+            padding-top: 20px;
+            width:80%; 
+            float: left;
+            text-align: left;
+        }    
+        #search .s_Text ul li    {
+            margin-left: 5px;
+            width:100%; 
+            height: 110px;
+         
+        } 
+        #search .s_Text ul li a p {
+            font-size: 3vw;
+            color: #999999;
+            font-weight: bold;
+        }
+
+     #search .s_Text ul li a p:hover 
+        {  color: #2f2f2f; 
+            transition:0.5s;
+            padding-left: 5px;
+        }
+    
+/*------------ list ------------*/
+
+    #header .h_btn {
+		top: 20px;
+        position: relative;
+        width:5%; 
+        height: 30px; 
+        float: right;
+        z-index: 10;
+        }
+	
+    #header .h_btn ul {
+		width: 60px;
+		height: 30px;
+		border-radius: 15px;
+		background: #ddd;
+		margin: 0 auto;
+		float: right;
+		margin-right: 45px;
+    }
+    #header .h_btn ul li { 
+		padding-left: 5px;
+		position: absolute;
+        width:20px;
+        height: 30px;
+    }
+    
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

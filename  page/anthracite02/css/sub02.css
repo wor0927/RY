@@ -1,0 +1,506 @@
+*{margin: 0; padding: 0; font-family: "NanumMyeongjo-Bold";}
+
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+        
+
+    body {
+      margin: 0;
+      padding: 0;
+    }       
+    #wrap {
+        width: 100%; 
+        height: 100%;
+        } 
+
+
+/*스크롤 바 생성
+
+::-webkit-scrollbar {
+   width:15px;    -- 세로 스크롤바 굵기 --
+   height:15px;  -- 가로 스크롤바 높이 --
+}
+::-webkit-scrollbar-track-piece  {
+    background-color:#ebebeb;   -- 스크롤 색상 --
+    
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;     -- ?? --
+ background-color:#868686;    -- 스클로 배경 색상 --
+} 
+::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    background-color: #ffffff; 
+}
+
+*/
+
+
+
+#container {width: 90%; height: 980px; margin: 0 auto;  padding: 100px 20px;}
+
+
+/*텍스트*/
+.Journal {
+        width: 30%;
+        height: 918px; 
+        float: left;
+        text-align: center;
+    }
+
+/*텍스트 타이핑*/
+p.typing-txt {display: none;}
+p.typing {  
+        margin-top: 420px;
+        font-size: 100px;
+        font-weight: bold;
+    /*       position: absolute;*/ 
+         display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor { 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; line-height: 2;}    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 25px;}
+
+
+/*게시판*/
+#board { 
+    width: auto;
+    position: relative;
+    right: 350px;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+
+
+
+/*★★두번째★★*/
+@media screen and (min-width:1280px) and (max-width:1735px){
+    
+    
+#container {
+    width: 90%;
+    height: 980px; 
+    margin: 0 auto;  
+    padding: 100px 20px;
+    }
+
+
+
+
+/*텍스트*/
+.Journal {
+        width: 30%;
+        height: 918px; 
+        float: left;
+    }
+
+/*텍스트 타이핑*/
+p.typing-txt {display: none;}
+p.typing {  
+        top: 200px;
+        left: 5%;
+        position: absolute;
+        font-size: 70px;
+        font-weight: bold;
+    /*       position: absolute;*/ 
+         display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor { 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; line-height: 2;}    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 25px;}
+
+
+/*게시판*/
+    #board { 
+        width: auto;
+        position: relative;
+        right: 350px;
+        float: right;
+        }
+    #board a { width: auto;}
+    #board a p {
+        font-size: 25px;
+        font-weight: bold;
+        color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+        }
+}
+
+        
+/*★★세번째★★*/
+@media screen and (min-width:1024px) and (max-width:1279px){
+    
+    
+#container {
+    width: 100%; 
+    height: 600px; 
+    margin: 0 auto; 
+    padding: 100px 0px 20px 0px;
+    }
+
+.Journal {
+        width: 40%;
+        height: 600px; 
+        float: left;
+        _background-color: olivedrab;
+    }
+
+p.typing-txt {display: none;}
+  
+p.typing { 
+        top: 50px;
+        left: 10%;
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor{ 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; }    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 20px;}
+
+#board { 
+    width: auto;
+    position: relative;
+    right: 5%;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+    .swiper-container {
+        width: 60% !important;
+        height: 600px !important;
+    }    
+    .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+        z-index: 1;}
+    
+   .swiper-slide {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 55%;
+    text-align: center;
+       font-size: 18px;
+    } 
+    
+}
+        
+
+/*★★hahaha★★*/
+@media screen and (min-width:640px) and (max-width:1023px){
+    
+#container {
+    width: 100%; 
+    height: 600px; 
+    margin: 0 auto; 
+    padding: 100px 0px 20px 0px;
+    }
+
+.Journal {
+        width: 40%;
+        height: 600px; 
+        float: left;
+        _background-color: olivedrab;
+    }
+
+p.typing-txt {display: none;}
+  
+p.typing { 
+        top: 50px;
+        left: 10%;
+        position: absolute;
+        font-size: 50px;
+        font-weight: bold;
+        display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor{ 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; }    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 18px;}
+
+#board { 
+    width: auto;
+    position: relative;
+    right: 5%;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+    .swiper-container {
+        width: 60% !important;
+        height: 600px !important;
+    }    
+    .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+        z-index: 1;}
+    
+   .swiper-slide {
+    width: 50%!important; 
+    } 
+    
+    
+}
+                
+
+/*★★다섯번째★★*/
+@media screen and (min-width:480px) and (max-width:639px) {
+    #container {
+    width: 100%; 
+    height: 600px; 
+    margin: 0 auto; 
+    padding: 100px 0px 20px 0px;
+    }
+
+.Journal {
+        width: 35%;
+        height: 600px; 
+        float: left;
+    }
+
+p.typing-txt {display: none;}
+  
+p.typing { 
+        top: 50px;
+        left:1%;
+        position: absolute;
+        font-size: 38px;
+        font-weight: bold;
+        display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor{ 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; }    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 20px;}
+/*.txt1:before {content: "기억하는 시간";color: #fff; font-weight: bold; font-size: 16px; opacity: 1;}*/
+    
+    
+#board { 
+    width: auto;
+    position: relative;
+    right: 5%;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+    .swiper-container {
+        width: 65% !important;
+        height: 600px !important;
+    }    
+    .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+        z-index: 1;}
+    
+   .swiper-slide {
+    width: 60%!important;
+  
+    } 
+    
+    
+    
+}
+        
+/*★★여섯번째★★*/
+@media screen and (max-width:479px) {
+    #container {
+    width: 100%; 
+    height: 800px; 
+    margin: 0 auto; 
+    padding: 0px 0px 0px 0px;
+    }
+
+.Journal {
+        width: 100%;
+        height: 150px; 
+        float: left;
+        
+    
+    }
+
+p.typing-txt {display: none;}
+  
+p.typing { 
+        top: -45vh;
+        left:20%;
+        position: absolute;
+        font-size: 55px;
+        font-weight: bold;
+        display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor{ 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; }    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 20px;}
+/*.txt1:before {content: "기억하는 시간";color: #fff; font-weight: bold; font-size: 16px; opacity: 1;}*/
+    
+    
+#board { 
+    width: auto;
+    position: relative;
+    right: 5%;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+    .swiper-container {
+        width: 100% !important;
+        height: 600px !important;     
+    }    
+    .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+        z-index: 1;}
+    
+   .swiper-slide {
+    width: 50%!important;
+    height: 40%!important;   
+  
+    } 
+    
+}
+        
+/*★★일곱번째(아이폰SE)★★*/
+@media screen and (max-width:320px) {
+    
+    
+#container {
+    width: 100%; 
+    height: 730px; 
+    margin: 0 auto; 
+    padding: 0px 0px 0px 0px;
+    }
+
+.Journal {
+    width: 100%;
+    height: 100px; 
+    float: left;
+    }
+
+p.typing-txt {display: none;}
+  
+p.typing { 
+        top: -60vh;
+        left:15%;
+        position: absolute;
+        font-size: 55px;
+        font-weight: bold;
+        display: inline-block; 
+          animation-name: cursor; 
+          animation-duration: 0.5s; 
+          animation-iteration-count: infinite; 
+        } 
+        @keyframes cursor{ 
+          0%{border-right: 1px solid #fff} 
+          50%{border-right: 1px solid #000} 
+          100%{border-right: 1px solid #fff} 
+        }
+.txt1 {position: absolute; }    
+.txt1 p{ color: #fff; font-weight: bold; font-size: 18px;}
+/*.txt1:before {content: "기억하는 시간";color: #fff; font-weight: bold; font-size: 16px; opacity: 1;}*/
+    
+    
+#board { 
+    width: auto;
+    position: relative;
+    right: 5%;
+    float: right;
+    }
+#board a { width: auto;}
+#board a p {font-size: 25px;
+    font-weight: bold;
+    color: #000;
+        text-shadow: 0px 1px #ffffff, 0px 4px 0px #dad7d7;
+
+    }
+    .swiper-container {
+        width: 100% !important;
+        height: 600px !important;     
+    }    
+    .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+        z-index: 1;}
+    
+   .swiper-slide {
+    width: 50%!important;
+    height: 40%!important;   
+  
+    } 
+    
+}
+        

@@ -1,0 +1,432 @@
+.container {
+	padding: 100px 0 0 0;
+	width: 100vw;
+}
+.P_main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.P_main::after {
+	content: "";
+	position: absolute;
+	background: url(../img/P_main.png);
+	filter:alpha(opacity=50);
+	background-repeat: no-repeat;
+	background-size: 100% 2500px;
+	background-position: bottom;	
+	top:0;
+    left:0;
+    position:absolute;
+    background-size:100%;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+.P_main h1 {
+	color: #fff;
+	font-size: 3vw;
+	line-height: 8;
+}
+
+/* -------------------- content01 -------------------- */
+
+.content01 {
+	width: 50%;
+	margin: 0 auto;
+}
+.content01 > h1 {
+    text-align: center;
+    margin: 100px 0 0;
+    font-size: 60px;
+	width: 100%;
+	position: relative;
+    border-bottom: 2px solid black;
+}
+
+
+/* ----- a_box1 ----- */
+.a_box1 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.a_box1 ul { 
+	width: 100%;
+	height: 200px;
+		
+}
+.a_box1 ul li {
+	font-size: 20px;
+	position: absolute;
+	padding-top: 130px;
+}
+.a_box1 ul li:nth-child(2),
+.a_box1 ul li:nth-child(3) { visibility: hidden;}
+
+/* ----- a_box2 ----- */
+.a_box2 {
+	width: 80%;
+	position: relative;
+}
+.a_box2 ul { 
+	width: 100%;
+	height: 50px;
+		
+}
+.a_box2 ul li {
+	font-size: 20px;
+	float: left;
+	padding-top: 10px;
+	padding-right: 25px;
+}
+.a_box2 ul li a {color: #000;}
+
+.a_box2 ul li:hover a{
+	font-weight: bold;
+}
+
+/* ------------------------- content02 ------------------------- */
+.content02 {
+	width: 50%;
+	height: 850px;
+	margin: 0 auto 100px;
+	position: relative;
+	border-bottom: 2px solid black;
+}
+
+.PRO {
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	padding: 50px 0;
+}
+
+/* ----- a_box1 ----- */
+.b_box1 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+/* ----- a_box2 ----- */
+.b_box2 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+/* --- a_box1 , a_box2 공통--- */
+
+.PRO01 {
+	width: 33.33%;
+	padding:20px 0;
+	float: left;
+	text-align: center;
+}
+.PRO01 img {
+	cursor: pointer;
+}
+
+.PRO01 img:hover {  
+	-webkit-filter: blur(1px);
+		filter: blur(3px);
+}
+
+.PRO01 ul {
+	width: 100%;
+}
+.PRO01 ul li {
+	width: 100%;
+    text-align: center;
+}
+.PRO01 ul li{
+	padding-top: 10px;
+}
+
+.PRO01 ul li span {
+	display: block;
+	border-radius: 15px;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    font-weight: bold;	
+}
+.PRO01 ul li  .VEGAN {
+    background-color: #4e7a50;
+    color: #fff;
+}
+
+.PRO01 ul li  .NEW {
+    background-color: #d16613;
+    color: #fff;
+}
+.PRO01 ul li  .txt {
+	font-size: 19px;
+}
+.PRO01 ul li  .one {
+	font-weight: bold;
+}
+
+/* --------------------------- */
+
+
+/* 매우 작은 기기들 (모바일폰, 320px 보다 작은) */
+@media screen and (min-width:320px) and (max-width:640px){ 
+/* -------------------- content01 -------------------- */
+.P_main {
+    display: none;
+    height: 30px;
+}
+   
+    .content01 {
+        width: 90%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 90%;
+        height: 2100px;
+        margin: 0 auto 100px;
+        position: relative;
+        border-bottom: 2px solid black;
+    }
+    .PRO01 {
+        width: 100%;
+        padding: 20px 0;
+        float: left;
+    }
+    
+    .a_box1 ul {
+        height: 10px;
+    }    
+    .a_box1 ul li {
+        width: 200px;
+        position: absolute;
+        top: -72px;
+        left: 25%;
+        text-align: center;
+    }
+    .a_box2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+     .a_box2 ul li {
+        display: inline;
+        font-size: 20px;
+         float: none; 
+        padding-top: 10px;
+        padding: 0 10px;
+    }  
+    
+}
+
+/* 작은 기기들 (태블릿, 640px 이상) */
+@media screen and (min-width:641px) and (max-width:767px){
+.P_main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.P_main::after {
+	content: "";
+	position: absolute;
+	background: url(../img/P_main.png);
+	filter:alpha(opacity=50);
+	background-repeat: no-repeat;
+	background-size: 1000px 500px;
+    background-position: top;	
+	top:0;
+    left:0;
+    position:absolute;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+.P_main h1 {
+	color: #fff;
+	font-size: 10vw;
+	line-height: 6;
+}
+    
+    
+
+/* -------------------- content01 -------------------- */
+
+    .content01 {
+        width: 90%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 90%;
+    }
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media screen and (min-width:768px) and (max-width:991px){
+.P_main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.P_main::after {
+	content: "";
+	position: absolute;
+	background: url(../img/P_main.png);
+	filter:alpha(opacity=50);
+	background-repeat: no-repeat;
+	background-size: 1000px 500px;
+    background-position: top;	
+	top:0;
+    left:0;
+    position:absolute;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+.P_main h1 {
+	color: #fff;
+	font-size: 10vw;
+	line-height: 6;
+}
+/* -------------------- content01 -------------------- */
+
+    .content01 {
+        width: 90%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 90%;
+    }
+
+}
+ 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media screen and (min-width:992px) and (max-width:1024px) {
+.P_main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.P_main::after {
+	content: "";
+	position: absolute;
+	background: url(../img/P_main.png);
+	filter:alpha(opacity=50);
+	background-repeat: no-repeat;
+	background-size: 1000px 500px;
+    background-position: top;	
+	top:0;
+    left:0;
+    position:absolute;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+.P_main h1 {
+	color: #fff;
+	font-size: 10vw;
+	line-height: 5;
+}
+/* -------------------- content01 -------------------- */
+
+    .content01 {
+        width: 90%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 90%;
+    }
+
+}
+
+/* 큰 기기들 (큰 데스크탑, 1025px 이상) */
+@media screen and (min-width:1025px) and (max-width:1279px) {
+.P_main {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.P_main::after {
+	content: "";
+	position: absolute;
+	background: url(../img/P_main.png);
+	filter:alpha(opacity=50);
+	background-repeat: no-repeat;
+	background-size: 1000px 500px;
+    background-position: top;	
+	top:0;
+    left:0;
+    position:absolute;
+    opacity:0.5!important;
+    filter:alpha(opacity=50);
+    z-index:-1;
+    width:100%;
+    height:100%;
+}
+
+.P_main h1 {
+	color: #fff;
+	font-size: 10vw;
+	line-height: 5;
+}
+/* -------------------- content01 -------------------- */
+
+    .content01 {
+        width: 80%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 80%;
+    }
+}
+
+/* 큰 기기들 (큰 데스크탑, 1280px 이상) */
+@media screen and (min-width:1280px) and (max-width:1920px) {
+
+
+
+.P_main h1 {
+	color: #fff;
+	font-size: 3vw;
+	line-height: 8;
+}
+/* -------------------- content01 -------------------- */
+
+    .content01 {
+        width: 80%;
+    }
+
+/* -------------------- content02 -------------------- */
+    .content02 {
+        width: 80%;
+    }
+    
+}
+	

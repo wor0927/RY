@@ -1,0 +1,1253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+p,
+sapn {
+    font-family: "Bookman Old Style";
+}
+
+body {
+    background-color: #f4f4f4;
+    background-color: #fff;
+}
+
+#wrap {
+    position: relative;
+}
+
+#container {
+    width: 800px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 15px 19px rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-radius: 5px;
+    left: 0;
+    background-image: url(../IMAGE/hwanji_glass.png);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+
+
+/*  sound  */
+.cd_audio {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+}
+
+.cd_audio video {
+    width: 0px;
+    height: 0px;
+}
+
+.sound_icon {
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    right: 3%
+}
+
+.sound_icon ul li {
+    width: 50%;
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sound_icon ul li i {
+    font-size: 35px;
+}
+
+/* 사운드 on/off */
+.X_btn.pop {
+    opacity: 0;
+}
+
+.O_btn {
+    position: absolute;
+    right: 33px;
+    top: 0;
+    display: block;
+}
+
+
+
+/*LOGIN*/
+.join_box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+}
+
+.join_mini {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.J_box {
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    _background-color: bisque;
+}
+
+.J_box p {
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #777;
+    letter-spacing: 3px;
+}
+
+
+.J_btn {
+    width: 90%;
+    height: 100px;
+    padding-top: 20px;
+    margin: 10px auto;
+    color: #fff;
+}
+
+.J_btn ul li {
+    padding-top: 20px;
+}
+
+.join_btn01 {
+    border: 0;
+    font-size: 18px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #999;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+.join_btn02 p {
+    font-size: 18px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #999;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+input {
+    border: 0;
+    background: none;
+}
+
+
+
+/*  CD  */
+.join_cd {
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    float: left;
+    position: absolute;
+    top: 135px;
+    left: 920px;
+    z-index: -1;
+}
+
+.join_cd img {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    animation: ani 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes ani {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*★★두번째★★*/
+@media all and (min-width:1280px) and (max-width:1735px) {
+
+    #container {
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 15px 19px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: 0;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 70px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: 3%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 35px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 33px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 40%;
+        height: 35%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .J_box {
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+    }
+
+    .J_box p {
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+        letter-spacing: 3px;
+    }
+
+
+    .J_btn {
+        width: 90%;
+        height: 100px;
+        padding-top: 20px;
+        margin: 10px auto;
+        color: #fff;
+    }
+
+    .J_btn ul li {
+        padding-top: 20px;
+    }
+
+    .join_btn01 {
+        border: 0;
+        font-size: 18px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        letter-spacing: 3px;
+    }
+
+    .join_btn02 p {
+        font-size: 18px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        letter-spacing: 3px;
+    }
+
+
+    /*  CD  */
+    .join_cd {
+        width: 30%;
+        height: 45%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 170px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 600px;
+        height: 600px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+/*★★세번째★★*/
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    #container {
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 15px 19px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: 0;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 70px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: 3%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 35px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 33px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 40%;
+        height: 35%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .J_box {
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+    }
+
+    .J_box p {
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+        letter-spacing: 3px;
+    }
+
+
+    .J_btn {
+        width: 90%;
+        height: 100px;
+        padding-top: 20px;
+        margin: 10px auto;
+        color: #fff;
+    }
+
+    .J_btn ul li {
+        padding-top: 20px;
+    }
+
+    .join_btn01 {
+        border: 0;
+        font-size: 18px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        letter-spacing: 3px;
+    }
+
+    .join_btn02 p {
+        font-size: 18px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        letter-spacing: 3px;
+    }
+
+
+    /*  CD  */
+    .join_cd {
+        width: 30%;
+        height: 45%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 170px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 600px;
+        height: 600px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+}
+
+/*★★hahaha★★*/
+@media screen and (min-width:640px) and (max-width:1023px) {
+    #container {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 15px 19px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: 0;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: 3%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 18px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 50%;
+        height: 35%;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+
+    .J_box {
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+    }
+
+    .txt01 p {
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt01 p label {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    .txt02 p {
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt02 p label {
+        margin-left: 17px;
+        font-size: 14px;
+    }
+
+    .J_btn {
+        width: 90%;
+        height: 80px;
+        padding-top: 20px;
+        margin: 10px auto;
+    }
+
+    .J_btn ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .J_btn ul li {
+        width: 50%;
+        padding-top: 20px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .join_btn01 {
+        font-size: 15px;
+        text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+        font-weight: 100;
+        color: #777;
+        transition: 0.5s;
+    }
+
+    .join_btn02 p {
+        font-size: 15px;
+        text-shadow: 0px 2.5px 2px rgba(0, 0, 0, 0.4);
+        font-weight: 100;
+        color: #666;
+        transition: 0.5s;
+    }
+
+    .J_box input {
+        border: 0;
+        background-color: none;
+    }
+
+
+
+    .join_btn01:hover,
+    .join_btn02 p:hover {
+        font-weight: 900;
+        transition: all 0.9s;
+        font-size: 17px;
+    }
+
+    /*  CD  */
+    .join_cd {
+        width: 30%;
+        height: 45%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 160px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 400px;
+        height: 400px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+
+}
+
+/*★★다섯번째★★*/
+@media screen and (min-width:480px) and (max-width:639px) {
+    #container {
+        width: 330px;
+        height: 350px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 2px 7px 8px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: -10px;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: 3%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 18px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 60%;
+        height: 35%;
+        position: absolute;
+        top: 18%;
+        left: 17%;
+    }
+
+    .J_box {
+        width: 80%;
+        height: 60px;
+    }
+
+    .J_box input {
+        width: 120px;
+    }
+
+    .txt01 p {
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt01 p label {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    .txt02 p {
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt02 p label {
+        margin-left: 14px;
+        font-size: 14px;
+    }
+
+    .J_btn {
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        margin: 10px auto;
+    }
+
+    .J_btn ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .J_btn ul li {
+        width: 50%;
+        padding-top: 20px;
+        float: left;
+    }
+
+    .join_btn01 {
+        font-size: 12px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .join_btn02 p {
+        font-size: 12px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        padding-top: 3px;
+    }
+
+    .J_btn ul li .jbtn:hover,
+    p:hover {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    /*  CD  */
+    .join_cd {
+        width: 20%;
+        height: 35%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 160px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 250px;
+        height: 250px;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+}
+
+/*★★여섯번째★★*/
+@media screen and (max-width:479px) {
+    #container {
+        width: 250px;
+        height: 330px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 2px 7px 8px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: -10px;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: -8%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 18px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 70%;
+        height: 50%;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+
+    .J_box {
+        width: 80%;
+        height: 60px;
+    }
+
+    .J_box input {
+        width: 120px;
+    }
+
+    .txt01 p {
+        width: 25%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt01 p label {
+        padding-left: 60px;
+        font-size: 14px;
+    }
+
+    .txt02 p {
+        width: 25%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt02 p label {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .J_btn {
+        width: 100%;
+        height: 80px;
+        padding-top: 20px;
+        margin: 10px auto;
+    }
+
+    .J_btn ul {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .J_btn ul li {
+        width: 50%;
+        padding-top: 20px;
+        float: left;
+    }
+
+    .join_btn01 {
+        font-size: 12px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .join_btn02 p {
+        font-size: 12px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        padding-top: 3px;
+    }
+
+    /*  CD  */
+    .join_cd {
+        width: 20%;
+        height: 35%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 250px;
+        height: 250px;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+
+}
+
+
+/*★★일곱번째(아이폰SE)★★*/
+@media screen and (max-width:320px) {
+    #container {
+        width: 225px;
+        height: 280px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 2px 7px 8px rgba(0, 0, 0, 0.4);
+        position: relative;
+        border-radius: 5px;
+        left: -130px;
+        background-image: url(../IMAGE/hwanji_glass.png);
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+
+    /*  sound  */
+    .cd_audio {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .cd_audio video {
+        width: 0px;
+        height: 0px;
+    }
+
+    .sound_icon {
+        width: 90px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: -8%
+    }
+
+    .sound_icon ul li {
+        width: 50%;
+        height: 35px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sound_icon ul li i {
+        font-size: 18px;
+    }
+
+    /* 사운드 on/off */
+    .X_btn.pop {
+        opacity: 0;
+    }
+
+    .O_btn {
+        position: absolute;
+        right: 27px;
+        top: 0;
+        display: block;
+    }
+
+
+
+    /*LOGIN*/
+    .join_box {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        float: left;
+        text-align: center;
+    }
+
+    .join_mini {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 15%;
+        left: 0%;
+    }
+
+    .J_box {
+        width: 60%;
+        height: 60px;
+    }
+
+    .J_box input {
+        width: 100px;
+        float: left;
+    }
+
+    .txt01 p {
+        width: 90%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt01 p label {
+        text-align: center;
+        font-size: 12px;
+        margin-left: -50px;
+    }
+
+    .txt02 p {
+        width: 90%;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: #777;
+    }
+
+    .txt02 p label {
+        margin-left: -25px;
+        font-size: 12px;
+    }
+
+    .J_btn {
+        width: 100%;
+        height: 40px;
+        margin: 0px auto;
+        padding-top: 0;
+    }
+
+    .J_btn ul {
+        width: 55%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .J_btn ul li {
+        width: 50%;
+        float: left;
+    }
+
+    .join_btn01 {
+        font-size: 12px;
+        text-shadow: none;
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .join_btn02 p {
+        font-size: 12px;
+        text-shadow: none;
+        _text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        color: #999;
+        transition: 0.5s;
+        padding-top: 3px;
+    }
+
+    .join_btn01:hover,
+    .join_btn02 p:hover {
+        color: #fff;
+    }
+
+
+
+    /*  CD  */
+    .join_cd {
+        width: 1%;
+        height: 35%;
+        margin: 0 auto;
+        float: left;
+        position: absolute;
+        top: 150px;
+        left: 5px;
+        z-index: -1;
+    }
+
+    .join_cd img {
+        width: 200px;
+        height: 200px;
+        box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        animation: ani 5s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes ani {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+
+
+}

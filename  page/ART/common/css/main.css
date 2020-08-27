@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'FrutigerLTStd-Cn';
+    src: url('../font/frutiger/FrutigerLTStd-Cn.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-y: hidden;
+    height: 100%;
+    min-height: 100%;
+    background: #fff;
+    font-family: 'FrutigerLTStd-Cn', 'Noto Sans KR', '나눔고딕', 'NanumGothic', sans-serif;
+}
+
+li {
+    list-style: none
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black
+}
+
+
+/*
+::-webkit-scrollbar { -webkit-appearance: none; } 
+::-webkit-scrollbar:vertical { width: 12px; } 
+::-webkit-scrollbar:horizontal { height: 8px; } 
+::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, .5); border-radius: 10px; border: 2px solid #ffffff; } 
+::-webkit-scrollbar-track { border-radius: 10px; background-color: #ffffff; }
+*/
+
+
+
+#wrap {
+    width: 500%;
+    /* 100% x length of panel */
+    height: 100%;
+    overflow: hidden;
+}
+
+.panel {
+    width: 15%;
+    /* 100% / length of panel */
+    float: left;
+    height: 100%;
+}
+
+.panel .inner {
+    padding: 2em
+}
+
+.panel .inner h2 {
+    font-weight: bold;
+    font-size: 200%;
+    margin: 0 0 1em;
+}
+
+.panel .inner p {
+    text-align: center;
+    margin: 1.5em 0
+}
+
+.panel .inner .p_txt {
+    width: 10%;
+    left: 23%;
+    float: left;
+    position: relative;
+}
+
+.panel .inner .p_txt p {
+    width: 100%;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 70px;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #999,
+        1px -1px 0 #999,
+        -1px 1px 0 #999,
+        1px 1px 0 #999;
+    position: relative;
+    letter-spacing: 0.15em;
+}
+/*텍스트 드래그 컬러*/
+.panel .inner .p_txt p::selection {
+    background-color: black;
+    color: yellow;
+}
+
+.panel .inner .p_img {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.panel .inner .p_img img {
+    width: 400px;
+    height: 700px;
+}
+.panel .inner .p_img p {
+    
+}
+.panel .inner .p_img span {
+    font-size: 13px; 
+}
+
+/*---------------- 공통 ----------------*/
+#panel-1 {
+    background-color: white;
+    padding-right: 80px;
+}
+
+#panel-2 {
+    background-color: white;
+    border-left: 1px solid #eee;
+}
+
+#panel-3 {
+    background-color: darkblue;
+}
+
+#panel-4 {
+    background-color: pink;
+}
+
+#panel-5 {
+    background-color: cyan;
+}
+/*---------------- 끝 ----------------*/

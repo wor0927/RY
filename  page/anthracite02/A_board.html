@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/A_board.css">  
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>-->
+    
+ 
+    
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            //타이핑 효과        
+            var typingBool = false; 
+            var typingIdx=0; 
+            var typingTxt = $("#menu_title> .typing-txt").text(); // 타이핑될 텍스트를 가져온다 
+            typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+            if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+               typingBool=true; 
+
+               var tyInt = setInterval(typing,500); // 반복동작 
+             } 
+
+             function typing(){ 
+               if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+                 $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+                 typingIdx++; 
+               } else{ 
+                 clearInterval(tyInt); //끝나면 반복종료 
+               } 
+             }     
+            
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            var num = 0,
+                $button = $(".button1 > .page_wrap > .btn > a"),
+                $layout = $(".table_layout1 > ul"),
+                $left = $(".button1 > .page_wrap > .btnlb"),
+                $right = $(".button1 > .page_wrap > .btnrb"),
+                $first = $(".button1 > .page_wrap > .btnll"),
+                $end = $(".button1 > .page_wrap > .btnrr");
+
+            $button.click(function(){
+                var i = $(this).index();
+                
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(i).addClass("active");
+                
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(i).addClass("list");
+                num = i;
+            });
+ 
+            $left.click(function(e){
+                e.preventDefault();
+                console.log("1");
+                num = num-1;
+                if (num < 0) {
+                    num = 0;
+                    return; // 빠져나오기
+                }
+                motion();
+            });
+            
+            $right.click(function(e){
+                e.preventDefault();
+                $listNum = $(".show_layout1 >.button1 > .page_wrap > .btn > a").length;
+                console.log("$listNum:"+$listNum);
+                num = num+1;
+                if (num >= $listNum){
+                    num = $listNum-1;
+                    return;
+                }
+                motion();
+            });
+            function motion(){
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(num).addClass("active");
+                
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(num).addClass("list");
+//                num = i;         
+            }
+            
+            $first.click(function(e){
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(0).addClass("active");
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(0).addClass("list");
+                num=0;
+            });
+            $end.click(function(e){
+                var a = $(".show_layout1 >.button1 > .page_wrap > .btn > a").length-1;
+                $button.removeClass();
+                $(".show_layout1 > .button > .page_wrap > .btn > a").eq(a).addClass("active");
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(a).addClass("list");
+                num=a;
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            var $menu = $("#menu_list ul li");
+            var $layout = $(".table_layout1");
+            
+            
+            $menu.click(function(){
+                var i = $(this).index();
+                
+                $menu.removeClass("move_m");
+                $(this).addClass("move_m");
+                $layout.removeClass("show_layout1");
+                $layout.eq(i).addClass("show_layout1");
+                $(".table_layout1>ul").removeClass();
+                $(".show_layout1>ul").eq(0).addClass("list");
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(0).addClass("active");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            var num = 0,
+                $button = $(".button2 > .page_wrap > .btn > a"),
+                $layout = $(".table_layout2 > ul"),
+                $left = $(".button2 > .page_wrap > .btnlb"),
+                $right = $(".button2 > .page_wrap > .btnrb"),
+                $first = $(".button2 > .page_wrap > .btnll"),
+                $end = $(".button2 > .page_wrap > .btnrr");
+                
+            $button.click(function(){
+                var i = $(this).index();
+                $button.removeClass();
+                $button.eq(i).addClass("active");
+                $layout.removeClass();
+                $layout.eq(i).addClass("list");
+                num = i;
+            });
+            
+            $left.click(function(e){
+                e.preventDefault();
+                num = num-1;
+                if (num < 0) {
+                    num = 0;
+                    return; // 빠져나오기
+                }
+                motion();
+            });
+            
+            $right.click(function(e){
+                e.preventDefault();
+                $listNum = $(".button2 > .page_wrap > .btn > a").length;
+                num = num+1;
+                if (num >= $listNum){
+                    num = $listNum-1;
+                    return;
+                }
+                motion();
+            });
+            function motion(){
+                $button.removeClass();
+                $button.eq(num).addClass("active");
+                $layout.removeClass();
+                $layout.eq(num).addClass("list");
+            }
+            
+            $first.click(function(e){
+                $button.removeClass();
+                $button.eq(0).addClass("active");
+                $layout.removeClass();
+                $layout.eq(0).addClass("list");
+                num=0;
+            });
+            $end.click(function(e){
+                var a = $(".button2 > .page_wrap > .btn > a").length-1;
+                $button.removeClass();
+                $button.eq(a).addClass("active");
+                $layout.removeClass();
+                $layout.eq(a).addClass("list");
+                num=a;
+            })
+            
+        });
+    </script> 
+       
+
+</head>
+
+<body>
+<div id="wrap">
+    <!-- header-->
+    <header id="header"></header>
+    
+    <div id="menu">
+        <div id="menu_title">
+            <p class="typing-txt">BOARD</p>
+            <p class="typing"></p>
+        </div>
+        
+        <div class="section section2">
+           <h2></h2>
+            <div class="table_layout table_layout2 show_layout2">
+                <ul class="list">
+                    <li class="table_th">
+                        <div class="num">번호</div>
+                        <div class="subject">제목</div>
+                        <div class="date">날짜</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">20</div>
+                        <div class="subject">서교,기억하는 시간</div>
+                        <div class="date">2020-05-13</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">19</div>
+                        <div class="subject">연희,시작</div>
+                        <div class="date">2020-02-26</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">18</div>
+                        <div class="subject">연희,일상편</div>
+                        <div class="date">2019-11-21</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">17</div>
+                        <div class="subject">엔트러사이트 영업시간</div>
+                        <div class="date">2019-06-18</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">16</div>
+                        <div class="subject">주차 가능시간</div>
+                        <div class="date">2018-12-04</div>
+                    </li>
+                </ul>
+                <ul>
+                   <li class="table_th">
+                        <div class="num">번호</div>
+                        <div class="subject">제목</div>
+                        <div class="date">날짜</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">15</div>
+                        <div class="subject">새로운 원두가 입고되었습니다.</div>
+                        <div class="date">2018-09-10</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">14</div>
+                        <div class="subject">연휴 영업 안내(참고부탁드립니다.)</div>
+                        <div class="date">2018-09-05</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">13</div>
+                        <div class="subject">홈페이지 이용약관, 개인정보 처리방침, 위치기반 서비스 이용약관 개정 안내(2018년 9월 4일부터 적용) </div>
+                        <div class="date">2018-08-06</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">12</div>
+                        <div class="subject">개인정보 처리방침 개정 안내(2018년 5월 1일부터 적용)</div>
+                        <div class="date">2018-04-23</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">11</div>
+                        <div class="subject">제휴사 서비스(제로포인트)사용 안내</div>
+                        <div class="date">2017-12-01</div>
+                    </li>
+                </ul>
+                <ul>
+                   <li class="table_th">
+                        <div class="num">번호</div>
+                        <div class="subject">제목</div>
+                        <div class="date">날짜</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">10</div>
+                        <div class="subject">개인정보 취급방침 개정 안내(2017년 9월 12일부터 적용)</div>
+                        <div class="date">2017-09-05</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">9</div>
+                        <div class="subject">제휴사 서비스(카카오톡 원두 선물하기) 종료 안내</div>
+                        <div class="date">2017-02-21</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">8</div>
+                        <div class="subject">12월 멤버십 혜택 이용 안내</div>
+                        <div class="date">2016-12-23</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">7</div>
+                        <div class="subject">홈페이지 이용 안내</div>
+                        <div class="date">2016-10-20</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">6</div>
+                        <div class="subject">개인정보 취급방침 개정 안내(2016년 8월 23일부터 적용)</div>
+                        <div class="date">2016-09-21</div>
+                    </li>
+                </ul>
+                <ul>
+                   <li class="table_th">
+                        <div class="num">번호</div>
+                        <div class="subject">제목</div>
+                        <div class="date">날짜</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">5</div>
+                        <div class="subject">개인정보 취급방침 개정 안내(2016년 4월 30일부터 적용)</div>
+                        <div class="date">2016-03-25</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">4</div>
+                        <div class="subject">앤트러사이트 개인개정 방침</div>
+                        <div class="date">2016-02-05</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">3</div>
+                        <div class="subject">개인정보 취급방침 개정 안내(2016년 1월 28일부터 적용)</div>
+                        <div class="date">2016-01-21</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">2</div>
+                        <div class="subject">Anthracite 멤버쉽 런칭! </div>
+                        <div class="date">2015-03-16</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">1</div>
+                        <div class="subject">Anthracite 홈페이지 오픈!</div>
+                        <div class="date">2015-03-16</div>
+                    </li>
+                </ul>
+                <div class="button button2">
+                    <div class="page_wrap">
+                        <a href="javascript:;" class="btnll"><img src="IMAGE/arrow_ll.gif" alt=""></a>
+                        <a href="javascript:;" class="btnlb"><img src="IMAGE/arrow_lb.gif" alt=""></a>
+                        <span class="btn">
+                            <a href="javascript:;" class="active">1</a>
+                            <a href="javascript:;" >2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                        </span>
+                        <a href="javascript:;" class="btnrb"><img src="IMAGE/arrow_rb.gif" alt=""></a>
+                        <a href="javascript:;" class="btnrr"><img src="IMAGE/arrow_rr.gif" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+      <!-- footer-->
+    <div id="footer"></div>
+</div>
+</body>
+</html>
