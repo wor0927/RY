@@ -6,8 +6,8 @@
 body {
 	background: #fff;
 	margin: 0;
-	padding: 0;
 	font-family: 'AAA';
+	padding: 10px 30px;
 }
 
 li {
@@ -24,7 +24,6 @@ a:visited {
 }
 
 
-
 .wrap {
 	width: 100%;
 	height: 100vh;
@@ -32,7 +31,6 @@ a:visited {
 }
 
 .M_txt {
-	max-width: 1920px;
 	width: 100%;
 	height: 100%;
 	z-index: -9999;
@@ -68,21 +66,19 @@ a:visited {
 .m_txt div p {
 	font-size: 5em;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 }
 
 .t01 {
-	margin-top: 160px;
+	margin-top: 90px;
 }
 
 /*--------------t02----------------*/
-.t02 {}
 
 .t02::before {
 	content: "";
-	width: 400px;
-	padding-left: 5px;
-	padding-bottom: 100px;
+	width: 100%;
+	padding-bottom: 80px;
 	display: block;
 	border-top: 1px solid #000;
 }
@@ -93,6 +89,7 @@ a:visited {
 }
 
 .m_txt .my_gr img {
+	margin: 0 auto;
 	display: block;
 	width: 300px;
 	height: 400px;
@@ -102,7 +99,7 @@ a:visited {
 
 /*---------------------------- 공통 ---------------------------*/
 .container {
-	top: 800px;
+	top: 850px;
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
@@ -130,10 +127,11 @@ a:visited {
 .about_txt p {
 	font-weight: bold;
 	font-family: 'NanumGothic';
-	font-size: 18px;
+	font-size: 22px;
 	color: #222;
-	line-height: 2;
+	line-height: 2.5;
 	letter-spacing: 1.2px;
+	text-align: center;
 }
 
 
@@ -144,6 +142,7 @@ a:visited {
 	_background: #777;
 	overflow: hidden;
 	position: relative;
+	padding-top: 200px;
 }
 
 .Technics_txt {
@@ -202,6 +201,8 @@ a:visited {
 	text-align: right;
 }
 
+
+
 .Technics_txt div p .o_txt {
 	opacity: 0;
 	position: relative;
@@ -212,10 +213,11 @@ a:visited {
 	opacity: 1;
 	display: block;
 	top: 50px;
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	background: #000;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/star01.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: absolute;
 	cursor: pointer;
 	transition-delay: .5;
@@ -255,16 +257,28 @@ a:visited {
 
 
 /*--- hover animation ---*/
+.Technics_txt div p .o_txt::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top:14px;
+	width: 0px;
+	height: 70px;
+	background-image: #e9e81e66;
+	transition: 1s;
+}
+
+
 .Technics_txt div p .o_txt::before {
 	content: "";
 	position: absolute;
 	display: block;
-	top: 40px;
+	top:14px;
 	width: 0px;
-	height: 40px;
+	height: 70px;
 	background-color: #e9e81e66;
 	transition: 1s;
-
+	z-index: 0;
 }
 
 .Technics_txt div:nth-child(1) p .o_txt::before {
@@ -331,6 +345,12 @@ a:visited {
 }
 
 /*-- 메뉴 --*/
+.modal_box {
+	width: 1500px;
+	height: 740px;
+	box-shadow: 1px 16px 24px 2px rgb(0 0 0 / 50%);	
+}
+
 .top {
 	padding: 5px 0 0 10px;
 	z-index: 1;
@@ -447,7 +467,11 @@ a:visited {
 }
 
 .star_bottom span {
-	background: #000;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/star02.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -579,9 +603,9 @@ sct02::after {
 
 .sct03 h1 {
 	text-align: center;
-	font-size: 12em;
+	font-size: 7vw;
 	z-index: -1;
-	color: #eee;
+	color: gainsboro;
 }
 
 /*---- mobile* ----*/
@@ -823,12 +847,13 @@ sct02::after {
 	}
 
 	.about_txt p {
-		font-weight: bold;
-		font-family: 'NanumGothic';
-		font-size: 15px;
-		color: #222;
-		line-height: 2.3;
-		letter-spacing: 1.6px;
+    font-weight: bold;
+    font-family: 'NanumGothic';
+    font-size: 22px;
+    color: #222;
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    text-align: center;
 	}
 
 	/*------------------------------ sct02 --------------------------------*/
@@ -1088,9 +1113,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 	.mobile {
@@ -1273,12 +1298,13 @@ sct02::after {
 	}
 
 	.about_txt p {
-		font-weight: bold;
-		font-family: 'NanumGothic';
-		font-size: 16px;
-		color: #222;
-		line-height: 2.5;
-		letter-spacing: 1.6px;
+    font-weight: bold;
+    font-family: 'NanumGothic';
+    font-size: 18px;
+    color: #222;
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    text-align: center;
 	}
 
 	/*------------------------------ sct02 --------------------------------*/
@@ -1479,9 +1505,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 	.mobile {
@@ -1529,13 +1555,13 @@ sct02::after {
 	}
 
 	/*--------------t02----------------*/
-	.t02 {}
+
 
 	.t02::before {
 		content: "";
 		width: 600px;
 		margin: 0 auto;
-		padding-bottom: 100px;
+		padding-bottom: 80px;
 		display: block;
 		border-top: 1px solid #000;
 	}
@@ -1562,12 +1588,13 @@ sct02::after {
 	}
 
 	.about_txt p {
-		font-weight: bold;
-		font-family: 'NanumGothic';
-		font-size: 16px;
-		color: #222;
-		line-height: 2.5;
-		letter-spacing: 1.6px;
+    font-weight: bold;
+    font-family: 'NanumGothic';
+    font-size: 18px;
+    color: #222;
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    text-align: center;
 	}
 
 	/*------------------------------ sct02 --------------------------------*/
@@ -1773,9 +1800,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 }
@@ -1821,7 +1848,7 @@ sct02::after {
 		content: "";
 		width: 600px;
 		margin: 0 auto;
-		padding-bottom: 100px;
+		padding-bottom: 80px;
 		display: block;
 		border-top: 1px solid #000;
 	}
@@ -1848,12 +1875,13 @@ sct02::after {
 	}
 
 	.about_txt p {
-		font-weight: bold;
-		font-family: 'NanumGothic';
-		font-size: 16px;
-		color: #222;
-		line-height: 2.5;
-		letter-spacing: 1.6px;
+    font-weight: bold;
+    font-family: 'NanumGothic';
+    font-size: 18px;
+    color: #222;
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    text-align: center;
 	}
 
 	/*------------------------------ sct02 --------------------------------*/
@@ -2056,9 +2084,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 }
@@ -2076,12 +2104,13 @@ sct02::after {
 	}
 
 	.about_txt p {
-		font-weight: bold;
-		font-family: 'NanumGothic';
-		font-size: 16px;
-		color: #222;
-		line-height: 2.5;
-		letter-spacing: 1.6px;
+    font-weight: bold;
+    font-family: 'NanumGothic';
+    font-size: 18px;
+    color: #222;
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    text-align: center;
 	}
 
 	/*------------------------------ sct02 --------------------------------*/
@@ -2208,9 +2237,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 	/*---- mobile* ----*/
@@ -2374,9 +2403,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 9vw;
+		font-size: 7vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 
@@ -2476,9 +2505,9 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 10vw;
+		font-size: 9vw;
 		z-index: -1;
-		color: #eee;
+		color: gainsboro;
 	}
 
 
@@ -2516,7 +2545,7 @@ sct02::after {
 
 	.sct03 h1 {
 		text-align: center;
-		font-size: 10vw;
+		font-size: 7vw;
 		z-index: -1;
 		color: #eee;
 	}

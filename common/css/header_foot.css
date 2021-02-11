@@ -32,7 +32,7 @@ header {
 
 .h_nav {
 	float: right;
-	width: 120px;
+	width: 100px;
 	position: relative;
 	text-align: center;
 }
@@ -44,26 +44,31 @@ header {
 .h_nav ul li {
 	padding: 5px 0;
 }
-
+.h_nav ul li:hover {
+	margin-left: -15px;
+	transition: 0.4s;
+}
 .h_nav ul li a {
 	letter-spacing: 0.03em;
 	text-align: justify;
 	font-size: 1.5em;
 	font-weight: bold;
 	font-size: 18px;
+	display: block;
+	transition: 0.3s;
 }
 
 
 
 
 /*★★★★★ 반응형 ★★★★★ */
-*//* 작은 기기들 (모바일, 321px 이상) */
+/* 작은 기기들 (모바일, 321px 이상) */
 @media screen and (max-width:320px) {
 
 	/*---------- h_nav -----------*/
 	.h_nav {
 		float: right;
-		width: 190px;
+		width: 100px;
 		position: relative;
 		margin-right: 10px;
 	}
@@ -85,13 +90,13 @@ header {
 	}
 }
 
-*//* 작은 기기들 (모바일, 321px 이상) */
+/* 작은 기기들 (모바일, 321px 이상) */
 @media screen and (min-width:321px) and (max-width:640px) {
 
 	/*---------- h_nav -----------*/
 	.h_nav {
 		float: right;
-		width: 190px;
+		width: 100px;
 		position: relative;
 		margin-right: 10px;
 	}
@@ -119,7 +124,7 @@ header {
 	/*---------- h_nav -----------*/
 	.h_nav {
 		float: right;
-		width: 190px;
+		width: 100px;
 		position: relative;
 		margin-right: 10px;
 	}
@@ -147,7 +152,7 @@ header {
 	/*---------- h_nav -----------*/
 	.h_nav {
 		float: right;
-		width: 190px;
+		width: 100px;
 		position: relative;
 		margin-right: 10px;
 	}
@@ -176,7 +181,7 @@ header {
 	/*---------- h_nav -----------*/
 	.h_nav {
 		float: right;
-		width: 190px;
+		width: 100px;
 		position: relative;
 		margin-right: 60px;
 	}
