@@ -352,6 +352,7 @@ p:hover .mark::after {
 
 /*------- ★ 모달 ★-------*/
 .modal {
+  z-index: 99999;
   display: none;
   width: 100%;
   height: 100%;
@@ -416,6 +417,7 @@ p:hover .mark::after {
 .skillImg {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 .skillImg img {
   visibility: hidden;
@@ -425,7 +427,7 @@ p:hover .mark::after {
   object-position: left;
 }
 .skillImg img.showImg {
-  visibility: visible;
+  display: block;
 }
 
 .m_brackets {

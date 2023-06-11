@@ -107,7 +107,7 @@ cursorTexts.forEach((text) => {
           let h1El = document.querySelector("#skill h1");
           let imgEl = document.createElement("img");
           h1El.append(imgEl);
-          let targetImg = `../common/img/${img.name.toLowerCase()}.png`;
+          let targetImg = `https://wor0927.github.io/RY/common/img/${img.name.toLowerCase()}.png`;
           imgEl.setAttribute("src", targetImg);
           target === img.name
             ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
