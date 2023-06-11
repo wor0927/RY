@@ -1,359 +1,256 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 부드러운 페이지 전환 처리 -->
+    <meta http-equiv="Page-exit" content="BlendTrans(Duration=0.5)" />
+    <meta http-equiv="Page-Enter" content="BlendTrans(Duration=0.5)" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- 부드러운 페이지 전환 -->
-	<meta http-equiv="Page-exit" content="BlendTrans(Duration=0.5)">
-	<meta http-equiv="Page-Enter" content="BlendTrans(Duration=0.5)">
-	
-	<!-- css -->
-	<link rel="shortcut icon" href="../common/img/favicon/RY.png" type="image/x-icon"/>
-	<link rel="icon" href="../common/img/favicon/RY.png" type="image/x-icon">
-	<link rel="stylesheet" href="../common/css/main.css">
-	<link rel="stylesheet" href="../common/css/header_foot.css">
-	<link rel="stylesheet" href="../common/css/animate.css">
-	<link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link
+      rel="shortcut icon"
+      href="../common/img/favicon/RY.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../common/img/favicon/RY.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../common/css/main.css" />
+    <link rel="stylesheet" href="../common/css/space.css" />
+    <link rel="stylesheet" href="../common/css/header_foot.css" />
+    <link rel="stylesheet" href="../common/css/animate.css" />
+    <link rel="stylesheet" href="../common/css/swiper-bundle.min.css" />
 
-	<!-- js -->
-	<script type="text/javascript" src="../common/js/wow.min.js"></script>
-	<script type="text/javascript" src="../common/js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="../common/js/main.js"></script>
-	<title>KIM WOO RY </title>
-</head>
+    <title>KIM WOO RY</title>
+  </head>
 
-<body>
+  <body>
+    <header></header>
+    <div class="wrap">
+      <div class="cursor"></div>
+      <!-- 메인 -->
+      <div class="M_txt">
+        <div class="m_txt t01">
+          <div class="wow animate fadeInUp">
+            <p><span>즐거운</span></p>
+          </div>
+          <div
+            class="wow animate fadeInUp"
+            data-wow-delay=".4s"
+            data-wow-duration=".8s"
+          >
+            <p><span>도전을 꿈꾸다</span></p>
+          </div>
+        </div>
+        <div
+          class="m_txt t02 wow animate fadeInUp"
+          data-wow-delay=".6s"
+          data-wow-duration="1s"
+        >
+          <div
+            class="my_gr wow animate fadeInUp"
+            data-wow-delay=".8s"
+            data-wow-duration="1s"
+          >
+            <img src="../common/img/my.png" alt="woory" />
+          </div>
+        </div>
+      </div>
 
-	<header></header>
-	<div class="wrap">
-		<!--메인텍스트-->
-		<div class="M_txt">
-			<div class="m_txt t01">
-				<div class="wow animate fadeInUp ">
-					<p><span>즐거운</span></p>
-				</div>
-				<div class="wow animate fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
-					<p><span>도전을 꿈꾸다.</span></p>
-				</div>
-			</div>
-			<div class="m_txt t02">
-				<div class="my_gr wow animate fadeInUp" data-wow-delay="1s" data-wow-duration="1.2s" data-wow-offset="0">
-					<img src="../common/img/my.png" alt="woory">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<!--자기소개-->
-			<div class="section sct01">
-				<div class="about_txt">
-					<p class="wow animate fadeInUp" data-wow-delay="2s" data-wow-duration="2s">안녕하세요 :) 흥미로운 웹퍼블리셔 김우리입니다.</p>
-					<p class="wow animate fadeInUp" data-wow-delay="2.1s" data-wow-duration="2s">탄탄하게 쌓아올린 HTML 틀 위로 감각적인 UI를 그려냅니다.<br/>Photoshop 과 Illustrator를 사용하여 세련된 디자인을 제작하고<br> CSS, JQuery, JavaScript를 활용해 동적 모션을 만듭니다.<br /></p><br />
-					<p class="wow animate fadeInUp" data-wow-delay="2.2s" data-wow-duration="2s">웹 퍼블리셔를 처음 만났을 때 <br />무한한 공간 안에서 저의 감각만으로 공간을 꾸밀 수 있다는것에 큰 매력을 느꼈습니다. <br/>그런 매력은 저를 웹퍼플리셔로 이끌었고 더 넓은 미래를 꿈꾸며 끊임없이 발전하고싶어지는 저를 만들었습니다.</p><br />
-					<p class="wow animate fadeInUp" data-wow-delay="2.3s" data-wow-duration="2s">저의 손길이 닿은 곳은 삶의 모든 순간들이 남는다고 생각합니다.<br/>저와함께 사용자의 삶과 기억 또한 함께 녹아들길 바래봅니다 ! &#128075;</p>
-				</div>
-			</div>
-			<!--Skill-->
-			<div class="section sct02">
-					<!-- star -->
-					<div class="star_top">
-						<span class="st st1"></span>
-						<span class="st st2"></span>
-						<span class="st st3"></span>
-						<span class="st st4"></span>
-						<span class="st st5"></span>
-						<span class="st st6"></span>
-						<span class="st st7"></span>
-						<span class="st st8"></span>
-						<span class="st st9"></span>
-						<span class="st st10"></span>
-					</div>
-					<div class="star_bottom">
-						<span class="stb1"></span>
-						<span class="stb2"></span>
-						<span class="stb3"></span>
-						<span class="stb4"></span>
-						<span class="stb5"></span>
-						<span class="stb6"></span>
-						<span class="stb7"></span>
-						<span class="stb8"></span>
-						<span class="stb9"></span>
-						<span class="stb10"></span>
-					</div>		
-				<!-- skill txt -->
-				<div class="Technics_txt">
-					<div class="skil01">
-						<p><span class="o_cle"></span><span class="o_txt">HTML5</span></p>
-						<p><span class="o_cle"></span><span class="o_txt">CSS3</span></p>
-					</div>
-					<div class="skil02">
-						<p><span class="o_cle"></span><span class="o_txt">JQurey</span></p>
-						<p><span class="o_cle"></span><span class="o_txt">Javascript</span></p>
-					</div>
-					<div class="skil03">
-						<p><span class="o_cle"></span><span class="o_txt">PhotoShop</span></p>
-						<p><span class="o_cle"></span><span class="o_txt">Illustrator</span></p>
-					</div>
-				</div>
-				<!-- 모달 -->
-				<div class="modal">
-					<div class="m_brackets M_HTML">
-						<h1 data-wow-offset = "100" >HTML MARKUP</h1>
-						
-						<!-- 메뉴 -->
-						<div class="modal_box">
-							<div class="top">
-								<ul>
-									<li><img src="../common/img/brakets.png" alt="브라켓icon"></li>
-									<li>파일</li>
-									<li>편집</li>
-									<li>검색</li>
-									<li>탐색</li>
-									<li>디버그</li>
-									<li>도움말</li>
-								</ul>
-							</div>
-							<div class="left">
-								<div class="le">
-									<p>왼쪽</p>
-									<ul>
-										<li><span>index</span>.html</li>
-										<li><span>header</span>.html</li>
-										<li><span>main</span>.html</li>
-										<li><span>footer</span>.html</li>
-									</ul>
-								</div>
-								<div class="ri">
-									<p>오른쪽</p>
-									<ul>
-										<li><span>index</span>.css</li>
-										<li><span>header_footer</span>.css</li>
-										<li><span>main</span>.css</li>
-										<li><span>main</span>.js</li>
-									</ul>
-								</div>
-							</div>
-							<!-- 내용 -->
-							<div class="mo_html">
-								<img src="../common/img/brakets_html.png" alt="html_brakets_img">
-							</div>
-						</div>
-					</div>
-					<div class="m_brackets M_CSS">
-					<h1>CSS3 DESIGN</h1>
-						<!-- 메뉴 -->
-						<div class="modal_box">
-							<div class="top">
-								<ul>
-									<li><img src="../common/img/brakets.png" alt="브라켓icon"></li>
-									<li>파일</li>
-									<li>편집</li>
-									<li>검색</li>
-									<li>탐색</li>
-									<li>디버그</li>
-									<li>도움말</li>
-								</ul>
-							</div>
-							<div class="left">
-								<div class="le">
-									<p>왼쪽</p>
-									<ul>
-										<li><span>index</span>.html</li>
-										<li><span>header</span>.html</li>
-										<li><span>main</span>.html</li>
-										<li><span>footer</span>.html</li>
-									</ul>
-								</div>
-								<div class="ri">
-									<p>오른쪽</p>
-									<ul>
-										<li><span>index</span>.css</li>
-										<li><span>header_footer</span>.css</li>
-										<li><span>main</span>.css</li>
-										<li><span>main</span>.js</li>
-									</ul>
-								</div>
-							</div>
-							<!-- 내용 -->
-							<div class="mo_css">
-								<img src="../common/img/brakets_css.png" alt="html_brakets_img">
-							</div>
-						</div>
-					</div>
-					<div class="m_brackets M_JQ">
-					<h1>JQuery EVENT</h1>
-						<!-- 메뉴 -->
-						<div class="modal_box">
-							<div class="top">
-								<ul>
-									<li><img src="../common/img/brakets.png" alt="브라켓icon"></li>
-									<li>파일</li>
-									<li>편집</li>
-									<li>검색</li>
-									<li>탐색</li>
-									<li>디버그</li>
-									<li>도움말</li>
-								</ul>
-							</div>
-							<div class="left">
-								<div class="le">
-									<p>왼쪽</p>
-									<ul>
-										<li><span>index</span>.html</li>
-										<li><span>header</span>.html</li>
-										<li><span>main</span>.html</li>
-										<li><span>footer</span>.html</li>
-									</ul>
-								</div>
-								<div class="ri">
-									<p>오른쪽</p>
-									<ul>
-										<li><span>index</span>.css</li>
-										<li><span>header_footer</span>.css</li>
-										<li><span>main</span>.css</li>
-										<li><span>main</span>.js</li>
-									</ul>
-								</div>
-							</div>
-							<!-- 내용 -->
-							<div class="mo_jQ">
-								<img src="../common/img/brakets_J.png" alt="html_brakets_img">
-							</div>
-						</div>		
-					</div>	
+      <!-- 컨테이너 -->
+      <div class="container">
+        <!--자기소개-->
+        <div id="aboutMe" class="section">
+          <div class="about_txt">
+            <p
+              class="wow animate fadeInUp"
+              data-wow-delay=".4s"
+              data-wow-duration="1s"
+            >
+              안녕하세요.
+            </p>
+            <p
+              class="wow animate fadeInUp"
+              data-wow-delay=".6s"
+              data-wow-duration="1s"
+            >
+              탄탄하게 쌓아올린 HTML 위로 <br />
+              감각적인 디자인을 그려내는 퍼블리셔 김우리입니다.<br />
+            </p>
+            <p
+              class="wow animate fadeInUp"
+              data-wow-delay=".8s"
+              data-wow-duration="1s"
+            >
+              Photoshop과 Figma를 통해 UI/UX를 제작하며,<br />
+              CSS, JQuery, JavaScript, React를 활용하여 화려한 동적 모션을
+              구현합니다.
+            </p>
 
-					<div class="m_brackets M_JAVA">
-						<h1>JQuery EVENT</h1>
-							<!-- 메뉴 -->
-							<div class="modal_box">
-								<div class="top">
-									<ul>
-										<li><img src="../common/img/brakets.png" alt="브라켓icon"></li>
-										<li>파일</li>
-										<li>편집</li>
-										<li>검색</li>
-										<li>탐색</li>
-										<li>디버그</li>
-										<li>도움말</li>
-									</ul>
-								</div>
-								<div class="left">
-									<div class="le">
-										<p>왼쪽</p>
-										<ul>
-											<li><span>index</span>.html</li>
-											<li><span>header</span>.html</li>
-											<li><span>main</span>.html</li>
-											<li><span>footer</span>.html</li>
-										</ul>
-									</div>
-									<div class="ri">
-										<p>오른쪽</p>
-										<ul>
-											<li><span>index</span>.css</li>
-											<li><span>header_footer</span>.css</li>
-											<li><span>main</span>.css</li>
-											<li><span>main</span>.js</li>
-										</ul>
-									</div>
-								</div>
-								<!-- 내용 -->
-								<div class="mo_jQ">
-									<img src="../common/img/brakets_JQ.png" alt="html_brakets_img">
-								</div>
-							</div>
-					</div>	
-					<div class="m_brackets M_PHOTO">
-					<h1>PhotoShop</h1>
-						<!-- 내용 -->
-						<div class="mo_photo">
-							<img src="../common/img/brakets_photo.png" alt="html_brakets_img">
-						</div>
-					</div>
-					<div class="m_brackets M_ILLUST">
-					<h1>Illustrator</h1>
-						<!-- 내용 -->
-						<div class="mo_Illust">
-							<img src="../common/img/brakets_Illust.png" alt="html_brakets_img">
-						</div>
-					</div>	
-				</div>
-			</div>
-			<!--SHARE-->
-			<div class="section sct03">
-				<h1 class="wow animate fadeInLeftBig">SHARE</h1>
-				<h1 class="wow animate fadeInRightBig">제가 궁금하신가요? &#128521; </h1>
-				<div class="mobile">
-					<div class="mobile_box">
-						<!-- mobile sound -->
-						<span class="m_o"></span>
-						<span class="m_l"></span>
-						<div class="m_ain">
-							<!-- Swiper -->
-							<div class="swiper-container">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="../page/BONGBONG/index.html">
-											<img src="../common/img/mobile02.png" alt="Bongjungo_page">
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="../page/anthracite02/index.html">
-											<img src="../common/img/mobile01.png" alt="anthracite_page">
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="../page/NU/index.html">
-											<img src="../common/img/mobile03.png" alt="NU_page">
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="../page/Hince01/index.html">
-											<img src="../common/img/mobile04.png" alt="HINCE_page">
-										</a>
-									</div>
-<!--
+            <p
+              class="circle wow animate fadeInUp"
+              data-wow-delay="1s"
+              data-wow-duration="1s"
+            >
+              다양한 경험을 통해 얻은 창의적인 아이디어로<br />
+              사용자의 일상과 가장 가까운 곳에서, <br />
+              더 나은 경험을 선사하기 위해 끊임없이 노력하겠습니다 👩‍💻
+            </p>
+            <br />
+          </div>
+        </div>
+        <!--Skill-->
+        <div id="skill" class="section">
+          <h1
+            class="wow animate fadeInRightBig"
+            data-wow-delay="0.8s"
+            data-wow-duration="1s"
+          >
+            Skill 🔧
+          </h1>
+          <!-- space -->
+          <div
+            class="space wow animate fadeInUp"
+            data-wow-delay=1s"
+            data-wow-duration="1s"
+          >
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+          </div>
+
+          <!-- Technics -->
+          <div class="Technics_txt">
+            <p class="cursor_text"><span class="mark">HTML5</span></p>
+            <p class="cursor_text"><span class="mark">CSS3</span></p>
+            <p class="cursor_text"><span class="mark">JQurey</span></p>
+            <p class="cursor_text"><span class="mark">Javascript</span></p>
+            <p class="cursor_text"><span class="mark">PhotoShop</span></p>
+            <p class="cursor_text"><span class="mark">Illustrator</span></p>
+            <p class="cursor_text"><span class="mark">AdobeXD</span></p>
+            <p class="cursor_text"><span class="mark">Figma</span></p>
+          </div>
+
+          <!-- 모달 -->
+          <div class="modal">
+            <div class="modal_body">
+              <div class="m_head">
+                <div class="modal_title"></div>
+                <div class="closeBtn">X</div>
+              </div>
+              <div class="m_body">
+                <div class="skillImg">
+                  <img name="HTML5" alt="HTML5" />
+                  <img name="CSS3" alt="CSS3" />
+                  <img name="JQurey" alt="JQurey" />
+                  <img name="Javascript" alt="Javascript" />
+                  <img name="PhotoShop" alt="PhotoShop" />
+                  <img name="Illustrator" alt="Illustrator" />
+                  <img name="AdobeXD" alt="Adobe XD" />
+                  <img name="Figma" alt="Figma" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="section sct03">
+          <h1
+            class="wow animate fadeInLeftBig"
+            data-wow-delay=".8s"
+            data-wow-duration="1s"
+          >
+            Portfolio 🎨
+          </h1>
+
+          <div
+            class="mobile wow animate fadeInUp"
+            data-wow-delay=".8s"
+            data-wow-duration="1s"
+          >
+            <div class="mobile_box">
+              <!-- mobile sound -->
+              <span class="m_o"></span>
+              <span class="m_l"></span>
+              <div class="m_ain">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="../page/BONGBONG/index.html">
+                        <img
+                          src="../common/img/mobile02.png"
+                          alt="Bongjungo_page"
+                        />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="../page/anthracite02/index.html">
+                        <img
+                          src="../common/img/mobile01.png"
+                          alt="anthracite_page"
+                        />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="../page/NU/index.html">
+                        <img src="../common/img/mobile03.png" alt="NU_page" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="../page/Hince01/index.html">
+                        <img
+                          src="../common/img/mobile04.png"
+                          alt="HINCE_page"
+                        />
+                      </a>
+                    </div>
+                    <!--
 									<div class="swiper-slide">
 										<a href="../page/ART/index.html">
 											<img src="../common/img/mobile04.png" alt="HINCE_page">
 										</a>
 									</div>
 -->
-								</div>
-							</div>
-							<!-- Swiper JS -->
-							<script type="text/javascript" src="../common/js/swiper-bundle.min.js"></script>
-						</div>
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-						<!-- mobile btn -->
-						<span class="m_btn"><span class="m_btn_bt"></span></span>
-					</div>
-				</div>
-				<div class="mobile_txt">
-				</div>
+                  </div>
+                </div>
+                <!-- Swiper JS -->
+                <script
+                  type="text/javascript"
+                  src="../common/js/swiper-bundle.min.js"
+                ></script>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- mobile btn -->
+              <span class="m_btn"><span class="m_btn_bt"></span></span>
+            </div>
+          </div>
+        </div>
 
-			</div>
-			<!--footer-->
-			<div class="section sct04">
-				<div class="f_icon">
-					<ul>
-						<li><a href="javascript:;"><img src="../common/img/instar.png" alt="인스타그램"></a></li>
-						<li><a href="mailto:wor0927@naver.com?Subject=안녕하세요:) &body=저에대해%20궁금하시다면%20언제든지%20편하게%20연락%20주세요!%20감사합니다%20:)" target="_top" target="_top"><img src="../common/img/mail.png" alt="이메일"></a></li>
-					</ul>
-				</div>
-				<div class="f_address">
-					<p><a href="tel:010-8060-3167">+82 010 8060 3167</a></p>
-					<!--블러 디폴트 마우스대면 보여지기-->
-					<span>Ry. All rights reserved.</span>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<footer></footer>
-</body>
-
+        <!--footer-->
+        <div class="section sct04">
+          <div class="f_icon"></div>
+          <div class="f_address">
+            <p><a href="tel:010-8060-3167">+82 010 8060 3167</a></p>
+            <!--블러 디폴트 마우스대면 보여지기-->
+            <span>Ry. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <!-- js -->
+    <script type="text/javascript" src="../common/js/wow.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../common/js/jquery-3.4.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../common/js/main.js"></script>
+  </body>
 </html>
