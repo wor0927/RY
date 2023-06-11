@@ -1,141 +1,142 @@
-	// Create HTML5 elements for IE
-	document.createElement("article");
-	document.createElement("section");
+// Create HTML5 elements for IE
+document.createElement("article");
+document.createElement("section");
 
-	new WOW().init();
+new WOW().init();
 
-	$(function() {
-		$("header").load("../common/header.html");
-		//            $("footer").load("../common/foot.html");
-		//          $(".mobile").load("../common/mobile.html");
-	});
+/** header 즉시 실행 (IIFE) */
+(function () {
+  $("header").load("../common/header.html");
+})();
 
-	//---------- M_txt fadein / fadeout ----------//
-	$(window).scroll(function() {
+$(window).scroll(function () {
+  var M_txt = $(".M_txt");
 
-		var num = 0;
-		var win_sc = $(window).scrollTop();
-		var this_sc = $(this).scrollTop();
-		var M_txt = $(".M_txt");
-		var sec_txt = $(".sec_txt");
-		var container = $(".container")
+  if (scrollY > 50) {
+    M_txt.addClass("M_txt_Out");
+    M_txt.removeClass("M_txt_In");
+  } else {
+    M_txt.addClass("M_txt_In");
+    M_txt.removeClass("M_txt_Out");
+    modal.classList.remove("show");
+  }
+});
 
+/**
+ * title : Scroll Event
+ * description : Main, section 02 Text scroll event
+ */
 
-		console.log("window : " + $(window).scrollTop());
-		console.log("this_sc : " + $(this).scrollTop());
+function textScroll(e) {
+  var skill = $("#skill").offset().top;
 
-		if (win_sc > 50) {
-			M_txt.addClass("M_txt_Out");
-			M_txt.removeClass("M_txt_In");
-			sec_txt.css("visibility", "visible");
+  scrollY >= skill - 450
+    ? ($(".o_txt ").stop().animate({
+        opacity: "1",
+      }),
+      $(".o_cle").fadeOut().css({
+        zIndex: "0",
+      }))
+    : ($(".o_cle").fadeIn().css({
+        zIndex: "1",
+      }),
+      $(".o_txt ").stop().animate({
+        opacity: "0",
+      }));
+}
+window.addEventListener("scroll", textScroll);
 
-		} else {
-			M_txt.addClass("M_txt_In");
-			M_txt.removeClass("M_txt_Out");
-			sec_txt.css("visibility", "hidden");
-		}
+/**
+ * title : Cursor Event
+ * description : 커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+ */
 
-	});
+function cursor(e) {
+  let mouseCursor = document.querySelector(".cursor");
+  let cursorText = document.querySelectorAll(".cursor_text");
 
-	//---------- sct02 / 텍스트 나오기 ----------//
-	$(window).scroll(function(e) {
+  mouseCursor.style.left = e.pageX + "px";
+  mouseCursor.style.top = e.pageY + "px";
 
-		var win_sc = $(window).scrollTop();
-		var this_sc = $(this).scrollTop();
-		var sct02 = $(".sct02").offset().top;
+  cursorText.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      mouseCursor.classList.add("cursor-grow");
 
-		if (win_sc >= sct02 - 450) {
-			$(".o_txt ").stop().animate({
-				opacity: "1"
-			});
-			$(".o_cle").fadeOut().css({
-				zIndex: "0"
-			});
-			//				
+      item.classList.add("hovered-link");
+    });
+    item.addEventListener("mouseleave", () => {
+      mouseCursor.classList.remove("cursor-grow");
+      mouseCursor.style.zIndex = "1000";
+      item.classList.remove("hovered-link");
+    });
+  });
+}
+window.addEventListener("mousemove", cursor);
+/**
+ * title : Modal
+ * description : Skill Modal Event
+ */
 
-		} else {
-			$(".o_cle").fadeIn().css({
-				zIndex: "1"
-			});
-			$(".o_txt ").stop().animate({
-				opacity: "0"
-			});
-		}
-	});
-	//---------- sct02 / Skill IMG ----------//	
-	
-	$(function(){
-//		-- mouseleave fadeOut -- //
-		$(".m_brackets").mouseleave(function(){
-			$(".modal > .m_brackets").fadeOut();
-		});
-		//-------------------------//
-		
-		
-		//-- html cilck event -- //
-		$(".skil01>p:nth-child(1)").click(function(){
-			$(".modal > .M_HTML").fadeIn();
-		});
-		$(".modal > .M_HTML").click(function(){
-			$(".modal > .M_HTML").fadeOut();
-		});
+let cursorTexts = document.querySelectorAll(".cursor_text");
+let modal = document.querySelector(".modal");
+let closeBtn = document.querySelector(".closeBtn");
+let modalTitle = document.querySelector(".modal_title");
+let imgs = document.querySelectorAll(".skillImg img");
 
-		
-		//-- css cilck event -- //
-		$(".skil01>p:nth-child(2)").click(function(){
-			$(".modal > .M_CSS").fadeIn();
-		});
-		$(".modal > .M_CSS").click(function(){
-			$(".modal > .M_CSS").fadeOut();
-		});
-		
-		//-- JQ cilck event -- //
-		$(".skil02>p:nth-child(1)").click(function(){
-			$(".modal > .M_JQ").fadeIn();
-		});
-		$(".modal > .M_JQ").click(function(){
-			$(".modal > .M_JQ").fadeOut();
-		})
-		
-		//-- JAVA cilck event -- //
-		$(".skil02>p:nth-child(2)").click(function(){
-			$(".modal > .M_JAVA").fadeIn();
-		});
-		$(".modal > .M_JAVA").click(function(){
-			$(".modal > .M_JAVA").fadeOut();
-		})
-		
-		//-- PHOTO cilck event -- //
-		$(".skil03>p:nth-child(1)").click(function(){
-			$(".modal > .M_PHOTO").fadeIn();
-		});
-		$(".modal > .M_PHOTO").click(function(){
-			$(".modal > .M_PHOTO").fadeOut();
-		})
-		
-		//-- Illust cilck event -- //
-		$(".skil03>p:nth-child(2)").click(function(){
-			$(".modal > .M_ILLUST").fadeIn();
-		});
-		$(".modal > .M_ILLUST").click(function(){
-			$(".modal > .M_ILLUST").fadeOut();
-		})
+// 피그마 링크처리
+let linkEl = document.createElement("a");
 
-	});
-	
-	//---------- sct03 / Share swiper ----------//
-	$(function() {
-		var swiper = new Swiper('.swiper-container', {
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			spaceBetween:0,
-			autoplayDisableOnInteraction: false,
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-		});
-	});
+linkEl.id = "figmaLink";
+linkEl.innerText = "프로젝트 바로보기 ";
+linkEl.setAttribute(
+  "href",
+  `https://www.figma.com/file/GYMvm4fctyWro9qk93Hqaa/%F0%9F%A7%A0-RBrain?type=design&node-id=128%3A8914&t=zhRk8UDJVIJeaxgO-1`
+);
+linkEl.setAttribute("target", "_blank");
+
+// 모달 클릭 이벤트
+cursorTexts.forEach((text) => {
+  text.addEventListener("click", function (e) {
+    let target = e.target.innerText;
+
+    target === text.textContent
+      ? ((modalTitle.innerText = `${target} ✍`),
+        text.textContent === "Figma" && modalTitle.appendChild(linkEl),
+        modal.classList.add("show"),
+        imgs.forEach((img) => {
+          let targetImg = `../../common/img/${img.name.toLowerCase()}.png`;
+          target === img.name
+            ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
+            : null;
+        }))
+      : null;
+  });
+});
+
+// 모달 클로즈 이벤트
+closeBtn.addEventListener("click", function () {
+  modal.classList.remove("show");
+  imgs.forEach((img) => ((img.src = ""), img.classList.remove("showImg")));
+});
+
+/**
+ * title : Portfolio
+ * description :  Portfolio swiper event
+ */
+
+//---------- sct03 / Share swiper ----------//
+$(function () {
+  var swiper = new Swiper(".swiper-container", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 0,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+});
