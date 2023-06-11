@@ -104,7 +104,7 @@ cursorTexts.forEach((text) => {
         text.textContent === "Figma" && modalTitle.appendChild(linkEl),
         modal.classList.add("show"),
         imgs.forEach((img) => {
-          let targetImg = `https://wor0927.github.io/RY/common/img/${img.name.toLowerCase()}.png`;
+          let targetImg = `../../${img.name.toLowerCase()}.png`;
           target === img.name
             ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
             : null;
