@@ -12,7 +12,7 @@ new WOW().init();
 $(window).scroll(function () {
   var M_txt = $(".M_txt");
 
-  if (scrollY > 50) {
+  if (scrollY > 20) {
     M_txt.addClass("M_txt_Out");
     M_txt.removeClass("M_txt_In");
   } else {
