@@ -104,7 +104,11 @@ cursorTexts.forEach((text) => {
         text.textContent === "Figma" && modalTitle.appendChild(linkEl),
         modal.classList.add("show"),
         imgs.forEach((img) => {
-          let targetImg = `/RY/common/img/${img.name.toLowerCase()}.png`;
+          let h1El = document.querySelector("#skill h1");
+          let imgEl = document.createElement("img");
+          h1El.append(imgEl);
+          let targetImg = `../common/img/${img.name.toLowerCase()}.png`;
+          imgEl.setAttribute("src", targetImg);
           target === img.name
             ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
             : null;
