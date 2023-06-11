@@ -104,24 +104,22 @@ cursorTexts.forEach((text) => {
         text.textContent === "Figma" && modalTitle.appendChild(linkEl),
         modal.classList.add("show"),
         imgs.forEach((img) => {
-          let h1El = document.querySelector("#skill h1");
-          let imgEl = document.createElement("img");
-          h1El.append(imgEl);
-          let targetImg = `https://wor0927.github.io/RY/common/img/${img.name.toLowerCase()}.png`;
-          imgEl.setAttribute("src", targetImg);
           target === img.name
-            ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
-            : null;
+            ? img.classList.add("showImg")
+            : img.classList.remove("showImg");
         }))
       : null;
   });
 });
 
 // 모달 클로즈 이벤트
+window.addEventListener("click", function (e) {
+  e.target === modal ? modal.classList.remove("show") : false;
+});
 
 closeBtn.addEventListener("click", function () {
   modal.classList.remove("show");
-  imgs.forEach((img) => ((img.src = ""), img.classList.remove("showImg")));
+  imgs.forEach((img) => img.classList.remove("showImg"));
 });
 
 /**

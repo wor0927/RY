@@ -6,6 +6,21 @@
 ::selection {
   background-color: #ffc75f;
 }
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+  height: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #217af4; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
 
 body,
 html {
@@ -372,6 +387,14 @@ p:hover .mark::after {
 .modal.show {
   display: block;
   transition: 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 1px -2px 16px 1px rgba(34, 36, 38, 0.15);
+  transform: translateX(-50%) translateY(-50%);
 }
 .m_head {
   display: flex;
@@ -417,10 +440,9 @@ p:hover .mark::after {
 .skillImg {
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 .skillImg img {
-  visibility: hidden;
+  display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
