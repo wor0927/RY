@@ -1,205 +1,204 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'MomentumSansVariable', 'MomentumSansText', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MomentumSansVariable", "MomentumSansText", "sans-serif";
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-	width: 100%;
-	height: 60px;
-	position: fixed;
-	z-index: 999;
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 999;
 }
 
 /*------------ logo ----------*/
 .h_logo {
-	width: 70px;
-	position: absolute;
-	text-align: center;
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  cursor: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 
 /*---------- h_nav -----------*/
 
 .h_nav {
-	float: right;
-	width: 100px;
-	position: relative;
-	text-align: center;
+  float: right;
+  width: 100px;
+  position: relative;
+  text-align: center;
 }
 
 .h_nav ul {
-	width: 100%;
+  width: 100%;
 }
 
 .h_nav ul li {
-	padding: 5px 0;
+  padding: 5px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .h_nav ul li:hover {
-	margin-left: -15px;
-	transition: 0.4s;
+  margin-left: -15px;
+  transition: 0.4s;
 }
 .h_nav ul li a {
-	letter-spacing: 0.03em;
-	text-align: justify;
-	font-size: 1.5em;
-	font-weight: bold;
-	font-size: 18px;
-	display: block;
-	transition: 0.3s;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
 }
-
-
-
 
 /*★★★★★ 반응형 ★★★★★ */
 /* 작은 기기들 (모바일, 321px 이상) */
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
+  /*---------- h_nav -----------*/
+  .h_nav {
+    float: right;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+  }
 
-	/*---------- h_nav -----------*/
-	.h_nav {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right: 10px;
-	}
+  .h_nav ul {
+    width: 100%;
+    text-align: right;
+  }
 
-	.h_nav ul {
-		width: 100%;
-		text-align: right;
-	}
+  .h_nav ul li {
+    padding: 10px 0;
+  }
 
-	.h_nav ul li {
-		padding: 10px 0;
-	}
-
-	.h_nav ul li a {
-		letter-spacing: 0.03em;
-		text-align: justify;
-		font-size: 6vw;
-		font-weight: bold;
-	}
+  .h_nav ul li a {
+    letter-spacing: 0.03em;
+    text-align: justify;
+    font-size: 6vw;
+    font-weight: bold;
+  }
 }
 
 /* 작은 기기들 (모바일, 321px 이상) */
-@media screen and (min-width:321px) and (max-width:640px) {
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  /*---------- h_nav -----------*/
+  .h_nav {
+    float: right;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+  }
 
-	/*---------- h_nav -----------*/
-	.h_nav {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right: 10px;
-	}
+  .h_nav ul {
+    width: 100%;
+    text-align: right;
+  }
 
-	.h_nav ul {
-		width: 100%;
-		text-align: right;
-	}
+  .h_nav ul li {
+    padding: 10px 0;
+  }
 
-	.h_nav ul li {
-		padding: 10px 0;
-	}
-
-	.h_nav ul li a {
-		letter-spacing: 0.03em;
-		text-align: justify;
-		font-size: 6vw;
-		font-weight: bold;
-	}
+  .h_nav ul li a {
+    letter-spacing: 0.03em;
+    text-align: justify;
+    font-size: 6vw;
+    font-weight: bold;
+  }
 }
 
 /* 작은 기기들 (태블릿, 641px 이상) */
-@media screen and (min-width:641px) and (max-width:767px) {
+@media screen and (min-width: 641px) and (max-width: 767px) {
+  /*---------- h_nav -----------*/
+  .h_nav {
+    float: right;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+  }
 
-	/*---------- h_nav -----------*/
-	.h_nav {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right: 10px;
-	}
+  .h_nav ul {
+    width: 100%;
+    text-align: right;
+  }
 
-	.h_nav ul {
-		width: 100%;
-		text-align: right;
-	}
+  .h_nav ul li {
+    padding: 10px 0;
+  }
 
-	.h_nav ul li {
-		padding: 10px 0;
-	}
-
-	.h_nav ul li a {
-		letter-spacing: 0.03em;
-		text-align: justify;
-		font-size: 1.5em;
-		font-weight: bold;
-	}
+  .h_nav ul li a {
+    letter-spacing: 0.03em;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
 /* 작은 기기들 (태블릿, 768px 이상) */
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*---------- h_nav -----------*/
+  .h_nav {
+    float: right;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+  }
 
-	/*---------- h_nav -----------*/
-	.h_nav {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right: 10px;
-	}
+  .h_nav ul {
+    width: 100%;
+    text-align: right;
+  }
 
-	.h_nav ul {
-		width: 100%;
-		text-align: right;
-	}
+  .h_nav ul li {
+    padding: 10px 0;
+  }
 
-	.h_nav ul li {
-		padding: 10px 0;
-	}
-
-	.h_nav ul li a {
-		letter-spacing: 0.03em;
-		text-align: justify;
-		font-size: 1.5em;
-		font-weight: bold;
-	}
+  .h_nav ul li a {
+    letter-spacing: 0.03em;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 
-
 /* 중간 기기들 (데스크탑, 992px 이상) */
-@media screen and (min-width:992px) and (max-width:1920px) {
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+  /*---------- h_nav -----------*/
+  .h_nav {
+    float: right;
+    width: 100px;
+    position: relative;
+    margin-right: 60px;
+  }
 
-	/*---------- h_nav -----------*/
-	.h_nav {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right: 60px;
-	}
+  .h_nav ul {
+    width: 100%;
+    text-align: right;
+  }
 
-	.h_nav ul {
-		width: 100%;
-		text-align: right;
-	}
+  .h_nav ul li {
+    padding: 10px 0;
+  }
 
-	.h_nav ul li {
-		padding: 10px 0;
-	}
-
-	.h_nav ul li a {
-		letter-spacing: 0.03em;
-		text-align: justify;
-		font-size: 1.5em;
-		font-weight: bold;
-	}
-
+  .h_nav ul li a {
+    letter-spacing: 0.03em;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
