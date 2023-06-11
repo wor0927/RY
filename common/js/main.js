@@ -104,7 +104,7 @@ cursorTexts.forEach((text) => {
         text.textContent === "Figma" && modalTitle.appendChild(linkEl),
         modal.classList.add("show"),
         imgs.forEach((img) => {
-          let targetImg = `../../${img.name.toLowerCase()}.png`;
+          let targetImg = `./../common/img/${img.name.toLowerCase()}.png`;
           target === img.name
             ? (img.classList.add("showImg"), img.setAttribute("src", targetImg))
             : null;
@@ -114,6 +114,7 @@ cursorTexts.forEach((text) => {
 });
 
 // 모달 클로즈 이벤트
+
 closeBtn.addEventListener("click", function () {
   modal.classList.remove("show");
   imgs.forEach((img) => ((img.src = ""), img.classList.remove("showImg")));
